@@ -149,5 +149,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBUS\AppBUS.csproj">
+      <Project>{de36e007-5ed1-46df-b26f-194c7ce55546}</Project>
+      <Name>AppBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppDTO\AppDTO.csproj">
+      <Project>{ed8e4923-10fb-41ad-8256-0ccb235d5309}</Project>
+      <Name>AppDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
