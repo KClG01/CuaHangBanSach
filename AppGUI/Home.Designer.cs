@@ -40,6 +40,8 @@
             this.btn_Main_book = new Guna.UI2.WinForms.Guna2Button();
             this.menuTranstition = new System.Windows.Forms.Timer(this.components);
             this.pn_MenuSide = new System.Windows.Forms.Panel();
+            this.btn_Main_fnc_thongke = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_Main_formTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Main_logout = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_nhanvien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_hoadon = new Guna.UI2.WinForms.Guna2Button();
@@ -47,12 +49,15 @@
             this.btn_Main_fullscreen = new System.Windows.Forms.Button();
             this.btn_Main_Close = new System.Windows.Forms.Button();
             this.pn_Main_Bar = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Main_SideBar = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_Main_formTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_Main_fnc_thongke = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Main_fnc_bansach = new Guna.UI2.WinForms.Guna2Button();
             this.pn_bookContainer.SuspendLayout();
             this.pn_MenuSide.SuspendLayout();
             this.pn_Main_Bar.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebarTransition
@@ -192,7 +197,7 @@
             this.btn_Main_book.Location = new System.Drawing.Point(0, 0);
             this.btn_Main_book.Name = "btn_Main_book";
             this.btn_Main_book.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_book.TabIndex = 4;
+            this.btn_Main_book.TabIndex = 5;
             this.btn_Main_book.Text = "     Sách";
             this.btn_Main_book.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_book.Click += new System.EventHandler(this.btn_Main_book_Click);
@@ -204,6 +209,7 @@
             // pn_MenuSide
             // 
             this.pn_MenuSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.pn_MenuSide.Controls.Add(this.btn_Main_fnc_bansach);
             this.pn_MenuSide.Controls.Add(this.btn_Main_fnc_thongke);
             this.pn_MenuSide.Controls.Add(this.btn_Main_logout);
             this.pn_MenuSide.Controls.Add(this.btn_Main_fnc_nhanvien);
@@ -215,6 +221,43 @@
             this.pn_MenuSide.Name = "pn_MenuSide";
             this.pn_MenuSide.Size = new System.Drawing.Size(319, 1040);
             this.pn_MenuSide.TabIndex = 3;
+            // 
+            // btn_Main_fnc_thongke
+            // 
+            this.btn_Main_fnc_thongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_thongke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_thongke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_thongke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Main_fnc_thongke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Main_fnc_thongke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Main_fnc_thongke.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_thongke.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Main_fnc_thongke.ForeColor = System.Drawing.Color.White;
+            this.btn_Main_fnc_thongke.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_fnc_thongke.Image")));
+            this.btn_Main_fnc_thongke.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Main_fnc_thongke.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_Main_fnc_thongke.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_Main_fnc_thongke.Location = new System.Drawing.Point(0, 160);
+            this.btn_Main_fnc_thongke.Name = "btn_Main_fnc_thongke";
+            this.btn_Main_fnc_thongke.Size = new System.Drawing.Size(319, 40);
+            this.btn_Main_fnc_thongke.TabIndex = 9;
+            this.btn_Main_fnc_thongke.Text = "     Thống kê";
+            this.btn_Main_fnc_thongke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Main_fnc_thongke.Click += new System.EventHandler(this.btn_Main_fnc_thongke_Click);
+            // 
+            // lbl_Main_formTitle
+            // 
+            this.lbl_Main_formTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Main_formTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbl_Main_formTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Main_formTitle.ForeColor = System.Drawing.Color.White;
+            this.lbl_Main_formTitle.Location = new System.Drawing.Point(0, 1);
+            this.lbl_Main_formTitle.Name = "lbl_Main_formTitle";
+            this.lbl_Main_formTitle.Padding = new System.Windows.Forms.Padding(7);
+            this.lbl_Main_formTitle.Size = new System.Drawing.Size(200, 39);
+            this.lbl_Main_formTitle.TabIndex = 20;
+            this.lbl_Main_formTitle.Text = "Màn hình chính";
+            this.lbl_Main_formTitle.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // btn_Main_logout
             // 
@@ -257,7 +300,7 @@
             this.btn_Main_fnc_nhanvien.Location = new System.Drawing.Point(0, 120);
             this.btn_Main_fnc_nhanvien.Name = "btn_Main_fnc_nhanvien";
             this.btn_Main_fnc_nhanvien.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_fnc_nhanvien.TabIndex = 23;
+            this.btn_Main_fnc_nhanvien.TabIndex = 8;
             this.btn_Main_fnc_nhanvien.Text = "     Nhân viên";
             this.btn_Main_fnc_nhanvien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_nhanvien.Visible = false;
@@ -281,7 +324,7 @@
             this.btn_Main_fnc_hoadon.Location = new System.Drawing.Point(0, 80);
             this.btn_Main_fnc_hoadon.Name = "btn_Main_fnc_hoadon";
             this.btn_Main_fnc_hoadon.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_fnc_hoadon.TabIndex = 22;
+            this.btn_Main_fnc_hoadon.TabIndex = 7;
             this.btn_Main_fnc_hoadon.Text = "     Hóa đơn";
             this.btn_Main_fnc_hoadon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_hoadon.Click += new System.EventHandler(this.btn_Main_fnc_hoadon_Click);
@@ -304,7 +347,7 @@
             this.btn_Main_fnc_customer.Location = new System.Drawing.Point(0, 40);
             this.btn_Main_fnc_customer.Name = "btn_Main_fnc_customer";
             this.btn_Main_fnc_customer.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_fnc_customer.TabIndex = 5;
+            this.btn_Main_fnc_customer.TabIndex = 6;
             this.btn_Main_fnc_customer.Text = "     Khách hàng";
             this.btn_Main_fnc_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_customer.Click += new System.EventHandler(this.btn_Main_fnc_customer_Click);
@@ -342,8 +385,8 @@
             // pn_Main_Bar
             // 
             this.pn_Main_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
-            this.pn_Main_Bar.Controls.Add(this.lbl_Main_formTitle);
-            this.pn_Main_Bar.Controls.Add(this.btn_Main_SideBar);
+            this.pn_Main_Bar.Controls.Add(this.panel2);
+            this.pn_Main_Bar.Controls.Add(this.panel1);
             this.pn_Main_Bar.Controls.Add(this.btn_Main_fullscreen);
             this.pn_Main_Bar.Controls.Add(this.btn_Main_Close);
             this.pn_Main_Bar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -353,6 +396,24 @@
             this.pn_Main_Bar.Size = new System.Drawing.Size(1920, 40);
             this.pn_Main_Bar.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lbl_Main_formTitle);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(95, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 40);
+            this.panel2.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_Main_SideBar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(95, 40);
+            this.panel1.TabIndex = 21;
+            // 
             // btn_Main_SideBar
             // 
             this.btn_Main_SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
@@ -360,57 +421,39 @@
             this.btn_Main_SideBar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Main_SideBar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Main_SideBar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Main_SideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_Main_SideBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Main_SideBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
             this.btn_Main_SideBar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_Main_SideBar.ForeColor = System.Drawing.Color.White;
             this.btn_Main_SideBar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_SideBar.Image")));
-            this.btn_Main_SideBar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Main_SideBar.ImageOffset = new System.Drawing.Point(12, 0);
-            this.btn_Main_SideBar.ImageSize = new System.Drawing.Size(25, 25);
             this.btn_Main_SideBar.Location = new System.Drawing.Point(0, 0);
             this.btn_Main_SideBar.Name = "btn_Main_SideBar";
-            this.btn_Main_SideBar.Size = new System.Drawing.Size(94, 40);
+            this.btn_Main_SideBar.Size = new System.Drawing.Size(95, 40);
             this.btn_Main_SideBar.TabIndex = 19;
             this.btn_Main_SideBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_SideBar.Click += new System.EventHandler(this.btn_Main_SideBar_Click);
             // 
-            // lbl_Main_formTitle
+            // btn_Main_fnc_bansach
             // 
-            this.lbl_Main_formTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Main_formTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_Main_formTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Main_formTitle.ForeColor = System.Drawing.Color.White;
-            this.lbl_Main_formTitle.Location = new System.Drawing.Point(94, 1);
-            this.lbl_Main_formTitle.Name = "lbl_Main_formTitle";
-            this.lbl_Main_formTitle.Padding = new System.Windows.Forms.Padding(7);
-            this.lbl_Main_formTitle.Size = new System.Drawing.Size(1746, 39);
-            this.lbl_Main_formTitle.TabIndex = 20;
-            this.lbl_Main_formTitle.Text = "Màn hình chính";
-            this.lbl_Main_formTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btn_Main_fnc_thongke
-            // 
-            this.btn_Main_fnc_thongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
-            this.btn_Main_fnc_thongke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Main_fnc_thongke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Main_fnc_thongke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Main_fnc_thongke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Main_fnc_thongke.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Main_fnc_thongke.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
-            this.btn_Main_fnc_thongke.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Main_fnc_thongke.ForeColor = System.Drawing.Color.White;
-            this.btn_Main_fnc_thongke.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_fnc_thongke.Image")));
-            this.btn_Main_fnc_thongke.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Main_fnc_thongke.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btn_Main_fnc_thongke.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_Main_fnc_thongke.Location = new System.Drawing.Point(0, 160);
-            this.btn_Main_fnc_thongke.Name = "btn_Main_fnc_thongke";
-            this.btn_Main_fnc_thongke.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_fnc_thongke.TabIndex = 25;
-            this.btn_Main_fnc_thongke.Text = "     Thống kê";
-            this.btn_Main_fnc_thongke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Main_fnc_thongke.Click += new System.EventHandler(this.btn_Main_fnc_thongke_Click);
+            this.btn_Main_fnc_bansach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_bansach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_bansach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_bansach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Main_fnc_bansach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Main_fnc_bansach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Main_fnc_bansach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_bansach.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_Main_fnc_bansach.ForeColor = System.Drawing.Color.White;
+            this.btn_Main_fnc_bansach.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_fnc_bansach.Image")));
+            this.btn_Main_fnc_bansach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Main_fnc_bansach.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_Main_fnc_bansach.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_Main_fnc_bansach.Location = new System.Drawing.Point(0, 200);
+            this.btn_Main_fnc_bansach.Name = "btn_Main_fnc_bansach";
+            this.btn_Main_fnc_bansach.Size = new System.Drawing.Size(319, 40);
+            this.btn_Main_fnc_bansach.TabIndex = 4;
+            this.btn_Main_fnc_bansach.Text = "     Bán sách";
+            this.btn_Main_fnc_bansach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FormHome
             // 
@@ -422,10 +465,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.pn_bookContainer.ResumeLayout(false);
             this.pn_MenuSide.ResumeLayout(false);
             this.pn_Main_Bar.ResumeLayout(false);
-            this.pn_Main_Bar.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -452,5 +498,8 @@
         private System.Windows.Forms.Panel pn_Menu_fncSlected1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Main_formTitle;
         private Guna.UI2.WinForms.Guna2Button btn_Main_fnc_thongke;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btn_Main_fnc_bansach;
     }
 }

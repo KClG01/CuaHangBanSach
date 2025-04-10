@@ -37,7 +37,7 @@
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.pn_fn = new System.Windows.Forms.Panel();
             this.btn_QLLS_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QLLS_Xóa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_QLLS_Del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLLS_Add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLLS_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.txt_QLLS_TENLOAI = new Guna.UI2.WinForms.Guna2TextBox();
@@ -134,7 +134,7 @@
             // 
             this.pn_fn.BackColor = System.Drawing.Color.Transparent;
             this.pn_fn.Controls.Add(this.btn_QLLS_Search);
-            this.pn_fn.Controls.Add(this.btn_QLLS_Xóa);
+            this.pn_fn.Controls.Add(this.btn_QLLS_Del);
             this.pn_fn.Controls.Add(this.btn_QLLS_Add);
             this.pn_fn.Controls.Add(this.btn_QLLS_Edit);
             this.pn_fn.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -158,20 +158,20 @@
             this.btn_QLLS_Search.TabIndex = 0;
             this.btn_QLLS_Search.Text = "Tìm kiếm";
             // 
-            // btn_QLLS_Xóa
+            // btn_QLLS_Del
             // 
-            this.btn_QLLS_Xóa.BorderRadius = 10;
-            this.btn_QLLS_Xóa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLLS_Xóa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLLS_Xóa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLLS_Xóa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLLS_Xóa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLLS_Xóa.ForeColor = System.Drawing.Color.White;
-            this.btn_QLLS_Xóa.Location = new System.Drawing.Point(154, 56);
-            this.btn_QLLS_Xóa.Name = "btn_QLLS_Xóa";
-            this.btn_QLLS_Xóa.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLLS_Xóa.TabIndex = 3;
-            this.btn_QLLS_Xóa.Text = "Xóa";
+            this.btn_QLLS_Del.BorderRadius = 10;
+            this.btn_QLLS_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLLS_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLLS_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLLS_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLLS_Del.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLLS_Del.ForeColor = System.Drawing.Color.White;
+            this.btn_QLLS_Del.Location = new System.Drawing.Point(154, 56);
+            this.btn_QLLS_Del.Name = "btn_QLLS_Del";
+            this.btn_QLLS_Del.Size = new System.Drawing.Size(117, 30);
+            this.btn_QLLS_Del.TabIndex = 3;
+            this.btn_QLLS_Del.Text = "Xóa";
             // 
             // btn_QLLS_Add
             // 
@@ -284,7 +284,7 @@
         private System.Windows.Forms.Panel pn_QLLS_dgv;
         private System.Windows.Forms.Panel pn_fn;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Search;
-        private Guna.UI2.WinForms.Guna2Button btn_QLLS_Xóa;
+        private Guna.UI2.WinForms.Guna2Button btn_QLLS_Del;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Add;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Edit;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLLS_TENLOAI;
