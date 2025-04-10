@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppGUI", "AppGUI\AppGUI.csproj", "{A96B4C63-7A53-44FC-AECF-D2285511763C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDTO", "AppDTO\AppDTO.csproj", "{ED8E4923-10FB-41AD-8256-0CCB235D5309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A96B4C63-7A53-44FC-AECF-D2285511763C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A96B4C63-7A53-44FC-AECF-D2285511763C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A96B4C63-7A53-44FC-AECF-D2285511763C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8E4923-10FB-41AD-8256-0CCB235D5309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8E4923-10FB-41AD-8256-0CCB235D5309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8E4923-10FB-41AD-8256-0CCB235D5309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8E4923-10FB-41AD-8256-0CCB235D5309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
