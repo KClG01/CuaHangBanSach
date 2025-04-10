@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppDTO
 {
-    public class Class1
+    public class LoaiSP_DTO
     {
+        public int MaLoai {  get; set; }
+        public string TenLoai {  get; set; }
     }
 }
