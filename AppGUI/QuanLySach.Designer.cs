@@ -43,21 +43,31 @@
             this.cln_QLS_SLTON = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_fn = new System.Windows.Forms.Panel();
             this.btn_QLS_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QLS_Xóa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_QLS_Del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLS_Add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLS_Edit = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_QLS_TENSP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_QLS_GIABAN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_QLS_GIANHAP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_QLS_LOAISACH = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel_function = new System.Windows.Forms.Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_QLS_SLTON = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.txt_QLS_TACGIA = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txt_QLS_NXB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txt_QLS_MASP = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_QLS_dgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLS)).BeginInit();
             this.pn_fn.SuspendLayout();
             this.panel_function.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_QLS_SLTON)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_QLS_dgv
@@ -193,7 +203,7 @@
             // 
             this.pn_fn.BackColor = System.Drawing.Color.Transparent;
             this.pn_fn.Controls.Add(this.btn_QLS_Search);
-            this.pn_fn.Controls.Add(this.btn_QLS_Xóa);
+            this.pn_fn.Controls.Add(this.btn_QLS_Del);
             this.pn_fn.Controls.Add(this.btn_QLS_Add);
             this.pn_fn.Controls.Add(this.btn_QLS_Edit);
             this.pn_fn.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -217,20 +227,20 @@
             this.btn_QLS_Search.TabIndex = 0;
             this.btn_QLS_Search.Text = "Tìm kiếm";
             // 
-            // btn_QLS_Xóa
+            // btn_QLS_Del
             // 
-            this.btn_QLS_Xóa.BorderRadius = 10;
-            this.btn_QLS_Xóa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLS_Xóa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLS_Xóa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLS_Xóa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLS_Xóa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLS_Xóa.ForeColor = System.Drawing.Color.White;
-            this.btn_QLS_Xóa.Location = new System.Drawing.Point(154, 56);
-            this.btn_QLS_Xóa.Name = "btn_QLS_Xóa";
-            this.btn_QLS_Xóa.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLS_Xóa.TabIndex = 3;
-            this.btn_QLS_Xóa.Text = "Xóa";
+            this.btn_QLS_Del.BorderRadius = 10;
+            this.btn_QLS_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLS_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLS_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLS_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLS_Del.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLS_Del.ForeColor = System.Drawing.Color.White;
+            this.btn_QLS_Del.Location = new System.Drawing.Point(154, 56);
+            this.btn_QLS_Del.Name = "btn_QLS_Del";
+            this.btn_QLS_Del.Size = new System.Drawing.Size(117, 30);
+            this.btn_QLS_Del.TabIndex = 3;
+            this.btn_QLS_Del.Text = "Xóa";
             // 
             // btn_QLS_Add
             // 
@@ -262,146 +272,109 @@
             this.btn_QLS_Edit.TabIndex = 2;
             this.btn_QLS_Edit.Text = "Sửa";
             // 
-            // guna2TextBox2
+            // txt_QLS_TENSP
             // 
-            this.guna2TextBox2.BorderRadius = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(16, 78);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.PlaceholderText = "Tên sách";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox2.TabIndex = 7;
+            this.txt_QLS_TENSP.BorderRadius = 2;
+            this.txt_QLS_TENSP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLS_TENSP.DefaultText = "";
+            this.txt_QLS_TENSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLS_TENSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLS_TENSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_TENSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_TENSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLS_TENSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_TENSP.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLS_TENSP.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_TENSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_TENSP.Location = new System.Drawing.Point(16, 127);
+            this.txt_QLS_TENSP.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLS_TENSP.Name = "txt_QLS_TENSP";
+            this.txt_QLS_TENSP.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_TENSP.PlaceholderText = "Tên sách";
+            this.txt_QLS_TENSP.SelectedText = "";
+            this.txt_QLS_TENSP.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLS_TENSP.TabIndex = 7;
             // 
-            // guna2TextBox6
+            // txt_QLS_GIABAN
             // 
-            this.guna2TextBox6.BorderRadius = 2;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(16, 418);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.PlaceholderText = "Giá bán";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox6.TabIndex = 12;
+            this.txt_QLS_GIABAN.BorderRadius = 2;
+            this.txt_QLS_GIABAN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLS_GIABAN.DefaultText = "";
+            this.txt_QLS_GIABAN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLS_GIABAN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLS_GIABAN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_GIABAN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_GIABAN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLS_GIABAN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_GIABAN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLS_GIABAN.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_GIABAN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_GIABAN.Location = new System.Drawing.Point(16, 510);
+            this.txt_QLS_GIABAN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLS_GIABAN.Name = "txt_QLS_GIABAN";
+            this.txt_QLS_GIABAN.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_GIABAN.PlaceholderText = "Giá bán";
+            this.txt_QLS_GIABAN.SelectedText = "";
+            this.txt_QLS_GIABAN.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLS_GIABAN.TabIndex = 12;
             // 
-            // guna2TextBox5
+            // txt_QLS_GIANHAP
             // 
-            this.guna2TextBox5.BorderRadius = 2;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(16, 346);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.PlaceholderText = "Giá nhập";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox5.TabIndex = 11;
+            this.txt_QLS_GIANHAP.BorderRadius = 2;
+            this.txt_QLS_GIANHAP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLS_GIANHAP.DefaultText = "";
+            this.txt_QLS_GIANHAP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLS_GIANHAP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLS_GIANHAP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_GIANHAP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_GIANHAP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLS_GIANHAP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_GIANHAP.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLS_GIANHAP.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_GIANHAP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_GIANHAP.Location = new System.Drawing.Point(16, 428);
+            this.txt_QLS_GIANHAP.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLS_GIANHAP.Name = "txt_QLS_GIANHAP";
+            this.txt_QLS_GIANHAP.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_GIANHAP.PlaceholderText = "Giá nhập";
+            this.txt_QLS_GIANHAP.SelectedText = "";
+            this.txt_QLS_GIANHAP.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLS_GIANHAP.TabIndex = 11;
             // 
-            // guna2ComboBox1
+            // txt_QLS_LOAISACH
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(16, 281);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(255, 36);
-            this.guna2ComboBox1.TabIndex = 10;
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.BorderRadius = 2;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(16, 213);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.PlaceholderText = "Tác giả";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox4.TabIndex = 9;
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.BorderRadius = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(16, 145);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.PlaceholderText = "Nhà xuất bản";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox3.TabIndex = 8;
+            this.txt_QLS_LOAISACH.BackColor = System.Drawing.Color.Transparent;
+            this.txt_QLS_LOAISACH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txt_QLS_LOAISACH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txt_QLS_LOAISACH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_LOAISACH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_LOAISACH.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_QLS_LOAISACH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txt_QLS_LOAISACH.ItemHeight = 30;
+            this.txt_QLS_LOAISACH.Location = new System.Drawing.Point(17, 353);
+            this.txt_QLS_LOAISACH.Name = "txt_QLS_LOAISACH";
+            this.txt_QLS_LOAISACH.Size = new System.Drawing.Size(255, 36);
+            this.txt_QLS_LOAISACH.TabIndex = 10;
             // 
             // panel_function
             // 
             this.panel_function.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel_function.Controls.Add(this.guna2TextBox6);
-            this.panel_function.Controls.Add(this.guna2TextBox5);
-            this.panel_function.Controls.Add(this.guna2ComboBox1);
-            this.panel_function.Controls.Add(this.guna2TextBox4);
-            this.panel_function.Controls.Add(this.guna2TextBox3);
-            this.panel_function.Controls.Add(this.guna2TextBox2);
-            this.panel_function.Controls.Add(this.guna2TextBox1);
+            this.panel_function.Controls.Add(this.label8);
+            this.panel_function.Controls.Add(this.label7);
+            this.panel_function.Controls.Add(this.label6);
+            this.panel_function.Controls.Add(this.label5);
+            this.panel_function.Controls.Add(this.label4);
+            this.panel_function.Controls.Add(this.label3);
+            this.panel_function.Controls.Add(this.label2);
+            this.panel_function.Controls.Add(this.label1);
+            this.panel_function.Controls.Add(this.txt_QLS_SLTON);
+            this.panel_function.Controls.Add(this.txt_QLS_TACGIA);
+            this.panel_function.Controls.Add(this.txt_QLS_NXB);
+            this.panel_function.Controls.Add(this.txt_QLS_GIABAN);
+            this.panel_function.Controls.Add(this.txt_QLS_GIANHAP);
+            this.panel_function.Controls.Add(this.txt_QLS_LOAISACH);
+            this.panel_function.Controls.Add(this.txt_QLS_TENSP);
+            this.panel_function.Controls.Add(this.txt_QLS_MASP);
             this.panel_function.Controls.Add(this.pn_fn);
             this.panel_function.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_function.Location = new System.Drawing.Point(1632, 0);
@@ -409,28 +382,157 @@
             this.panel_function.Size = new System.Drawing.Size(288, 1080);
             this.panel_function.TabIndex = 2;
             // 
-            // guna2TextBox1
+            // label8
             // 
-            this.guna2TextBox1.BorderRadius = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 14);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.PlaceholderText = "Mã sách";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(255, 41);
-            this.guna2TextBox1.TabIndex = 6;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(18, 564);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 23);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Số lượng tồn";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(17, 482);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 23);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Giá bán";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(19, 400);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 23);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Giá nhập";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(18, 327);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 23);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Loại sách";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(18, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 23);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Tác giả";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(14, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 23);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Nhà xuất bản";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(17, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Tên sách";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(14, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 23);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Mã sách";
+            // 
+            // txt_QLS_SLTON
+            // 
+            this.txt_QLS_SLTON.BackColor = System.Drawing.Color.Transparent;
+            this.txt_QLS_SLTON.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLS_SLTON.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_QLS_SLTON.Location = new System.Drawing.Point(16, 591);
+            this.txt_QLS_SLTON.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_QLS_SLTON.Name = "txt_QLS_SLTON";
+            this.txt_QLS_SLTON.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLS_SLTON.TabIndex = 23;
+            // 
+            // txt_QLS_TACGIA
+            // 
+            this.txt_QLS_TACGIA.BackColor = System.Drawing.Color.Transparent;
+            this.txt_QLS_TACGIA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txt_QLS_TACGIA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txt_QLS_TACGIA.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_TACGIA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_TACGIA.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_QLS_TACGIA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txt_QLS_TACGIA.ItemHeight = 30;
+            this.txt_QLS_TACGIA.Location = new System.Drawing.Point(16, 280);
+            this.txt_QLS_TACGIA.Name = "txt_QLS_TACGIA";
+            this.txt_QLS_TACGIA.Size = new System.Drawing.Size(255, 36);
+            this.txt_QLS_TACGIA.TabIndex = 16;
+            // 
+            // txt_QLS_NXB
+            // 
+            this.txt_QLS_NXB.BackColor = System.Drawing.Color.Transparent;
+            this.txt_QLS_NXB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txt_QLS_NXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txt_QLS_NXB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_NXB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_NXB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_QLS_NXB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txt_QLS_NXB.ItemHeight = 30;
+            this.txt_QLS_NXB.Location = new System.Drawing.Point(16, 207);
+            this.txt_QLS_NXB.Name = "txt_QLS_NXB";
+            this.txt_QLS_NXB.Size = new System.Drawing.Size(255, 36);
+            this.txt_QLS_NXB.TabIndex = 14;
+            // 
+            // txt_QLS_MASP
+            // 
+            this.txt_QLS_MASP.BorderRadius = 2;
+            this.txt_QLS_MASP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLS_MASP.DefaultText = "";
+            this.txt_QLS_MASP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLS_MASP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLS_MASP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_MASP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLS_MASP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLS_MASP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_MASP.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLS_MASP.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_MASP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLS_MASP.Location = new System.Drawing.Point(16, 45);
+            this.txt_QLS_MASP.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLS_MASP.Name = "txt_QLS_MASP";
+            this.txt_QLS_MASP.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLS_MASP.PlaceholderText = "Mã sách";
+            this.txt_QLS_MASP.SelectedText = "";
+            this.txt_QLS_MASP.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLS_MASP.TabIndex = 6;
             // 
             // FormQuanLySach
             // 
@@ -445,6 +547,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLS)).EndInit();
             this.pn_fn.ResumeLayout(false);
             this.panel_function.ResumeLayout(false);
+            this.panel_function.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_QLS_SLTON)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -454,17 +558,15 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvw_QLS;
         private System.Windows.Forms.Panel pn_fn;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Search;
-        private Guna.UI2.WinForms.Guna2Button btn_QLS_Xóa;
+        private Guna.UI2.WinForms.Guna2Button btn_QLS_Del;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Add;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Edit;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLS_TENSP;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLS_GIABAN;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLS_GIANHAP;
+        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_LOAISACH;
         private System.Windows.Forms.Panel panel_function;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLS_MASP;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_MASP;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_TENSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_NXB;
@@ -473,5 +575,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIANHAP;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIABAN;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_SLTON;
+        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_TACGIA;
+        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_NXB;
+        private Guna.UI2.WinForms.Guna2NumericUpDown txt_QLS_SLTON;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

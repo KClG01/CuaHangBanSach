@@ -19,11 +19,16 @@ namespace AppGUI
         FormQuanLyNhaXuatBan formQLNXB;
         FormQuanLyTacGia formQLTG;
         FormQuanLyKhachHang formQLKH;
-        
+        FormQuanLyHoaDon formQLHD;
+
         public FormHome()
         {
             InitializeComponent();
             this.IsMdiContainer = true;
+        }
+        private void FormHome_Load(object sender, EventArgs e)
+        {
+            btn_Main_fnc_bansach.BringToFront();
         }
         //Button khoát
         private void btn_Main_Close_Click(object sender, EventArgs e)
@@ -224,8 +229,25 @@ namespace AppGUI
         private void btn_Main_fnc_hoadon_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý hóa đơn";
-
+            if(formQLHD == null)
+            {
+                formQLHD = new FormQuanLyHoaDon();
+                formQLHD.FormClosed += formQLHD_FormClosed;
+                formQLHD.MdiParent = this;
+                formQLHD.Dock = DockStyle.Fill;
+                formQLHD.Show();
+            }
+            else
+            {
+                formQLHD.Activate();
+            }
         }
+
+        private void formQLHD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formQLHD = null;
+        }
+
         //Xuất lên home form quản lý nhân viên
         private void btn_Main_fnc_nhanvien_Click(object sender, EventArgs e)
         {
