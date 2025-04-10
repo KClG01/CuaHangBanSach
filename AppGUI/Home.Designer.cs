@@ -40,19 +40,19 @@
             this.btn_Main_book = new Guna.UI2.WinForms.Guna2Button();
             this.menuTranstition = new System.Windows.Forms.Timer(this.components);
             this.pn_MenuSide = new System.Windows.Forms.Panel();
+            this.btn_Main_fnc_bansach = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_thongke = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_Main_formTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Main_logout = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_nhanvien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_hoadon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_customer = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_Main_formTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Main_fullscreen = new System.Windows.Forms.Button();
             this.btn_Main_Close = new System.Windows.Forms.Button();
             this.pn_Main_Bar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Main_SideBar = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Main_fnc_bansach = new Guna.UI2.WinForms.Guna2Button();
             this.pn_bookContainer.SuspendLayout();
             this.pn_MenuSide.SuspendLayout();
             this.pn_Main_Bar.SuspendLayout();
@@ -222,6 +222,28 @@
             this.pn_MenuSide.Size = new System.Drawing.Size(319, 1040);
             this.pn_MenuSide.TabIndex = 3;
             // 
+            // btn_Main_fnc_bansach
+            // 
+            this.btn_Main_fnc_bansach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_bansach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_bansach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Main_fnc_bansach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Main_fnc_bansach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Main_fnc_bansach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Main_fnc_bansach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
+            this.btn_Main_fnc_bansach.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_Main_fnc_bansach.ForeColor = System.Drawing.Color.White;
+            this.btn_Main_fnc_bansach.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_fnc_bansach.Image")));
+            this.btn_Main_fnc_bansach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Main_fnc_bansach.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_Main_fnc_bansach.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_Main_fnc_bansach.Location = new System.Drawing.Point(0, 200);
+            this.btn_Main_fnc_bansach.Name = "btn_Main_fnc_bansach";
+            this.btn_Main_fnc_bansach.Size = new System.Drawing.Size(319, 40);
+            this.btn_Main_fnc_bansach.TabIndex = 4;
+            this.btn_Main_fnc_bansach.Text = "     Bán sách";
+            this.btn_Main_fnc_bansach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // btn_Main_fnc_thongke
             // 
             this.btn_Main_fnc_thongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
@@ -244,20 +266,6 @@
             this.btn_Main_fnc_thongke.Text = "     Thống kê";
             this.btn_Main_fnc_thongke.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_thongke.Click += new System.EventHandler(this.btn_Main_fnc_thongke_Click);
-            // 
-            // lbl_Main_formTitle
-            // 
-            this.lbl_Main_formTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Main_formTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_Main_formTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Main_formTitle.ForeColor = System.Drawing.Color.White;
-            this.lbl_Main_formTitle.Location = new System.Drawing.Point(0, 1);
-            this.lbl_Main_formTitle.Name = "lbl_Main_formTitle";
-            this.lbl_Main_formTitle.Padding = new System.Windows.Forms.Padding(7);
-            this.lbl_Main_formTitle.Size = new System.Drawing.Size(200, 39);
-            this.lbl_Main_formTitle.TabIndex = 20;
-            this.lbl_Main_formTitle.Text = "Màn hình chính";
-            this.lbl_Main_formTitle.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // btn_Main_logout
             // 
@@ -352,6 +360,20 @@
             this.btn_Main_fnc_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_customer.Click += new System.EventHandler(this.btn_Main_fnc_customer_Click);
             // 
+            // lbl_Main_formTitle
+            // 
+            this.lbl_Main_formTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Main_formTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbl_Main_formTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Main_formTitle.ForeColor = System.Drawing.Color.White;
+            this.lbl_Main_formTitle.Location = new System.Drawing.Point(0, 1);
+            this.lbl_Main_formTitle.Name = "lbl_Main_formTitle";
+            this.lbl_Main_formTitle.Padding = new System.Windows.Forms.Padding(7);
+            this.lbl_Main_formTitle.Size = new System.Drawing.Size(138, 39);
+            this.lbl_Main_formTitle.TabIndex = 20;
+            this.lbl_Main_formTitle.Text = "Màn hình chính";
+            this.lbl_Main_formTitle.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // btn_Main_fullscreen
             // 
             this.btn_Main_fullscreen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Main_fullscreen.BackgroundImage")));
@@ -432,28 +454,6 @@
             this.btn_Main_SideBar.TabIndex = 19;
             this.btn_Main_SideBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_SideBar.Click += new System.EventHandler(this.btn_Main_SideBar_Click);
-            // 
-            // btn_Main_fnc_bansach
-            // 
-            this.btn_Main_fnc_bansach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
-            this.btn_Main_fnc_bansach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Main_fnc_bansach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Main_fnc_bansach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Main_fnc_bansach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Main_fnc_bansach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Main_fnc_bansach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
-            this.btn_Main_fnc_bansach.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_Main_fnc_bansach.ForeColor = System.Drawing.Color.White;
-            this.btn_Main_fnc_bansach.Image = ((System.Drawing.Image)(resources.GetObject("btn_Main_fnc_bansach.Image")));
-            this.btn_Main_fnc_bansach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Main_fnc_bansach.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btn_Main_fnc_bansach.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_Main_fnc_bansach.Location = new System.Drawing.Point(0, 200);
-            this.btn_Main_fnc_bansach.Name = "btn_Main_fnc_bansach";
-            this.btn_Main_fnc_bansach.Size = new System.Drawing.Size(319, 40);
-            this.btn_Main_fnc_bansach.TabIndex = 4;
-            this.btn_Main_fnc_bansach.Text = "     Bán sách";
-            this.btn_Main_fnc_bansach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FormHome
             // 

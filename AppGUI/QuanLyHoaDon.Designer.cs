@@ -42,6 +42,8 @@
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_function = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,8 +61,6 @@
             this.btn_QLHD_Del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLHD_Add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLHD_Edit = new Guna.UI2.WinForms.Guna2Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLKH)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -231,12 +231,34 @@
             this.panel_function.Size = new System.Drawing.Size(288, 1080);
             this.panel_function.TabIndex = 10;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(17, 463);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 23);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Thành tiền";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(17, 387);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(161, 23);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Tiền thối cho khách";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(17, 301);
+            this.label5.Location = new System.Drawing.Point(17, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(169, 23);
             this.label5.TabIndex = 30;
@@ -247,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(17, 231);
+            this.label4.Location = new System.Drawing.Point(17, 239);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 29;
@@ -258,7 +280,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(17, 157);
+            this.label3.Location = new System.Drawing.Point(17, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 23);
             this.label3.TabIndex = 28;
@@ -269,7 +291,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 83);
+            this.label2.Location = new System.Drawing.Point(17, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 23);
             this.label2.TabIndex = 27;
@@ -280,7 +302,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 9);
+            this.label1.Location = new System.Drawing.Point(17, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 23);
             this.label1.TabIndex = 26;
@@ -301,7 +323,7 @@
             this.txt_QLHD_THANHTIEN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_THANHTIEN.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_THANHTIEN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_THANHTIEN.Location = new System.Drawing.Point(15, 477);
+            this.txt_QLHD_THANHTIEN.Location = new System.Drawing.Point(15, 491);
             this.txt_QLHD_THANHTIEN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_THANHTIEN.Name = "txt_QLHD_THANHTIEN";
             this.txt_QLHD_THANHTIEN.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -325,7 +347,7 @@
             this.txt_QLHD_TIENTRA.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_TIENTRA.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_TIENTRA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENTRA.Location = new System.Drawing.Point(15, 403);
+            this.txt_QLHD_TIENTRA.Location = new System.Drawing.Point(15, 415);
             this.txt_QLHD_TIENTRA.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_TIENTRA.Name = "txt_QLHD_TIENTRA";
             this.txt_QLHD_TIENTRA.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -341,7 +363,7 @@
             this.txt_QLHD_NGAYTAO.FillColor = System.Drawing.Color.White;
             this.txt_QLHD_NGAYTAO.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_QLHD_NGAYTAO.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_QLHD_NGAYTAO.Location = new System.Drawing.Point(16, 257);
+            this.txt_QLHD_NGAYTAO.Location = new System.Drawing.Point(16, 265);
             this.txt_QLHD_NGAYTAO.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txt_QLHD_NGAYTAO.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txt_QLHD_NGAYTAO.Name = "txt_QLHD_NGAYTAO";
@@ -364,7 +386,7 @@
             this.txt_QLHD_MAKH.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_MAKH.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MAKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_MAKH.Location = new System.Drawing.Point(16, 185);
+            this.txt_QLHD_MAKH.Location = new System.Drawing.Point(16, 191);
             this.txt_QLHD_MAKH.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_MAKH.Name = "txt_QLHD_MAKH";
             this.txt_QLHD_MAKH.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -388,7 +410,7 @@
             this.txt_QLHD_TIENNHAN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_TIENNHAN.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_TIENNHAN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENNHAN.Location = new System.Drawing.Point(15, 329);
+            this.txt_QLHD_TIENNHAN.Location = new System.Drawing.Point(15, 339);
             this.txt_QLHD_TIENNHAN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_TIENNHAN.Name = "txt_QLHD_TIENNHAN";
             this.txt_QLHD_TIENNHAN.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -412,7 +434,7 @@
             this.txt_QLHD_MANV.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_MANV.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MANV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_MANV.Location = new System.Drawing.Point(17, 111);
+            this.txt_QLHD_MANV.Location = new System.Drawing.Point(17, 115);
             this.txt_QLHD_MANV.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_MANV.Name = "txt_QLHD_MANV";
             this.txt_QLHD_MANV.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -438,7 +460,7 @@
             this.txt_QLHD_MAHD.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_MAHD.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MAHD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_MAHD.Location = new System.Drawing.Point(17, 37);
+            this.txt_QLHD_MAHD.Location = new System.Drawing.Point(17, 39);
             this.txt_QLHD_MAHD.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_MAHD.Name = "txt_QLHD_MAHD";
             this.txt_QLHD_MAHD.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -519,28 +541,6 @@
             this.btn_QLHD_Edit.Size = new System.Drawing.Size(117, 30);
             this.btn_QLHD_Edit.TabIndex = 2;
             this.btn_QLHD_Edit.Text = "Sửa";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(17, 375);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 23);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Tiền thối cho khách";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(17, 449);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 23);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Thành tiền";
             // 
             // FormQuanLyHoaDon
             // 
