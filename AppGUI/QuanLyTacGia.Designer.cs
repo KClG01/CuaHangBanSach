@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvw_QLTG = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cln_QLTG_MATG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLTG_TENTG = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,42 +39,46 @@
             this.cln_QLTG_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLTG_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
-            this.pn_fn = new System.Windows.Forms.Panel();
-            this.btn_QLTG_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QLTG_Del = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QLTG_Add = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QLTG_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.txt_QLTG_TENTG = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_function = new System.Windows.Forms.Panel();
+            this.btn_QLTG_Re = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_QLTG_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cb_QLTG_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_QLTG_Del = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_QLTG_Search = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_QLTG_Edit = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_QLTG_Add = new Guna.UI2.WinForms.Guna2Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.dtp_QLTG_NGSINH = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_QLTG_BUTDANH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLTG_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLTG_LIENHE = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLTG_MATG = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLTG)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
-            this.pn_fn.SuspendLayout();
             this.panel_function.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvw_QLTG
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.dgvw_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvw_QLTG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.dgvw_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvw_QLTG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvw_QLTG.ColumnHeadersHeight = 34;
             this.dgvw_QLTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvw_QLTG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -84,14 +88,14 @@
             this.cln_QLTG_NGSINH,
             this.cln_QLTG_LIENHE,
             this.cln_QLTG_DIACHI});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvw_QLTG.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvw_QLTG.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvw_QLTG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvw_QLTG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.dgvw_QLTG.Location = new System.Drawing.Point(0, 0);
@@ -100,7 +104,7 @@
             this.dgvw_QLTG.RowHeadersVisible = false;
             this.dgvw_QLTG.RowHeadersWidth = 51;
             this.dgvw_QLTG.RowTemplate.Height = 24;
-            this.dgvw_QLTG.Size = new System.Drawing.Size(1632, 1080);
+            this.dgvw_QLTG.Size = new System.Drawing.Size(1601, 549);
             this.dgvw_QLTG.TabIndex = 0;
             this.dgvw_QLTG.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
             this.dgvw_QLTG.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
@@ -171,83 +175,10 @@
             // 
             this.pn_QLLS_dgv.Controls.Add(this.dgvw_QLTG);
             this.pn_QLLS_dgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_QLLS_dgv.Location = new System.Drawing.Point(0, 0);
+            this.pn_QLLS_dgv.Location = new System.Drawing.Point(0, 491);
             this.pn_QLLS_dgv.Name = "pn_QLLS_dgv";
-            this.pn_QLLS_dgv.Size = new System.Drawing.Size(1632, 1080);
+            this.pn_QLLS_dgv.Size = new System.Drawing.Size(1601, 549);
             this.pn_QLLS_dgv.TabIndex = 9;
-            // 
-            // pn_fn
-            // 
-            this.pn_fn.BackColor = System.Drawing.Color.Transparent;
-            this.pn_fn.Controls.Add(this.btn_QLTG_Search);
-            this.pn_fn.Controls.Add(this.btn_QLTG_Del);
-            this.pn_fn.Controls.Add(this.btn_QLTG_Add);
-            this.pn_fn.Controls.Add(this.btn_QLTG_Edit);
-            this.pn_fn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_fn.Location = new System.Drawing.Point(0, 954);
-            this.pn_fn.Name = "pn_fn";
-            this.pn_fn.Size = new System.Drawing.Size(288, 126);
-            this.pn_fn.TabIndex = 5;
-            // 
-            // btn_QLTG_Search
-            // 
-            this.btn_QLTG_Search.BorderRadius = 10;
-            this.btn_QLTG_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLTG_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLTG_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLTG_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_QLTG_Search.Location = new System.Drawing.Point(17, 20);
-            this.btn_QLTG_Search.Name = "btn_QLTG_Search";
-            this.btn_QLTG_Search.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLTG_Search.TabIndex = 0;
-            this.btn_QLTG_Search.Text = "Tìm kiếm";
-            // 
-            // btn_QLTG_Del
-            // 
-            this.btn_QLTG_Del.BorderRadius = 10;
-            this.btn_QLTG_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLTG_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLTG_Del.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLTG_Del.ForeColor = System.Drawing.Color.White;
-            this.btn_QLTG_Del.Location = new System.Drawing.Point(154, 56);
-            this.btn_QLTG_Del.Name = "btn_QLTG_Del";
-            this.btn_QLTG_Del.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLTG_Del.TabIndex = 3;
-            this.btn_QLTG_Del.Text = "Xóa";
-            // 
-            // btn_QLTG_Add
-            // 
-            this.btn_QLTG_Add.BorderRadius = 10;
-            this.btn_QLTG_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLTG_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLTG_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLTG_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_QLTG_Add.Location = new System.Drawing.Point(154, 20);
-            this.btn_QLTG_Add.Name = "btn_QLTG_Add";
-            this.btn_QLTG_Add.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLTG_Add.TabIndex = 1;
-            this.btn_QLTG_Add.Text = "Thêm";
-            // 
-            // btn_QLTG_Edit
-            // 
-            this.btn_QLTG_Edit.BorderRadius = 10;
-            this.btn_QLTG_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QLTG_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QLTG_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QLTG_Edit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLTG_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_QLTG_Edit.Location = new System.Drawing.Point(17, 56);
-            this.btn_QLTG_Edit.Name = "btn_QLTG_Edit";
-            this.btn_QLTG_Edit.Size = new System.Drawing.Size(117, 30);
-            this.btn_QLTG_Edit.TabIndex = 2;
-            this.btn_QLTG_Edit.Text = "Sửa";
             // 
             // txt_QLTG_TENTG
             // 
@@ -264,18 +195,28 @@
             this.txt_QLTG_TENTG.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLTG_TENTG.ForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_TENTG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLTG_TENTG.Location = new System.Drawing.Point(15, 115);
+            this.txt_QLTG_TENTG.Location = new System.Drawing.Point(681, 95);
             this.txt_QLTG_TENTG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLTG_TENTG.Name = "txt_QLTG_TENTG";
             this.txt_QLTG_TENTG.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_TENTG.PlaceholderText = "Tên tác giả";
             this.txt_QLTG_TENTG.SelectedText = "";
-            this.txt_QLTG_TENTG.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLTG_TENTG.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_TENTG.TabIndex = 7;
             // 
             // panel_function
             // 
             this.panel_function.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel_function.Controls.Add(this.label11);
+            this.panel_function.Controls.Add(this.btn_QLTG_Re);
+            this.panel_function.Controls.Add(this.txt_QLTG_NhapNoiDung);
+            this.panel_function.Controls.Add(this.label9);
+            this.panel_function.Controls.Add(this.cb_QLTG_Selected);
+            this.panel_function.Controls.Add(this.label8);
+            this.panel_function.Controls.Add(this.btn_QLTG_Del);
+            this.panel_function.Controls.Add(this.btn_QLTG_Search);
+            this.panel_function.Controls.Add(this.btn_QLTG_Edit);
+            this.panel_function.Controls.Add(this.btn_QLTG_Add);
             this.panel_function.Controls.Add(this.label6);
             this.panel_function.Controls.Add(this.label4);
             this.panel_function.Controls.Add(this.label3);
@@ -288,12 +229,208 @@
             this.panel_function.Controls.Add(this.txt_QLTG_LIENHE);
             this.panel_function.Controls.Add(this.txt_QLTG_TENTG);
             this.panel_function.Controls.Add(this.txt_QLTG_MATG);
-            this.panel_function.Controls.Add(this.pn_fn);
-            this.panel_function.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_function.Location = new System.Drawing.Point(1632, 0);
+            this.panel_function.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_function.Location = new System.Drawing.Point(0, 0);
             this.panel_function.Name = "panel_function";
-            this.panel_function.Size = new System.Drawing.Size(288, 1080);
+            this.panel_function.Size = new System.Drawing.Size(1601, 491);
             this.panel_function.TabIndex = 8;
+            // 
+            // btn_QLTG_Re
+            // 
+            this.btn_QLTG_Re.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Re.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Re.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLTG_Re.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLTG_Re.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLTG_Re.ForeColor = System.Drawing.Color.White;
+            this.btn_QLTG_Re.Location = new System.Drawing.Point(716, 356);
+            this.btn_QLTG_Re.Name = "btn_QLTG_Re";
+            this.btn_QLTG_Re.Size = new System.Drawing.Size(150, 60);
+            this.btn_QLTG_Re.TabIndex = 66;
+            this.btn_QLTG_Re.Text = "Tạo mới";
+            // 
+            // txt_QLTG_NhapNoiDung
+            // 
+            this.txt_QLTG_NhapNoiDung.Animated = true;
+            this.txt_QLTG_NhapNoiDung.BorderRadius = 2;
+            this.txt_QLTG_NhapNoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLTG_NhapNoiDung.DefaultText = "";
+            this.txt_QLTG_NhapNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLTG_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLTG_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLTG_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLTG_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLTG_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLTG_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLTG_NhapNoiDung.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLTG_NhapNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLTG_NhapNoiDung.Location = new System.Drawing.Point(1120, 430);
+            this.txt_QLTG_NhapNoiDung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLTG_NhapNoiDung.Name = "txt_QLTG_NhapNoiDung";
+            this.txt_QLTG_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLTG_NhapNoiDung.PlaceholderText = "";
+            this.txt_QLTG_NhapNoiDung.SelectedText = "";
+            this.txt_QLTG_NhapNoiDung.Size = new System.Drawing.Size(255, 40);
+            this.txt_QLTG_NhapNoiDung.TabIndex = 65;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(935, 433);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(158, 28);
+            this.label9.TabIndex = 64;
+            this.label9.Text = "Nhập nội dung:";
+            // 
+            // cb_QLTG_Selected
+            // 
+            this.cb_QLTG_Selected.BackColor = System.Drawing.Color.Transparent;
+            this.cb_QLTG_Selected.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_QLTG_Selected.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_QLTG_Selected.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_QLTG_Selected.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_QLTG_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_QLTG_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_QLTG_Selected.ItemHeight = 30;
+            this.cb_QLTG_Selected.Location = new System.Drawing.Point(1120, 356);
+            this.cb_QLTG_Selected.Name = "cb_QLTG_Selected";
+            this.cb_QLTG_Selected.Size = new System.Drawing.Size(255, 36);
+            this.cb_QLTG_Selected.TabIndex = 63;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(935, 357);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(154, 28);
+            this.label8.TabIndex = 62;
+            this.label8.Text = "Tìm kiếm theo:";
+            // 
+            // btn_QLTG_Del
+            // 
+            this.btn_QLTG_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLTG_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLTG_Del.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLTG_Del.ForeColor = System.Drawing.Color.White;
+            this.btn_QLTG_Del.Location = new System.Drawing.Point(515, 356);
+            this.btn_QLTG_Del.Name = "btn_QLTG_Del";
+            this.btn_QLTG_Del.Size = new System.Drawing.Size(150, 60);
+            this.btn_QLTG_Del.TabIndex = 61;
+            this.btn_QLTG_Del.Text = "Xóa";
+            // 
+            // btn_QLTG_Search
+            // 
+            this.btn_QLTG_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLTG_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLTG_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLTG_Search.ForeColor = System.Drawing.Color.White;
+            this.btn_QLTG_Search.Location = new System.Drawing.Point(1381, 430);
+            this.btn_QLTG_Search.Name = "btn_QLTG_Search";
+            this.btn_QLTG_Search.Size = new System.Drawing.Size(120, 40);
+            this.btn_QLTG_Search.TabIndex = 58;
+            this.btn_QLTG_Search.Text = "Tìm kiếm";
+            // 
+            // btn_QLTG_Edit
+            // 
+            this.btn_QLTG_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLTG_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLTG_Edit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLTG_Edit.ForeColor = System.Drawing.Color.White;
+            this.btn_QLTG_Edit.Location = new System.Drawing.Point(313, 356);
+            this.btn_QLTG_Edit.Name = "btn_QLTG_Edit";
+            this.btn_QLTG_Edit.Size = new System.Drawing.Size(150, 60);
+            this.btn_QLTG_Edit.TabIndex = 60;
+            this.btn_QLTG_Edit.Text = "Sửa";
+            // 
+            // btn_QLTG_Add
+            // 
+            this.btn_QLTG_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QLTG_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QLTG_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QLTG_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLTG_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_QLTG_Add.Location = new System.Drawing.Point(113, 356);
+            this.btn_QLTG_Add.Name = "btn_QLTG_Add";
+            this.btn_QLTG_Add.Size = new System.Drawing.Size(150, 60);
+            this.btn_QLTG_Add.TabIndex = 59;
+            this.btn_QLTG_Add.Text = "Thêm";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(1003, 202);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 28);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Địa chỉ:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(558, 202);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 28);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Liên hệ:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(75, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 28);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Ngày sinh:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(983, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 28);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Bút danh:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(523, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 28);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Tên tác giả:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(75, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 28);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Mã tác giả:";
             // 
             // dtp_QLTG_NGSINH
             // 
@@ -302,11 +439,11 @@
             this.dtp_QLTG_NGSINH.FillColor = System.Drawing.Color.White;
             this.dtp_QLTG_NGSINH.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp_QLTG_NGSINH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_QLTG_NGSINH.Location = new System.Drawing.Point(15, 265);
+            this.dtp_QLTG_NGSINH.Location = new System.Drawing.Point(223, 198);
             this.dtp_QLTG_NGSINH.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_QLTG_NGSINH.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_QLTG_NGSINH.Name = "dtp_QLTG_NGSINH";
-            this.dtp_QLTG_NGSINH.Size = new System.Drawing.Size(254, 41);
+            this.dtp_QLTG_NGSINH.Size = new System.Drawing.Size(255, 40);
             this.dtp_QLTG_NGSINH.TabIndex = 11;
             this.dtp_QLTG_NGSINH.Value = new System.DateTime(2025, 4, 8, 8, 55, 25, 913);
             // 
@@ -325,13 +462,13 @@
             this.txt_QLTG_BUTDANH.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLTG_BUTDANH.ForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_BUTDANH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLTG_BUTDANH.Location = new System.Drawing.Point(17, 191);
+            this.txt_QLTG_BUTDANH.Location = new System.Drawing.Point(1120, 95);
             this.txt_QLTG_BUTDANH.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLTG_BUTDANH.Name = "txt_QLTG_BUTDANH";
             this.txt_QLTG_BUTDANH.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_BUTDANH.PlaceholderText = "Bút danh";
             this.txt_QLTG_BUTDANH.SelectedText = "";
-            this.txt_QLTG_BUTDANH.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLTG_BUTDANH.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_BUTDANH.TabIndex = 10;
             // 
             // txt_QLTG_DIACHI
@@ -349,13 +486,14 @@
             this.txt_QLTG_DIACHI.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLTG_DIACHI.ForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_DIACHI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLTG_DIACHI.Location = new System.Drawing.Point(17, 415);
+            this.txt_QLTG_DIACHI.Location = new System.Drawing.Point(1120, 198);
             this.txt_QLTG_DIACHI.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLTG_DIACHI.Multiline = true;
             this.txt_QLTG_DIACHI.Name = "txt_QLTG_DIACHI";
             this.txt_QLTG_DIACHI.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_DIACHI.PlaceholderText = "Địa chỉ";
             this.txt_QLTG_DIACHI.SelectedText = "";
-            this.txt_QLTG_DIACHI.Size = new System.Drawing.Size(255, 253);
+            this.txt_QLTG_DIACHI.Size = new System.Drawing.Size(255, 80);
             this.txt_QLTG_DIACHI.TabIndex = 9;
             // 
             // txt_QLTG_LIENHE
@@ -373,13 +511,13 @@
             this.txt_QLTG_LIENHE.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLTG_LIENHE.ForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_LIENHE.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLTG_LIENHE.Location = new System.Drawing.Point(17, 339);
+            this.txt_QLTG_LIENHE.Location = new System.Drawing.Point(681, 198);
             this.txt_QLTG_LIENHE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLTG_LIENHE.Name = "txt_QLTG_LIENHE";
             this.txt_QLTG_LIENHE.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_LIENHE.PlaceholderText = "Liên hệ";
             this.txt_QLTG_LIENHE.SelectedText = "";
-            this.txt_QLTG_LIENHE.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLTG_LIENHE.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_LIENHE.TabIndex = 8;
             // 
             // txt_QLTG_MATG
@@ -399,93 +537,39 @@
             this.txt_QLTG_MATG.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLTG_MATG.ForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_MATG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLTG_MATG.Location = new System.Drawing.Point(15, 39);
+            this.txt_QLTG_MATG.Location = new System.Drawing.Point(232, 95);
             this.txt_QLTG_MATG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLTG_MATG.Name = "txt_QLTG_MATG";
             this.txt_QLTG_MATG.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLTG_MATG.PlaceholderText = "Mã tác giả";
             this.txt_QLTG_MATG.SelectedText = "";
-            this.txt_QLTG_MATG.Size = new System.Drawing.Size(255, 41);
+            this.txt_QLTG_MATG.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_MATG.TabIndex = 6;
             // 
-            // label5
+            // label11
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(23, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 23);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Địa chỉ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(23, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 23);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Địa chỉ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 163);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 23);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Địa chỉ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 239);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 23);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Địa chỉ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(23, 311);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 23);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Địa chỉ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(23, 387);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 23);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "Địa chỉ";
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(347, 60);
+            this.label11.TabIndex = 68;
+            this.label11.Text = "Quản lý tác giả";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormQuanLyTacGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1601, 1040);
             this.Controls.Add(this.pn_QLLS_dgv);
             this.Controls.Add(this.panel_function);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyTacGia";
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLTG)).EndInit();
             this.pn_QLLS_dgv.ResumeLayout(false);
-            this.pn_fn.ResumeLayout(false);
             this.panel_function.ResumeLayout(false);
             this.panel_function.PerformLayout();
             this.ResumeLayout(false);
@@ -496,11 +580,6 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvw_QLTG;
         private System.Windows.Forms.Panel pn_QLLS_dgv;
-        private System.Windows.Forms.Panel pn_fn;
-        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Search;
-        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Del;
-        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Add;
-        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Edit;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_TENTG;
         private System.Windows.Forms.Panel panel_function;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_DIACHI;
@@ -520,5 +599,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Re;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_NhapNoiDung;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_QLTG_Selected;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Del;
+        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Search;
+        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Edit;
+        private Guna.UI2.WinForms.Guna2Button btn_QLTG_Add;
+        private System.Windows.Forms.Label label11;
     }
 }

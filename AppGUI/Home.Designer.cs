@@ -47,7 +47,6 @@
             this.btn_Main_fnc_hoadon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_customer = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Main_formTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_Main_fullscreen = new System.Windows.Forms.Button();
             this.btn_Main_Close = new System.Windows.Forms.Button();
             this.pn_Main_Bar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -311,7 +310,6 @@
             this.btn_Main_fnc_nhanvien.TabIndex = 8;
             this.btn_Main_fnc_nhanvien.Text = "     Nhân viên";
             this.btn_Main_fnc_nhanvien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Main_fnc_nhanvien.Visible = false;
             this.btn_Main_fnc_nhanvien.Click += new System.EventHandler(this.btn_Main_fnc_nhanvien_Click);
             // 
             // btn_Main_fnc_hoadon
@@ -374,21 +372,6 @@
             this.lbl_Main_formTitle.Text = "Màn hình chính";
             this.lbl_Main_formTitle.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // btn_Main_fullscreen
-            // 
-            this.btn_Main_fullscreen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Main_fullscreen.BackgroundImage")));
-            this.btn_Main_fullscreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Main_fullscreen.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Main_fullscreen.FlatAppearance.BorderSize = 0;
-            this.btn_Main_fullscreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Main_fullscreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Main_fullscreen.Location = new System.Drawing.Point(1840, 0);
-            this.btn_Main_fullscreen.Name = "btn_Main_fullscreen";
-            this.btn_Main_fullscreen.Size = new System.Drawing.Size(40, 40);
-            this.btn_Main_fullscreen.TabIndex = 17;
-            this.btn_Main_fullscreen.UseVisualStyleBackColor = true;
-            this.btn_Main_fullscreen.Click += new System.EventHandler(this.btn_Main_fullscreen_Click);
-            // 
             // btn_Main_Close
             // 
             this.btn_Main_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Main_Close.BackgroundImage")));
@@ -409,7 +392,6 @@
             this.pn_Main_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
             this.pn_Main_Bar.Controls.Add(this.panel2);
             this.pn_Main_Bar.Controls.Add(this.panel1);
-            this.pn_Main_Bar.Controls.Add(this.btn_Main_fullscreen);
             this.pn_Main_Bar.Controls.Add(this.btn_Main_Close);
             this.pn_Main_Bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_Main_Bar.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,7 +464,6 @@
         private System.Windows.Forms.Panel pn_bookContainer;
         private System.Windows.Forms.Timer menuTranstition;
         private System.Windows.Forms.Panel pn_MenuSide;
-        private System.Windows.Forms.Button btn_Main_fullscreen;
         private System.Windows.Forms.Button btn_Main_Close;
         private System.Windows.Forms.Panel pn_Main_Bar;
         private Guna.UI2.WinForms.Guna2Button btn_Main_book;

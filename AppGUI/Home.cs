@@ -20,7 +20,7 @@ namespace AppGUI
         FormQuanLyTacGia formQLTG;
         FormQuanLyKhachHang formQLKH;
         FormQuanLyHoaDon formQLHD;
-
+        FormQuanLyNhanVien formQLNV;
         public FormHome()
         {
             InitializeComponent();
@@ -28,24 +28,12 @@ namespace AppGUI
         }
         private void FormHome_Load(object sender, EventArgs e)
         {
-            btn_Main_fnc_bansach.BringToFront();
+            this.WindowState = FormWindowState.Maximized;
         }
         //Button khoát
         private void btn_Main_Close_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        //Button full màn hình
-        private void btn_Main_fullscreen_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
         }
         //Đăng xuất khỏi form home
         private void btn_Main_logout_Click(object sender, EventArgs e)
@@ -252,7 +240,25 @@ namespace AppGUI
         private void btn_Main_fnc_nhanvien_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý nhân viên";
+            if(formQLNV == null)
+            {
+                formQLNV = new FormQuanLyNhanVien();
+                formQLNV.FormClosed += formQLNV_FormClosed;
+                formQLNV.MdiParent = this;
+                formQLNV.Dock = DockStyle.Fill;
+                formQLNV.Show();
+            }
+            else
+            {
+                formQLNV.Activate();
+            }
         }
+
+        private void formQLNV_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formQLNV = null;
+        }
+
         //Xuất lên home form thống kê
         private void btn_Main_fnc_thongke_Click(object sender, EventArgs e)
         {

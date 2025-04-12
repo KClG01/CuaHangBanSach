@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace AppGUI
 {
-    public partial class FormQuanLyHoaDon : Form
+    public partial class FormQuanLyNhanVien : Form
     {
-        public FormQuanLyHoaDon()
+        public FormQuanLyNhanVien()
         {
             InitializeComponent();
-        }
-
-        private void btn_QLHD_Add_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
