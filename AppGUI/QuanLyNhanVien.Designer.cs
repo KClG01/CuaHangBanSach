@@ -28,13 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvw_QLKH = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cln_QLNV_MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_NGSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_LUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNV_PASSWORD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_function = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rad_QLNV_Female = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rad_QLNV_Male = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_QLNV_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,21 +70,6 @@
             this.txt_QLNV_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNV_TENKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNV_MAKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rad_QLNV_Male = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rad_QLNV_Female = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cln_QLNV_MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_NGSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_LUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNV_PASSWORD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLKH)).BeginInit();
@@ -97,16 +97,16 @@
             // 
             // dgvw_QLKH
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.dgvw_QLKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvw_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.dgvw_QLKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvw_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvw_QLKH.ColumnHeadersHeight = 34;
             this.dgvw_QLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvw_QLKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -118,14 +118,14 @@
             this.cln_QLNV_NGSINH,
             this.cln_QLNV_LUONG,
             this.cln_QLNV_PASSWORD});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvw_QLKH.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvw_QLKH.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvw_QLKH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvw_QLKH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.dgvw_QLKH.Location = new System.Drawing.Point(0, 516);
@@ -159,6 +159,70 @@
             this.dgvw_QLKH.ThemeStyle.RowsStyle.Height = 24;
             this.dgvw_QLKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
             this.dgvw_QLKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // cln_QLNV_MANV
+            // 
+            this.cln_QLNV_MANV.DataPropertyName = "MANV";
+            this.cln_QLNV_MANV.HeaderText = "Mã nhân viên";
+            this.cln_QLNV_MANV.MinimumWidth = 6;
+            this.cln_QLNV_MANV.Name = "cln_QLNV_MANV";
+            this.cln_QLNV_MANV.ReadOnly = true;
+            // 
+            // cln_QLNV_TENNV
+            // 
+            this.cln_QLNV_TENNV.DataPropertyName = "TENNV";
+            this.cln_QLNV_TENNV.HeaderText = "Tên nhân viên";
+            this.cln_QLNV_TENNV.MinimumWidth = 6;
+            this.cln_QLNV_TENNV.Name = "cln_QLNV_TENNV";
+            this.cln_QLNV_TENNV.ReadOnly = true;
+            // 
+            // cln_QLNV_GIOITINH
+            // 
+            this.cln_QLNV_GIOITINH.DataPropertyName = "GIOITINH";
+            this.cln_QLNV_GIOITINH.HeaderText = "Giới tính";
+            this.cln_QLNV_GIOITINH.MinimumWidth = 6;
+            this.cln_QLNV_GIOITINH.Name = "cln_QLNV_GIOITINH";
+            this.cln_QLNV_GIOITINH.ReadOnly = true;
+            // 
+            // cln_QLNV_SDT
+            // 
+            this.cln_QLNV_SDT.DataPropertyName = "SDT";
+            this.cln_QLNV_SDT.HeaderText = "SĐT";
+            this.cln_QLNV_SDT.MinimumWidth = 6;
+            this.cln_QLNV_SDT.Name = "cln_QLNV_SDT";
+            this.cln_QLNV_SDT.ReadOnly = true;
+            // 
+            // cln_QLNV_DIACHI
+            // 
+            this.cln_QLNV_DIACHI.DataPropertyName = "DIACHI";
+            this.cln_QLNV_DIACHI.HeaderText = "Địa chỉ";
+            this.cln_QLNV_DIACHI.MinimumWidth = 6;
+            this.cln_QLNV_DIACHI.Name = "cln_QLNV_DIACHI";
+            this.cln_QLNV_DIACHI.ReadOnly = true;
+            // 
+            // cln_QLNV_NGSINH
+            // 
+            this.cln_QLNV_NGSINH.DataPropertyName = "NGSINH";
+            this.cln_QLNV_NGSINH.HeaderText = "Ngày sinh";
+            this.cln_QLNV_NGSINH.MinimumWidth = 6;
+            this.cln_QLNV_NGSINH.Name = "cln_QLNV_NGSINH";
+            this.cln_QLNV_NGSINH.ReadOnly = true;
+            // 
+            // cln_QLNV_LUONG
+            // 
+            this.cln_QLNV_LUONG.DataPropertyName = "LUONG";
+            this.cln_QLNV_LUONG.HeaderText = "Lương";
+            this.cln_QLNV_LUONG.MinimumWidth = 6;
+            this.cln_QLNV_LUONG.Name = "cln_QLNV_LUONG";
+            this.cln_QLNV_LUONG.ReadOnly = true;
+            // 
+            // cln_QLNV_PASSWORD
+            // 
+            this.cln_QLNV_PASSWORD.DataPropertyName = "PASSWORD";
+            this.cln_QLNV_PASSWORD.HeaderText = "Mật khẩu";
+            this.cln_QLNV_PASSWORD.MinimumWidth = 6;
+            this.cln_QLNV_PASSWORD.Name = "cln_QLNV_PASSWORD";
+            this.cln_QLNV_PASSWORD.ReadOnly = true;
             // 
             // panel_function
             // 
@@ -195,6 +259,127 @@
             this.panel_function.Name = "panel_function";
             this.panel_function.Size = new System.Drawing.Size(1601, 516);
             this.panel_function.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(129, 301);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(107, 28);
+            this.label12.TabIndex = 51;
+            this.label12.Text = "Mật khẩu:";
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.Animated = true;
+            this.guna2TextBox2.BorderRadius = 2;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(263, 299);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(220, 40);
+            this.guna2TextBox2.TabIndex = 50;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(602, 301);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 28);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "Lương:";
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Animated = true;
+            this.guna2TextBox1.BorderRadius = 2;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(702, 299);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(220, 40);
+            this.guna2TextBox1.TabIndex = 48;
+            // 
+            // rad_QLNV_Female
+            // 
+            this.rad_QLNV_Female.AutoSize = true;
+            this.rad_QLNV_Female.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_QLNV_Female.CheckedState.BorderThickness = 0;
+            this.rad_QLNV_Female.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_QLNV_Female.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rad_QLNV_Female.CheckedState.InnerOffset = -4;
+            this.rad_QLNV_Female.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_QLNV_Female.ForeColor = System.Drawing.Color.White;
+            this.rad_QLNV_Female.Location = new System.Drawing.Point(1248, 117);
+            this.rad_QLNV_Female.Name = "rad_QLNV_Female";
+            this.rad_QLNV_Female.Size = new System.Drawing.Size(62, 32);
+            this.rad_QLNV_Female.TabIndex = 47;
+            this.rad_QLNV_Female.Text = "Nữ";
+            this.rad_QLNV_Female.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rad_QLNV_Female.UncheckedState.BorderThickness = 2;
+            this.rad_QLNV_Female.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rad_QLNV_Female.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rad_QLNV_Male
+            // 
+            this.rad_QLNV_Male.AutoSize = true;
+            this.rad_QLNV_Male.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_QLNV_Male.CheckedState.BorderThickness = 0;
+            this.rad_QLNV_Male.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_QLNV_Male.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rad_QLNV_Male.CheckedState.InnerOffset = -4;
+            this.rad_QLNV_Male.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_QLNV_Male.ForeColor = System.Drawing.Color.White;
+            this.rad_QLNV_Male.Location = new System.Drawing.Point(1106, 115);
+            this.rad_QLNV_Male.Name = "rad_QLNV_Male";
+            this.rad_QLNV_Male.Size = new System.Drawing.Size(78, 32);
+            this.rad_QLNV_Male.TabIndex = 46;
+            this.rad_QLNV_Male.Text = "Nam";
+            this.rad_QLNV_Male.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rad_QLNV_Male.UncheckedState.BorderThickness = 2;
+            this.rad_QLNV_Male.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rad_QLNV_Male.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(967, 114);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 28);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Giới tính:";
             // 
             // label10
             // 
@@ -508,191 +693,6 @@
             this.txt_QLNV_MAKH.SelectedText = "";
             this.txt_QLNV_MAKH.Size = new System.Drawing.Size(220, 40);
             this.txt_QLNV_MAKH.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(967, 114);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 28);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Giới tính:";
-            // 
-            // rad_QLNV_Male
-            // 
-            this.rad_QLNV_Male.AutoSize = true;
-            this.rad_QLNV_Male.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_QLNV_Male.CheckedState.BorderThickness = 0;
-            this.rad_QLNV_Male.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_QLNV_Male.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rad_QLNV_Male.CheckedState.InnerOffset = -4;
-            this.rad_QLNV_Male.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_QLNV_Male.ForeColor = System.Drawing.Color.White;
-            this.rad_QLNV_Male.Location = new System.Drawing.Point(1106, 115);
-            this.rad_QLNV_Male.Name = "rad_QLNV_Male";
-            this.rad_QLNV_Male.Size = new System.Drawing.Size(78, 32);
-            this.rad_QLNV_Male.TabIndex = 46;
-            this.rad_QLNV_Male.Text = "Nam";
-            this.rad_QLNV_Male.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rad_QLNV_Male.UncheckedState.BorderThickness = 2;
-            this.rad_QLNV_Male.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rad_QLNV_Male.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rad_QLNV_Female
-            // 
-            this.rad_QLNV_Female.AutoSize = true;
-            this.rad_QLNV_Female.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_QLNV_Female.CheckedState.BorderThickness = 0;
-            this.rad_QLNV_Female.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_QLNV_Female.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rad_QLNV_Female.CheckedState.InnerOffset = -4;
-            this.rad_QLNV_Female.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_QLNV_Female.ForeColor = System.Drawing.Color.White;
-            this.rad_QLNV_Female.Location = new System.Drawing.Point(1248, 117);
-            this.rad_QLNV_Female.Name = "rad_QLNV_Female";
-            this.rad_QLNV_Female.Size = new System.Drawing.Size(62, 32);
-            this.rad_QLNV_Female.TabIndex = 47;
-            this.rad_QLNV_Female.Text = "Nữ";
-            this.rad_QLNV_Female.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rad_QLNV_Female.UncheckedState.BorderThickness = 2;
-            this.rad_QLNV_Female.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rad_QLNV_Female.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(602, 301);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 28);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "Lương:";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderRadius = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(702, 299);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(220, 40);
-            this.guna2TextBox1.TabIndex = 48;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(129, 301);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 28);
-            this.label12.TabIndex = 51;
-            this.label12.Text = "Mật khẩu:";
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BorderRadius = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(263, 299);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(220, 40);
-            this.guna2TextBox2.TabIndex = 50;
-            // 
-            // cln_QLNV_MANV
-            // 
-            this.cln_QLNV_MANV.DataPropertyName = "MANV";
-            this.cln_QLNV_MANV.HeaderText = "Mã nhân viên";
-            this.cln_QLNV_MANV.MinimumWidth = 6;
-            this.cln_QLNV_MANV.Name = "cln_QLNV_MANV";
-            this.cln_QLNV_MANV.ReadOnly = true;
-            // 
-            // cln_QLNV_TENNV
-            // 
-            this.cln_QLNV_TENNV.DataPropertyName = "TENNV";
-            this.cln_QLNV_TENNV.HeaderText = "Tên nhân viên";
-            this.cln_QLNV_TENNV.MinimumWidth = 6;
-            this.cln_QLNV_TENNV.Name = "cln_QLNV_TENNV";
-            this.cln_QLNV_TENNV.ReadOnly = true;
-            // 
-            // cln_QLNV_GIOITINH
-            // 
-            this.cln_QLNV_GIOITINH.DataPropertyName = "GIOITINH";
-            this.cln_QLNV_GIOITINH.HeaderText = "Giới tính";
-            this.cln_QLNV_GIOITINH.MinimumWidth = 6;
-            this.cln_QLNV_GIOITINH.Name = "cln_QLNV_GIOITINH";
-            this.cln_QLNV_GIOITINH.ReadOnly = true;
-            // 
-            // cln_QLNV_SDT
-            // 
-            this.cln_QLNV_SDT.DataPropertyName = "SDT";
-            this.cln_QLNV_SDT.HeaderText = "SĐT";
-            this.cln_QLNV_SDT.MinimumWidth = 6;
-            this.cln_QLNV_SDT.Name = "cln_QLNV_SDT";
-            this.cln_QLNV_SDT.ReadOnly = true;
-            // 
-            // cln_QLNV_DIACHI
-            // 
-            this.cln_QLNV_DIACHI.DataPropertyName = "DIACHI";
-            this.cln_QLNV_DIACHI.HeaderText = "Địa chỉ";
-            this.cln_QLNV_DIACHI.MinimumWidth = 6;
-            this.cln_QLNV_DIACHI.Name = "cln_QLNV_DIACHI";
-            this.cln_QLNV_DIACHI.ReadOnly = true;
-            // 
-            // cln_QLNV_NGSINH
-            // 
-            this.cln_QLNV_NGSINH.DataPropertyName = "NGSINH";
-            this.cln_QLNV_NGSINH.HeaderText = "Ngày sinh";
-            this.cln_QLNV_NGSINH.MinimumWidth = 6;
-            this.cln_QLNV_NGSINH.Name = "cln_QLNV_NGSINH";
-            this.cln_QLNV_NGSINH.ReadOnly = true;
-            // 
-            // cln_QLNV_LUONG
-            // 
-            this.cln_QLNV_LUONG.DataPropertyName = "LUONG";
-            this.cln_QLNV_LUONG.HeaderText = "Lương";
-            this.cln_QLNV_LUONG.MinimumWidth = 6;
-            this.cln_QLNV_LUONG.Name = "cln_QLNV_LUONG";
-            this.cln_QLNV_LUONG.ReadOnly = true;
-            // 
-            // cln_QLNV_PASSWORD
-            // 
-            this.cln_QLNV_PASSWORD.DataPropertyName = "PASSWORD";
-            this.cln_QLNV_PASSWORD.HeaderText = "Mật khẩu";
-            this.cln_QLNV_PASSWORD.MinimumWidth = 6;
-            this.cln_QLNV_PASSWORD.Name = "cln_QLNV_PASSWORD";
-            this.cln_QLNV_PASSWORD.ReadOnly = true;
             // 
             // FormQuanLyNhanVien
             // 

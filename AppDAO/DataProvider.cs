@@ -21,9 +21,14 @@ namespace AppDAO
         }
         public static int ThucThi(string strThucThi, SqlParameter[] sp, SqlConnection conn)
         {
-            SqlCommand com = new SqlCommand(strThucThi,conn);
-            com.Parameters.AddRange(sp);
-            return com.ExecuteNonQuery();
+            SqlCommand comm = new SqlCommand(strThucThi, conn);
+            comm.Parameters.AddRange(sp);
+            return comm.ExecuteNonQuery();
+        }
+        public static int Xoa(string strXoa, SqlConnection conn)
+        {
+            SqlCommand comm = new SqlCommand(strXoa, conn);
+            return comm.ExecuteNonQuery();
         }
 
     }
