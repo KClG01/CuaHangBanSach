@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppBUS
 {
-    public class Class1
+    internal class KhachHang_BUS
     {
     }
 }
