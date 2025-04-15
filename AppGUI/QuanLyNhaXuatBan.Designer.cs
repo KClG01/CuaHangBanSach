@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvw_QLNXB = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgv_QLNXB = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cln_QLNXB_MANXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLNXB_TENNXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLNXB_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,15 +56,15 @@
             this.txt_QLNXB_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNXB_LIENHE = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNXB_MANXB = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLNXB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNXB)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel_function.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvw_QLNXB
+            // dgv_QLNXB
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgvw_QLNXB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_QLNXB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,10 +72,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvw_QLNXB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvw_QLNXB.ColumnHeadersHeight = 34;
-            this.dgvw_QLNXB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvw_QLNXB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_QLNXB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_QLNXB.ColumnHeadersHeight = 34;
+            this.dgv_QLNXB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLNXB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cln_QLNXB_MANXB,
             this.cln_QLNXB_TENNXB,
             this.cln_QLNXB_LIENHE,
@@ -87,39 +87,39 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvw_QLNXB.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvw_QLNXB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvw_QLNXB.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgvw_QLNXB.Location = new System.Drawing.Point(0, 0);
-            this.dgvw_QLNXB.MultiSelect = false;
-            this.dgvw_QLNXB.Name = "dgvw_QLNXB";
-            this.dgvw_QLNXB.RowHeadersVisible = false;
-            this.dgvw_QLNXB.RowHeadersWidth = 51;
-            this.dgvw_QLNXB.RowTemplate.Height = 24;
-            this.dgvw_QLNXB.Size = new System.Drawing.Size(1601, 577);
-            this.dgvw_QLNXB.TabIndex = 0;
-            this.dgvw_QLNXB.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.dgvw_QLNXB.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgvw_QLNXB.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvw_QLNXB.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvw_QLNXB.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvw_QLNXB.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvw_QLNXB.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvw_QLNXB.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvw_QLNXB.ThemeStyle.HeaderStyle.Height = 34;
-            this.dgvw_QLNXB.ThemeStyle.ReadOnly = false;
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.dgvw_QLNXB.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLNXB.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_QLNXB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_QLNXB.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_QLNXB.Location = new System.Drawing.Point(0, 0);
+            this.dgv_QLNXB.MultiSelect = false;
+            this.dgv_QLNXB.Name = "dgv_QLNXB";
+            this.dgv_QLNXB.RowHeadersVisible = false;
+            this.dgv_QLNXB.RowHeadersWidth = 51;
+            this.dgv_QLNXB.RowTemplate.Height = 24;
+            this.dgv_QLNXB.Size = new System.Drawing.Size(1601, 577);
+            this.dgv_QLNXB.TabIndex = 0;
+            this.dgv_QLNXB.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
+            this.dgv_QLNXB.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.dgv_QLNXB.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_QLNXB.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLNXB.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_QLNXB.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLNXB.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_QLNXB.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLNXB.ThemeStyle.HeaderStyle.Height = 34;
+            this.dgv_QLNXB.ThemeStyle.ReadOnly = false;
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            this.dgv_QLNXB.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // cln_QLNXB_MANXB
             // 
@@ -151,7 +151,7 @@
             // 
             // pn_QLLS_dgv
             // 
-            this.pn_QLLS_dgv.Controls.Add(this.dgvw_QLNXB);
+            this.pn_QLLS_dgv.Controls.Add(this.dgv_QLNXB);
             this.pn_QLLS_dgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_QLLS_dgv.Location = new System.Drawing.Point(0, 463);
             this.pn_QLLS_dgv.Name = "pn_QLLS_dgv";
@@ -475,7 +475,7 @@
             this.Controls.Add(this.panel_function);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyNhaXuatBan";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLNXB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNXB)).EndInit();
             this.pn_QLLS_dgv.ResumeLayout(false);
             this.panel_function.ResumeLayout(false);
             this.panel_function.PerformLayout();
@@ -485,7 +485,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView dgvw_QLNXB;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLNXB;
         private System.Windows.Forms.Panel pn_QLLS_dgv;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLNXB_TENNXB;
         private System.Windows.Forms.Panel panel_function;
