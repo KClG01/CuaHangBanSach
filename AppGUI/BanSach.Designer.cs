@@ -37,7 +37,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cb_SELL_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btn_SELL_Re = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SELL_Search = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_SELL_Del = new Guna.UI2.WinForms.Guna2Button();
@@ -55,15 +54,6 @@
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_SELL = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel_function = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txt_SELL_DONGIA = new Guna.UI2.WinForms.Guna2TextBox();
-            this.nb_SELL_SOLUONG = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cb_SELL_SACH = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cb_SELL_KHACHHANG = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cb_SELL_NHANVIEN = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cln_QLHD_MAHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_SELL_TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_SELL_TENKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,6 +64,16 @@
             this.cln_SELL_TIENNHAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_SELL_TIENTRA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_SELL_THANHTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_function = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_SELL_DONGIA = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nb_SELL_SOLUONG = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cb_SELL_SACH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cb_SELL_KHACHHANG = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_SELL_NHANVIEN = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_SELL_Re = new Guna.UI2.WinForms.Guna2Button();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SELL)).BeginInit();
@@ -156,20 +156,6 @@
             this.label8.Size = new System.Drawing.Size(154, 28);
             this.label8.TabIndex = 36;
             this.label8.Text = "Tìm kiếm theo:";
-            // 
-            // btn_SELL_Re
-            // 
-            this.btn_SELL_Re.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SELL_Re.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SELL_Re.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_SELL_Re.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_SELL_Re.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SELL_Re.ForeColor = System.Drawing.Color.White;
-            this.btn_SELL_Re.Location = new System.Drawing.Point(715, 430);
-            this.btn_SELL_Re.Name = "btn_SELL_Re";
-            this.btn_SELL_Re.Size = new System.Drawing.Size(150, 60);
-            this.btn_SELL_Re.TabIndex = 35;
-            this.btn_SELL_Re.Text = "Tạo mới";
             // 
             // btn_SELL_Search
             // 
@@ -478,6 +464,86 @@
             this.dgv_SELL.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgv_SELL.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // cln_QLHD_MAHD
+            // 
+            this.cln_QLHD_MAHD.DataPropertyName = "MAHD";
+            this.cln_QLHD_MAHD.HeaderText = "Mã Hóa Đơn";
+            this.cln_QLHD_MAHD.MinimumWidth = 6;
+            this.cln_QLHD_MAHD.Name = "cln_QLHD_MAHD";
+            this.cln_QLHD_MAHD.ReadOnly = true;
+            // 
+            // cln_SELL_TENNV
+            // 
+            this.cln_SELL_TENNV.DataPropertyName = "TENNV";
+            this.cln_SELL_TENNV.HeaderText = "Nhân Viên";
+            this.cln_SELL_TENNV.MinimumWidth = 6;
+            this.cln_SELL_TENNV.Name = "cln_SELL_TENNV";
+            this.cln_SELL_TENNV.ReadOnly = true;
+            // 
+            // cln_SELL_TENKH
+            // 
+            this.cln_SELL_TENKH.DataPropertyName = "TENKH";
+            this.cln_SELL_TENKH.HeaderText = "Khách Hàng";
+            this.cln_SELL_TENKH.MinimumWidth = 6;
+            this.cln_SELL_TENKH.Name = "cln_SELL_TENKH";
+            this.cln_SELL_TENKH.ReadOnly = true;
+            // 
+            // cln_SELL_NGAYBAN
+            // 
+            this.cln_SELL_NGAYBAN.DataPropertyName = "NGAYBAN";
+            this.cln_SELL_NGAYBAN.HeaderText = "Ngày Lập Hóa Đơn";
+            this.cln_SELL_NGAYBAN.MinimumWidth = 6;
+            this.cln_SELL_NGAYBAN.Name = "cln_SELL_NGAYBAN";
+            this.cln_SELL_NGAYBAN.ReadOnly = true;
+            // 
+            // cln_SELL_TENSP
+            // 
+            this.cln_SELL_TENSP.DataPropertyName = "TENSP";
+            this.cln_SELL_TENSP.HeaderText = "Sách";
+            this.cln_SELL_TENSP.MinimumWidth = 6;
+            this.cln_SELL_TENSP.Name = "cln_SELL_TENSP";
+            this.cln_SELL_TENSP.ReadOnly = true;
+            // 
+            // cln_SELL_SOLUONG
+            // 
+            this.cln_SELL_SOLUONG.DataPropertyName = "SOLUONG";
+            this.cln_SELL_SOLUONG.HeaderText = "Số lượng";
+            this.cln_SELL_SOLUONG.MinimumWidth = 6;
+            this.cln_SELL_SOLUONG.Name = "cln_SELL_SOLUONG";
+            this.cln_SELL_SOLUONG.ReadOnly = true;
+            // 
+            // cln_SELL_GIABAN
+            // 
+            this.cln_SELL_GIABAN.DataPropertyName = "GIABAN";
+            this.cln_SELL_GIABAN.HeaderText = "Đơn giá";
+            this.cln_SELL_GIABAN.MinimumWidth = 6;
+            this.cln_SELL_GIABAN.Name = "cln_SELL_GIABAN";
+            this.cln_SELL_GIABAN.ReadOnly = true;
+            // 
+            // cln_SELL_TIENNHAN
+            // 
+            this.cln_SELL_TIENNHAN.DataPropertyName = "TIENNHAN";
+            this.cln_SELL_TIENNHAN.HeaderText = "Tiền nhận";
+            this.cln_SELL_TIENNHAN.MinimumWidth = 6;
+            this.cln_SELL_TIENNHAN.Name = "cln_SELL_TIENNHAN";
+            this.cln_SELL_TIENNHAN.ReadOnly = true;
+            // 
+            // cln_SELL_TIENTRA
+            // 
+            this.cln_SELL_TIENTRA.DataPropertyName = "TIENTRA";
+            this.cln_SELL_TIENTRA.HeaderText = "Tiền trả";
+            this.cln_SELL_TIENTRA.MinimumWidth = 6;
+            this.cln_SELL_TIENTRA.Name = "cln_SELL_TIENTRA";
+            this.cln_SELL_TIENTRA.ReadOnly = true;
+            // 
+            // cln_SELL_THANHTIEN
+            // 
+            this.cln_SELL_THANHTIEN.DataPropertyName = "THANHTIEN";
+            this.cln_SELL_THANHTIEN.HeaderText = "Thành tiền";
+            this.cln_SELL_THANHTIEN.MinimumWidth = 6;
+            this.cln_SELL_THANHTIEN.Name = "cln_SELL_THANHTIEN";
+            this.cln_SELL_THANHTIEN.ReadOnly = true;
+            // 
             // panel_function
             // 
             this.panel_function.BackColor = System.Drawing.Color.White;
@@ -631,85 +697,19 @@
             this.cb_SELL_NHANVIEN.Size = new System.Drawing.Size(200, 36);
             this.cb_SELL_NHANVIEN.TabIndex = 42;
             // 
-            // cln_QLHD_MAHD
+            // btn_SELL_Re
             // 
-            this.cln_QLHD_MAHD.DataPropertyName = "MAHD";
-            this.cln_QLHD_MAHD.HeaderText = "Mã Hóa Đơn";
-            this.cln_QLHD_MAHD.MinimumWidth = 6;
-            this.cln_QLHD_MAHD.Name = "cln_QLHD_MAHD";
-            this.cln_QLHD_MAHD.ReadOnly = true;
-            // 
-            // cln_SELL_TENNV
-            // 
-            this.cln_SELL_TENNV.DataPropertyName = "TENNV";
-            this.cln_SELL_TENNV.HeaderText = "Nhân Viên";
-            this.cln_SELL_TENNV.MinimumWidth = 6;
-            this.cln_SELL_TENNV.Name = "cln_SELL_TENNV";
-            this.cln_SELL_TENNV.ReadOnly = true;
-            // 
-            // cln_SELL_TENKH
-            // 
-            this.cln_SELL_TENKH.DataPropertyName = "TENKH";
-            this.cln_SELL_TENKH.HeaderText = "Khách Hàng";
-            this.cln_SELL_TENKH.MinimumWidth = 6;
-            this.cln_SELL_TENKH.Name = "cln_SELL_TENKH";
-            this.cln_SELL_TENKH.ReadOnly = true;
-            // 
-            // cln_SELL_NGAYBAN
-            // 
-            this.cln_SELL_NGAYBAN.DataPropertyName = "NGAYBAN";
-            this.cln_SELL_NGAYBAN.HeaderText = "Ngày Lập Hóa Đơn";
-            this.cln_SELL_NGAYBAN.MinimumWidth = 6;
-            this.cln_SELL_NGAYBAN.Name = "cln_SELL_NGAYBAN";
-            this.cln_SELL_NGAYBAN.ReadOnly = true;
-            // 
-            // cln_SELL_TENSP
-            // 
-            this.cln_SELL_TENSP.DataPropertyName = "TENSP";
-            this.cln_SELL_TENSP.HeaderText = "Sách";
-            this.cln_SELL_TENSP.MinimumWidth = 6;
-            this.cln_SELL_TENSP.Name = "cln_SELL_TENSP";
-            this.cln_SELL_TENSP.ReadOnly = true;
-            // 
-            // cln_SELL_SOLUONG
-            // 
-            this.cln_SELL_SOLUONG.DataPropertyName = "SOLUONG";
-            this.cln_SELL_SOLUONG.HeaderText = "Số lượng";
-            this.cln_SELL_SOLUONG.MinimumWidth = 6;
-            this.cln_SELL_SOLUONG.Name = "cln_SELL_SOLUONG";
-            this.cln_SELL_SOLUONG.ReadOnly = true;
-            // 
-            // cln_SELL_GIABAN
-            // 
-            this.cln_SELL_GIABAN.DataPropertyName = "GIABAN";
-            this.cln_SELL_GIABAN.HeaderText = "Đơn giá";
-            this.cln_SELL_GIABAN.MinimumWidth = 6;
-            this.cln_SELL_GIABAN.Name = "cln_SELL_GIABAN";
-            this.cln_SELL_GIABAN.ReadOnly = true;
-            // 
-            // cln_SELL_TIENNHAN
-            // 
-            this.cln_SELL_TIENNHAN.DataPropertyName = "TIENNHAN";
-            this.cln_SELL_TIENNHAN.HeaderText = "Tiền nhận";
-            this.cln_SELL_TIENNHAN.MinimumWidth = 6;
-            this.cln_SELL_TIENNHAN.Name = "cln_SELL_TIENNHAN";
-            this.cln_SELL_TIENNHAN.ReadOnly = true;
-            // 
-            // cln_SELL_TIENTRA
-            // 
-            this.cln_SELL_TIENTRA.DataPropertyName = "TIENTRA";
-            this.cln_SELL_TIENTRA.HeaderText = "Tiền trả";
-            this.cln_SELL_TIENTRA.MinimumWidth = 6;
-            this.cln_SELL_TIENTRA.Name = "cln_SELL_TIENTRA";
-            this.cln_SELL_TIENTRA.ReadOnly = true;
-            // 
-            // cln_SELL_THANHTIEN
-            // 
-            this.cln_SELL_THANHTIEN.DataPropertyName = "THANHTIEN";
-            this.cln_SELL_THANHTIEN.HeaderText = "Thành tiền";
-            this.cln_SELL_THANHTIEN.MinimumWidth = 6;
-            this.cln_SELL_THANHTIEN.Name = "cln_SELL_THANHTIEN";
-            this.cln_SELL_THANHTIEN.ReadOnly = true;
+            this.btn_SELL_Re.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SELL_Re.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SELL_Re.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SELL_Re.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SELL_Re.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SELL_Re.ForeColor = System.Drawing.Color.White;
+            this.btn_SELL_Re.Location = new System.Drawing.Point(715, 430);
+            this.btn_SELL_Re.Name = "btn_SELL_Re";
+            this.btn_SELL_Re.Size = new System.Drawing.Size(150, 60);
+            this.btn_SELL_Re.TabIndex = 35;
+            this.btn_SELL_Re.Text = "Tạo mới";
             // 
             // FormBanSach
             // 
@@ -736,7 +736,6 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2ComboBox cb_SELL_Selected;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2Button btn_SELL_Re;
         private Guna.UI2.WinForms.Guna2Button btn_SELL_Search;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2Button btn_SELL_Del;
@@ -773,5 +772,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_SELL_TIENNHAN;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_SELL_TIENTRA;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_SELL_THANHTIEN;
+        private Guna.UI2.WinForms.Guna2Button btn_SELL_Re;
     }
 }

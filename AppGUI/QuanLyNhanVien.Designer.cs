@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_QLKH = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvw_QLKH = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cln_QLNV_MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLNV_TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLNV_GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +72,7 @@
             this.txt_QLNV_MAKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLKH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLKH)).BeginInit();
             this.panel_function.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dgv_QLKH);
+            this.panel1.Controls.Add(this.dgvw_QLKH);
             this.panel1.Controls.Add(this.panel_function);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -95,41 +95,21 @@
             this.panel1.Size = new System.Drawing.Size(1601, 1040);
             this.panel1.TabIndex = 11;
             // 
-            // dgv_QLKH
+            // dgvw_QLKH
             // 
-<<<<<<< HEAD
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
             this.dgvw_QLKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvw_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-=======
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-<<<<<<< HEAD
-            this.dgv_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_QLKH.ColumnHeadersHeight = 34;
-            this.dgv_QLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-=======
-            this.dgvw_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.dgvw_QLKH.ColumnHeadersHeight = 34;
             this.dgvw_QLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvw_QLKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
->>>>>>> 99c476aa798833cdfc4803fd2368c487ce2fbf9c
             this.cln_QLNV_MANV,
             this.cln_QLNV_TENNV,
             this.cln_QLNV_GIOITINH,
@@ -138,61 +118,14 @@
             this.cln_QLNV_NGSINH,
             this.cln_QLNV_LUONG,
             this.cln_QLNV_PASSWORD});
-<<<<<<< HEAD
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvw_QLKH.DefaultCellStyle = dataGridViewCellStyle6;
-=======
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-<<<<<<< HEAD
-            this.dgv_QLKH.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_QLKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_QLKH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.Location = new System.Drawing.Point(0, 516);
-            this.dgv_QLKH.MultiSelect = false;
-            this.dgv_QLKH.Name = "dgv_QLKH";
-            this.dgv_QLKH.ReadOnly = true;
-            this.dgv_QLKH.RowHeadersVisible = false;
-            this.dgv_QLKH.RowHeadersWidth = 51;
-            this.dgv_QLKH.RowTemplate.Height = 24;
-            this.dgv_QLKH.Size = new System.Drawing.Size(1601, 524);
-            this.dgv_QLKH.TabIndex = 0;
-            this.dgv_QLKH.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_QLKH.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.Height = 34;
-            this.dgv_QLKH.ThemeStyle.ReadOnly = true;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-=======
-            this.dgvw_QLKH.DefaultCellStyle = dataGridViewCellStyle3;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.dgvw_QLKH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvw_QLKH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.dgvw_QLKH.Location = new System.Drawing.Point(0, 516);
@@ -226,7 +159,6 @@
             this.dgvw_QLKH.ThemeStyle.RowsStyle.Height = 24;
             this.dgvw_QLKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgvw_QLKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
->>>>>>> 99c476aa798833cdfc4803fd2368c487ce2fbf9c
             // 
             // cln_QLNV_MANV
             // 
@@ -332,11 +264,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label12.ForeColor = System.Drawing.Color.White;
-=======
             this.label12.ForeColor = System.Drawing.Color.Black;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.label12.Location = new System.Drawing.Point(129, 301);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(107, 28);
@@ -371,11 +299,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label11.ForeColor = System.Drawing.Color.White;
-=======
             this.label11.ForeColor = System.Drawing.Color.Black;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.label11.Location = new System.Drawing.Point(602, 301);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 28);
@@ -415,11 +339,7 @@
             this.rad_QLNV_Female.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rad_QLNV_Female.CheckedState.InnerOffset = -4;
             this.rad_QLNV_Female.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.rad_QLNV_Female.ForeColor = System.Drawing.Color.White;
-=======
             this.rad_QLNV_Female.ForeColor = System.Drawing.Color.Black;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.rad_QLNV_Female.Location = new System.Drawing.Point(1248, 117);
             this.rad_QLNV_Female.Name = "rad_QLNV_Female";
             this.rad_QLNV_Female.Size = new System.Drawing.Size(62, 32);
@@ -439,11 +359,7 @@
             this.rad_QLNV_Male.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rad_QLNV_Male.CheckedState.InnerOffset = -4;
             this.rad_QLNV_Male.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.rad_QLNV_Male.ForeColor = System.Drawing.Color.White;
-=======
             this.rad_QLNV_Male.ForeColor = System.Drawing.Color.Black;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.rad_QLNV_Male.Location = new System.Drawing.Point(1106, 115);
             this.rad_QLNV_Male.Name = "rad_QLNV_Male";
             this.rad_QLNV_Male.Size = new System.Drawing.Size(78, 32);
@@ -458,11 +374,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label7.ForeColor = System.Drawing.Color.White;
-=======
             this.label7.ForeColor = System.Drawing.Color.Black;
->>>>>>> 942c191e35b7c3cad3b49ed2334a8849730a1669
             this.label7.Location = new System.Drawing.Point(967, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 28);
@@ -792,7 +704,7 @@
             this.Name = "FormQuanLyNhanVien";
             this.pn_QLLS_dgv.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLKH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvw_QLKH)).EndInit();
             this.panel_function.ResumeLayout(false);
             this.panel_function.PerformLayout();
             this.ResumeLayout(false);
@@ -803,7 +715,7 @@
 
         private System.Windows.Forms.Panel pn_QLLS_dgv;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLKH;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvw_QLKH;
         private System.Windows.Forms.Panel panel_function;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLNV_NhapNoiDung;

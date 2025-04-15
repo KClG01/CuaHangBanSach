@@ -21,6 +21,7 @@ namespace AppGUI
         FormQuanLyKhachHang formQLKH;
         FormQuanLyHoaDon formQLHD;
         FormQuanLyNhanVien formQLNV;
+        FormBanSach formSell;
         public FormHome()
         {
             InitializeComponent();
@@ -263,6 +264,28 @@ namespace AppGUI
         private void btn_Main_fnc_thongke_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Thống kê";
+        }
+
+        private void btn_Main_fnc_bansach_Click(object sender, EventArgs e)
+        {
+            lbl_Main_formTitle.Text = "Thống kê";
+            if(formSell == null)
+            {
+                formSell = new FormBanSach();
+                formSell.FormClosed += formSell_FormClosed;
+                formSell.MdiParent = this;
+                formSell.Dock = DockStyle.Fill;
+                formSell.Show();
+            }
+            else
+            {
+                formSell.Activate();
+            }
+        }
+
+        private void formSell_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formSell = null;
         }
     }
 }
