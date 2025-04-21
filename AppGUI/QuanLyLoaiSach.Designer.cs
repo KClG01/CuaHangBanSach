@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgv_QLLS = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.cln_QLLS_MA_LOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLLS_TENLOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
+            this.dgv_QLLS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_QLLS_Search = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLLS_Del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLLS_Add = new Guna.UI2.WinForms.Guna2Button();
@@ -43,89 +41,19 @@
             this.panel_function = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_QLLS_Re = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_QLKH_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_QLLS_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.cb_QLKH_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_QLLS_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_QLLS_MA_LOAI = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLLS)).BeginInit();
+            this.cln_QLLS_MA_LOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLLS_TENLOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_QLLS_dgv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLLS)).BeginInit();
             this.panel_function.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dgv_QLLS
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLLS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_QLLS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_QLLS.ColumnHeadersHeight = 34;
-            this.dgv_QLLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLLS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cln_QLLS_MA_LOAI,
-            this.cln_QLLS_TENLOAI});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_QLLS.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_QLLS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_QLLS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLLS.Location = new System.Drawing.Point(0, 0);
-            this.dgv_QLLS.MultiSelect = false;
-            this.dgv_QLLS.Name = "dgv_QLLS";
-            this.dgv_QLLS.RowHeadersVisible = false;
-            this.dgv_QLLS.RowHeadersWidth = 51;
-            this.dgv_QLLS.RowTemplate.Height = 24;
-            this.dgv_QLLS.Size = new System.Drawing.Size(1601, 729);
-            this.dgv_QLLS.TabIndex = 0;
-            this.dgv_QLLS.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLLS.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_QLLS.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLLS.ThemeStyle.HeaderStyle.Height = 34;
-            this.dgv_QLLS.ThemeStyle.ReadOnly = false;
-            this.dgv_QLLS.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.dgv_QLLS.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_QLLS.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLLS.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgv_QLLS.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_QLLS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.dgv_QLLS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // cln_QLLS_MA_LOAI
-            // 
-            this.cln_QLLS_MA_LOAI.DataPropertyName = "MA_LOAI";
-            this.cln_QLLS_MA_LOAI.HeaderText = "Mã loại sách";
-            this.cln_QLLS_MA_LOAI.MinimumWidth = 6;
-            this.cln_QLLS_MA_LOAI.Name = "cln_QLLS_MA_LOAI";
-            // 
-            // cln_QLLS_TENLOAI
-            // 
-            this.cln_QLLS_TENLOAI.DataPropertyName = "TENLOAI";
-            this.cln_QLLS_TENLOAI.HeaderText = "Tên loại sách";
-            this.cln_QLLS_TENLOAI.MinimumWidth = 6;
-            this.cln_QLLS_TENLOAI.Name = "cln_QLLS_TENLOAI";
             // 
             // pn_QLLS_dgv
             // 
@@ -135,6 +63,64 @@
             this.pn_QLLS_dgv.Name = "pn_QLLS_dgv";
             this.pn_QLLS_dgv.Size = new System.Drawing.Size(1601, 729);
             this.pn_QLLS_dgv.TabIndex = 5;
+            // 
+            // dgv_QLLS
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dgv_QLLS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_QLLS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_QLLS.ColumnHeadersHeight = 40;
+            this.dgv_QLLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLLS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cln_QLLS_MA_LOAI,
+            this.cln_QLLS_TENLOAI});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_QLLS.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_QLLS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_QLLS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.dgv_QLLS.Location = new System.Drawing.Point(0, 0);
+            this.dgv_QLLS.Name = "dgv_QLLS";
+            this.dgv_QLLS.RowHeadersVisible = false;
+            this.dgv_QLLS.RowHeadersWidth = 50;
+            this.dgv_QLLS.RowTemplate.Height = 24;
+            this.dgv_QLLS.Size = new System.Drawing.Size(1601, 729);
+            this.dgv_QLLS.TabIndex = 0;
+            this.dgv_QLLS.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_QLLS.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLLS.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_QLLS.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLLS.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgv_QLLS.ThemeStyle.ReadOnly = false;
+            this.dgv_QLLS.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.dgv_QLLS.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_QLLS.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLLS.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgv_QLLS.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_QLLS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.dgv_QLLS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLLS.SelectionChanged += new System.EventHandler(this.dgv_QLLS_SelectionChanged);
             // 
             // btn_QLLS_Search
             // 
@@ -177,6 +163,7 @@
             this.btn_QLLS_Add.Size = new System.Drawing.Size(150, 60);
             this.btn_QLLS_Add.TabIndex = 1;
             this.btn_QLLS_Add.Text = "Thêm";
+            this.btn_QLLS_Add.Click += new System.EventHandler(this.btn_QLLS_Add_Click);
             // 
             // btn_QLLS_Edit
             // 
@@ -214,15 +201,16 @@
             this.txt_QLLS_TENLOAI.SelectedText = "";
             this.txt_QLLS_TENLOAI.Size = new System.Drawing.Size(220, 40);
             this.txt_QLLS_TENLOAI.TabIndex = 7;
+            this.txt_QLLS_TENLOAI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLLS_TENLOAI_KeyPress);
             // 
             // panel_function
             // 
             this.panel_function.BackColor = System.Drawing.Color.White;
             this.panel_function.Controls.Add(this.label10);
             this.panel_function.Controls.Add(this.btn_QLLS_Re);
-            this.panel_function.Controls.Add(this.txt_QLKH_NhapNoiDung);
+            this.panel_function.Controls.Add(this.txt_QLLS_NhapNoiDung);
             this.panel_function.Controls.Add(this.label9);
-            this.panel_function.Controls.Add(this.cb_QLKH_Selected);
+            this.panel_function.Controls.Add(this.cb_QLLS_Selected);
             this.panel_function.Controls.Add(this.label8);
             this.panel_function.Controls.Add(this.btn_QLLS_Del);
             this.panel_function.Controls.Add(this.btn_QLLS_Search);
@@ -264,30 +252,31 @@
             this.btn_QLLS_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_QLLS_Re.TabIndex = 48;
             this.btn_QLLS_Re.Text = "Tạo mới";
+            this.btn_QLLS_Re.Click += new System.EventHandler(this.btn_QLLS_Re_Click);
             // 
-            // txt_QLKH_NhapNoiDung
+            // txt_QLLS_NhapNoiDung
             // 
-            this.txt_QLKH_NhapNoiDung.Animated = true;
-            this.txt_QLKH_NhapNoiDung.BorderRadius = 2;
-            this.txt_QLKH_NhapNoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_QLKH_NhapNoiDung.DefaultText = "";
-            this.txt_QLKH_NhapNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_QLKH_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_QLKH_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLKH_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLKH_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txt_QLKH_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLKH_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txt_QLKH_NhapNoiDung.ForeColor = System.Drawing.Color.Black;
-            this.txt_QLKH_NhapNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLKH_NhapNoiDung.Location = new System.Drawing.Point(1174, 196);
-            this.txt_QLKH_NhapNoiDung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txt_QLKH_NhapNoiDung.Name = "txt_QLKH_NhapNoiDung";
-            this.txt_QLKH_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txt_QLKH_NhapNoiDung.PlaceholderText = "";
-            this.txt_QLKH_NhapNoiDung.SelectedText = "";
-            this.txt_QLKH_NhapNoiDung.Size = new System.Drawing.Size(220, 40);
-            this.txt_QLKH_NhapNoiDung.TabIndex = 47;
+            this.txt_QLLS_NhapNoiDung.Animated = true;
+            this.txt_QLLS_NhapNoiDung.BorderRadius = 2;
+            this.txt_QLLS_NhapNoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLLS_NhapNoiDung.DefaultText = "";
+            this.txt_QLLS_NhapNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLLS_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLLS_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLLS_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLLS_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLLS_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLLS_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLLS_NhapNoiDung.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLLS_NhapNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLLS_NhapNoiDung.Location = new System.Drawing.Point(1174, 196);
+            this.txt_QLLS_NhapNoiDung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLLS_NhapNoiDung.Name = "txt_QLLS_NhapNoiDung";
+            this.txt_QLLS_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLLS_NhapNoiDung.PlaceholderText = "";
+            this.txt_QLLS_NhapNoiDung.SelectedText = "";
+            this.txt_QLLS_NhapNoiDung.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLLS_NhapNoiDung.TabIndex = 47;
             // 
             // label9
             // 
@@ -300,20 +289,23 @@
             this.label9.TabIndex = 46;
             this.label9.Text = "Nhập nội dung:";
             // 
-            // cb_QLKH_Selected
+            // cb_QLLS_Selected
             // 
-            this.cb_QLKH_Selected.BackColor = System.Drawing.Color.Transparent;
-            this.cb_QLKH_Selected.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_QLKH_Selected.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_QLKH_Selected.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_QLKH_Selected.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_QLKH_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_QLKH_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_QLKH_Selected.ItemHeight = 30;
-            this.cb_QLKH_Selected.Location = new System.Drawing.Point(1174, 122);
-            this.cb_QLKH_Selected.Name = "cb_QLKH_Selected";
-            this.cb_QLKH_Selected.Size = new System.Drawing.Size(220, 36);
-            this.cb_QLKH_Selected.TabIndex = 45;
+            this.cb_QLLS_Selected.BackColor = System.Drawing.Color.Transparent;
+            this.cb_QLLS_Selected.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_QLLS_Selected.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_QLLS_Selected.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_QLLS_Selected.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_QLLS_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_QLLS_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_QLLS_Selected.ItemHeight = 30;
+            this.cb_QLLS_Selected.Items.AddRange(new object[] {
+            "Mã loại sách",
+            "Tên loại sách"});
+            this.cb_QLLS_Selected.Location = new System.Drawing.Point(1174, 122);
+            this.cb_QLLS_Selected.Name = "cb_QLLS_Selected";
+            this.cb_QLLS_Selected.Size = new System.Drawing.Size(220, 36);
+            this.cb_QLLS_Selected.TabIndex = 45;
             // 
             // label8
             // 
@@ -370,6 +362,21 @@
             this.txt_QLLS_MA_LOAI.SelectedText = "";
             this.txt_QLLS_MA_LOAI.Size = new System.Drawing.Size(220, 40);
             this.txt_QLLS_MA_LOAI.TabIndex = 6;
+            this.txt_QLLS_MA_LOAI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLLS_MA_LOAI_KeyPress);
+            // 
+            // cln_QLLS_MA_LOAI
+            // 
+            this.cln_QLLS_MA_LOAI.DataPropertyName = "MALOAI";
+            this.cln_QLLS_MA_LOAI.HeaderText = "Mã loại sách";
+            this.cln_QLLS_MA_LOAI.MinimumWidth = 6;
+            this.cln_QLLS_MA_LOAI.Name = "cln_QLLS_MA_LOAI";
+            // 
+            // cln_QLLS_TENLOAI
+            // 
+            this.cln_QLLS_TENLOAI.DataPropertyName = "TENLOAI";
+            this.cln_QLLS_TENLOAI.HeaderText = "Tên loại sách";
+            this.cln_QLLS_TENLOAI.MinimumWidth = 6;
+            this.cln_QLLS_TENLOAI.Name = "cln_QLLS_TENLOAI";
             // 
             // FormQuanLyLoaiSach
             // 
@@ -380,8 +387,9 @@
             this.Controls.Add(this.panel_function);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyLoaiSach";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLLS)).EndInit();
+            this.Load += new System.EventHandler(this.FormQuanLyLoaiSach_Load);
             this.pn_QLLS_dgv.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLLS)).EndInit();
             this.panel_function.ResumeLayout(false);
             this.panel_function.PerformLayout();
             this.ResumeLayout(false);
@@ -389,8 +397,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLLS;
         private System.Windows.Forms.Panel pn_QLLS_dgv;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Search;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Del;
@@ -399,15 +405,16 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_QLLS_TENLOAI;
         private System.Windows.Forms.Panel panel_function;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLLS_MA_LOAI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLLS_MA_LOAI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLLS_TENLOAI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txt_QLKH_NhapNoiDung;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLLS_NhapNoiDung;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_QLKH_Selected;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_QLLS_Selected;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button btn_QLLS_Re;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLLS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLLS_MA_LOAI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLLS_TENLOAI;
     }
 }

@@ -265,7 +265,6 @@ namespace AppGUI
         {
             lbl_Main_formTitle.Text = "Thống kê";
         }
-
         private void btn_Main_fnc_bansach_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Thống kê";
