@@ -586,6 +586,7 @@
             this.Controls.Add(this.pn_QLLS_dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyKhachHang";
+            this.Load += new System.EventHandler(this.FormQuanLyKhachHang_Load);
             this.panel_function.ResumeLayout(false);
             this.panel_function.PerformLayout();
             this.pn_QLLS_dgv.ResumeLayout(false);

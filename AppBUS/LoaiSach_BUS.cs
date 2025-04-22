@@ -33,6 +33,9 @@ namespace AppBUS
         {
             return dsLS.CapNhatLoaiSach(loaiSach);
         }
-
+        public bool KiemTraTonTaiMaLoai(int maLoai)
+        {
+            return dsLS.KiemTraTonTaiMaLoai(maLoai);
+        }
     }
 }

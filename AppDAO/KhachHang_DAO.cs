@@ -20,8 +20,8 @@ namespace AppDAO
             while (dr.Read())
             {
                 KhachHang_DTO sv = new KhachHang_DTO();
-                sv.MaKH = dr["MSSV"].ToString();
-                sv.TenKH = dr["Ho"].ToString();
+                sv.MaKH = dr["MAKH"].ToString();
+                sv.TenKH = dr["TENKH"].ToString();
                 sv.SDT = dr["SDT"].ToString();
                 sv.DiaChi = dr["DiaChi"].ToString();
                 sv.Email = dr["Email"].ToString();
