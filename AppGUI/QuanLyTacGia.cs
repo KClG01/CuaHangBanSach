@@ -221,7 +221,6 @@ namespace AppGUI
                 LayThongTin();
             }
         }
-
         private void btn_QLTG_Search_Click(object sender, EventArgs e)
         {
             if(cb_QLTG_Selected.SelectedIndex == -1)
@@ -230,7 +229,7 @@ namespace AppGUI
                 return;
             }
             string keyword = txt_QLTG_MATG.Text.Trim();
-            if (string.IsNullOrEmpty(keyword))
+            if (string.IsNullOrWhiteSpace(keyword))
             {
                 MessageBox.Show("Vui lòng nhập thông tin cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
