@@ -15,7 +15,7 @@ namespace AppDAO
             List<NhaXuatBan_DTO> dsNXB = new List<NhaXuatBan_DTO>();
             SqlConnection conn = DataProvider.TaoKetNoi();
             conn.Open();
-            string SELECT = "SELECT * FORM NHA_XUAT_BAN";
+            string SELECT = "SELECT * FROM NHA_XUAT_BAN";
             SqlDataReader dr = DataProvider.TruyVan(SELECT, conn);
             while (dr.Read())
             {
@@ -30,7 +30,7 @@ namespace AppDAO
             conn.Close();
             return dsNXB;
         }
-        public bool KiemTraTonTaiMaNXB(int maNXB)
+        public bool KiemTraTonTaiMaNXB(string maNXB)
         {
             string query = "SELECT COUNT(*) FROM NHA_XUAT_BAN WHERE MA_NXB = @MaNXB";
             using (SqlConnection conn = DataProvider.TaoKetNoi())
@@ -48,7 +48,7 @@ namespace AppDAO
             try
             {
                 conn.Open();
-                string INSERT = "INSERT INTO NHA_XUAT_BAN (MA_LNXB, TEN_NXB, LIENHE, DIACHI) VALUES (@MaNXB, @TenNXB, @LienHe, @DiaChi)";
+                string INSERT = "INSERT INTO NHA_XUAT_BAN (MA_NXB, TEN_NXB, LIENHE, DIACHI) VALUES (@MaNXB, @TenNXB, @LienHe, @DiaChi)";
                 using (SqlCommand cmd = new SqlCommand(INSERT, conn))
                 {
                     cmd.Parameters.AddWithValue("@MaNXB", nxb.MaNXB);

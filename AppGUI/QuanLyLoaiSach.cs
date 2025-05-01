@@ -36,6 +36,7 @@ namespace AppGUI
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
             }
         }
@@ -44,6 +45,7 @@ namespace AppGUI
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)
                 && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
             {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
             }
         }
@@ -96,6 +98,7 @@ namespace AppGUI
             if (string.IsNullOrWhiteSpace(txt_QLLS_TENLOAI.Text) || string.IsNullOrWhiteSpace(txt_QLLS_MA_LOAI.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                return;
             }
             else
             {
@@ -116,7 +119,6 @@ namespace AppGUI
                     MessageBox.Show("Thêm thành công");
                     txt_QLLS_MA_LOAI.Clear();
                     txt_QLLS_TENLOAI.Clear();
-                    cb_QLLS_Selected.SelectedIndex = -1;
                     LoadData();
                 }
                 else

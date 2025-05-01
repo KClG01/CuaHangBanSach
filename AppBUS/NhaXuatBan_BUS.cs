@@ -20,7 +20,7 @@ namespace AppBUS
         {
             return dsNXB.dsNhaXuatBan();
         }
-        public bool KiemTraTonTaiMaNXB(int maNXB)
+        public bool KiemTraTonTaiMaNXB(string maNXB)
         {
             return dsNXB.KiemTraTonTaiMaNXB(maNXB);
         }
