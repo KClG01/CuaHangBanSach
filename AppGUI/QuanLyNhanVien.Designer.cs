@@ -44,6 +44,8 @@
             this.cln_QLNV_NGSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLNV_PASSWORD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_function = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_QLNV_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_QLNV_PASSWORD = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,7 +55,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_QLNV_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_index = new System.Windows.Forms.Label();
             this.cb_QLNV_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_QLNV_Re = new Guna.UI2.WinForms.Guna2Button();
@@ -69,8 +71,6 @@
             this.txt_QLNV_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNV_TENNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNV_MANV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btn_QLNV_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNV)).BeginInit();
@@ -239,7 +239,7 @@
             // 
             this.panel_function.BackColor = System.Drawing.Color.White;
             this.panel_function.Controls.Add(this.label4);
-            this.panel_function.Controls.Add(this.btn_QLNV_Email);
+            this.panel_function.Controls.Add(this.txt_QLNV_Email);
             this.panel_function.Controls.Add(this.label12);
             this.panel_function.Controls.Add(this.txt_QLNV_PASSWORD);
             this.panel_function.Controls.Add(this.label11);
@@ -249,7 +249,7 @@
             this.panel_function.Controls.Add(this.label7);
             this.panel_function.Controls.Add(this.label10);
             this.panel_function.Controls.Add(this.txt_QLNV_NhapNoiDung);
-            this.panel_function.Controls.Add(this.label9);
+            this.panel_function.Controls.Add(this.lbl_index);
             this.panel_function.Controls.Add(this.cb_QLNV_Selected);
             this.panel_function.Controls.Add(this.label8);
             this.panel_function.Controls.Add(this.btn_QLNV_Re);
@@ -270,6 +270,42 @@
             this.panel_function.Name = "panel_function";
             this.panel_function.Size = new System.Drawing.Size(1601, 516);
             this.panel_function.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(643, 210);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 28);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Email:";
+            // 
+            // txt_QLNV_Email
+            // 
+            this.txt_QLNV_Email.Animated = true;
+            this.txt_QLNV_Email.BorderRadius = 2;
+            this.txt_QLNV_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_QLNV_Email.DefaultText = "";
+            this.txt_QLNV_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_QLNV_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_QLNV_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLNV_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLNV_Email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txt_QLNV_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLNV_Email.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txt_QLNV_Email.ForeColor = System.Drawing.Color.Black;
+            this.txt_QLNV_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_QLNV_Email.Location = new System.Drawing.Point(735, 205);
+            this.txt_QLNV_Email.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_QLNV_Email.Name = "txt_QLNV_Email";
+            this.txt_QLNV_Email.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_QLNV_Email.PlaceholderText = "";
+            this.txt_QLNV_Email.SelectedText = "";
+            this.txt_QLNV_Email.Size = new System.Drawing.Size(284, 40);
+            this.txt_QLNV_Email.TabIndex = 52;
+            this.txt_QLNV_Email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_QLNV_Email_KeyPress);
             // 
             // label12
             // 
@@ -417,6 +453,7 @@
             this.txt_QLNV_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_QLNV_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_QLNV_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLNV_NhapNoiDung.Enabled = false;
             this.txt_QLNV_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txt_QLNV_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_QLNV_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
@@ -431,16 +468,16 @@
             this.txt_QLNV_NhapNoiDung.Size = new System.Drawing.Size(291, 40);
             this.txt_QLNV_NhapNoiDung.TabIndex = 43;
             // 
-            // label9
+            // lbl_index
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(921, 457);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 28);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "Nhập nội dung:";
+            this.lbl_index.AutoSize = true;
+            this.lbl_index.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_index.ForeColor = System.Drawing.Color.Red;
+            this.lbl_index.Location = new System.Drawing.Point(921, 457);
+            this.lbl_index.Name = "lbl_index";
+            this.lbl_index.Size = new System.Drawing.Size(146, 28);
+            this.lbl_index.TabIndex = 42;
+            this.lbl_index.Text = "Chọn loại tìm!";
             // 
             // cb_QLNV_Selected
             // 
@@ -452,6 +489,11 @@
             this.cb_QLNV_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_QLNV_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_QLNV_Selected.ItemHeight = 30;
+            this.cb_QLNV_Selected.Items.AddRange(new object[] {
+            "Mã nhân viên",
+            "Tên nhân viên",
+            "Số điện thoại",
+            "Email"});
             this.cb_QLNV_Selected.Location = new System.Drawing.Point(1106, 380);
             this.cb_QLNV_Selected.Name = "cb_QLNV_Selected";
             this.cb_QLNV_Selected.Size = new System.Drawing.Size(291, 36);
@@ -690,42 +732,6 @@
             this.txt_QLNV_MANV.TabIndex = 6;
             this.txt_QLNV_MANV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLNV_MAKH_KeyPress);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(643, 210);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 28);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Email:";
-            // 
-            // btn_QLNV_Email
-            // 
-            this.btn_QLNV_Email.Animated = true;
-            this.btn_QLNV_Email.BorderRadius = 2;
-            this.btn_QLNV_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_QLNV_Email.DefaultText = "";
-            this.btn_QLNV_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btn_QLNV_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btn_QLNV_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btn_QLNV_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btn_QLNV_Email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.btn_QLNV_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btn_QLNV_Email.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btn_QLNV_Email.ForeColor = System.Drawing.Color.Black;
-            this.btn_QLNV_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btn_QLNV_Email.Location = new System.Drawing.Point(735, 205);
-            this.btn_QLNV_Email.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btn_QLNV_Email.Name = "btn_QLNV_Email";
-            this.btn_QLNV_Email.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.btn_QLNV_Email.PlaceholderText = "";
-            this.btn_QLNV_Email.SelectedText = "";
-            this.btn_QLNV_Email.Size = new System.Drawing.Size(284, 40);
-            this.btn_QLNV_Email.TabIndex = 52;
-            this.btn_QLNV_Email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_QLNV_Email_KeyPress);
-            // 
             // FormQuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -752,7 +758,7 @@
         private System.Windows.Forms.Panel panel_function;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLNV_NhapNoiDung;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_index;
         private Guna.UI2.WinForms.Guna2ComboBox cb_QLNV_Selected;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button btn_QLNV_Re;
@@ -785,6 +791,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLNV_NGSINH;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLNV_PASSWORD;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox btn_QLNV_Email;
+        private Guna.UI2.WinForms.Guna2TextBox txt_QLNV_Email;
     }
 }
