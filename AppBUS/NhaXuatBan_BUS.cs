@@ -28,7 +28,7 @@ namespace AppBUS
         {
             return dsNXB.ThemNhaXuatBan(nxb);
         }
-        public bool XoaNhaXuatBan(int maNXB)
+        public bool XoaNhaXuatBan(string maNXB)
         {
             return dsNXB.XoaNhaXuatBan(maNXB);
         }

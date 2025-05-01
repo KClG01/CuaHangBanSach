@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_QLNXB = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cln_QLNXB_MANXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNXB_TENNXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNXB_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLNXB_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.txt_QLNXB_TENNXB = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_function = new System.Windows.Forms.Panel();
@@ -52,10 +56,6 @@
             this.txt_QLNXB_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNXB_LIENHE = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLNXB_MANXB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cln_QLNXB_MANXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNXB_TENNXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNXB_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLNXB_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNXB)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel_function.SuspendLayout();
@@ -63,16 +63,16 @@
             // 
             // dgv_QLNXB
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLNXB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_QLNXB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.dgv_QLNXB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_QLNXB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_QLNXB.ColumnHeadersHeight = 34;
             this.dgv_QLNXB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_QLNXB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -80,14 +80,14 @@
             this.cln_QLNXB_TENNXB,
             this.cln_QLNXB_LIENHE,
             this.cln_QLNXB_DIACHI});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_QLNXB.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_QLNXB.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_QLNXB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_QLNXB.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.dgv_QLNXB.Location = new System.Drawing.Point(0, 0);
@@ -121,6 +121,34 @@
             this.dgv_QLNXB.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgv_QLNXB.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgv_QLNXB.SelectionChanged += new System.EventHandler(this.dgv_QLNXB_SelectionChanged);
+            // 
+            // cln_QLNXB_MANXB
+            // 
+            this.cln_QLNXB_MANXB.DataPropertyName = "MANXB";
+            this.cln_QLNXB_MANXB.HeaderText = "Mã nhà xuất bản";
+            this.cln_QLNXB_MANXB.MinimumWidth = 6;
+            this.cln_QLNXB_MANXB.Name = "cln_QLNXB_MANXB";
+            // 
+            // cln_QLNXB_TENNXB
+            // 
+            this.cln_QLNXB_TENNXB.DataPropertyName = "TENNXB";
+            this.cln_QLNXB_TENNXB.HeaderText = "Tên nhà xuất bản";
+            this.cln_QLNXB_TENNXB.MinimumWidth = 6;
+            this.cln_QLNXB_TENNXB.Name = "cln_QLNXB_TENNXB";
+            // 
+            // cln_QLNXB_LIENHE
+            // 
+            this.cln_QLNXB_LIENHE.DataPropertyName = "LIENHE";
+            this.cln_QLNXB_LIENHE.HeaderText = "Liên hệ";
+            this.cln_QLNXB_LIENHE.MinimumWidth = 6;
+            this.cln_QLNXB_LIENHE.Name = "cln_QLNXB_LIENHE";
+            // 
+            // cln_QLNXB_DIACHI
+            // 
+            this.cln_QLNXB_DIACHI.DataPropertyName = "DIACHI";
+            this.cln_QLNXB_DIACHI.HeaderText = "Địa chỉ";
+            this.cln_QLNXB_DIACHI.MinimumWidth = 6;
+            this.cln_QLNXB_DIACHI.Name = "cln_QLNXB_DIACHI";
             // 
             // pn_QLLS_dgv
             // 
@@ -220,6 +248,7 @@
             this.txt_QLNXB_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_QLNXB_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_QLNXB_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLNXB_NhapNoiDung.Enabled = false;
             this.txt_QLNXB_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txt_QLNXB_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_QLNXB_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
@@ -241,9 +270,9 @@
             this.lbl_ccs.ForeColor = System.Drawing.Color.Red;
             this.lbl_ccs.Location = new System.Drawing.Point(922, 399);
             this.lbl_ccs.Name = "lbl_ccs";
-            this.lbl_ccs.Size = new System.Drawing.Size(158, 28);
+            this.lbl_ccs.Size = new System.Drawing.Size(146, 28);
             this.lbl_ccs.TabIndex = 55;
-            this.lbl_ccs.Text = "Nhập nội dung:";
+            this.lbl_ccs.Text = "Chọn loại tìm!";
             // 
             // cb_QLNXB_Selected
             // 
@@ -451,34 +480,6 @@
             this.txt_QLNXB_MANXB.Size = new System.Drawing.Size(291, 40);
             this.txt_QLNXB_MANXB.TabIndex = 6;
             this.txt_QLNXB_MANXB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLNXB_MANXB_KeyPress);
-            // 
-            // cln_QLNXB_MANXB
-            // 
-            this.cln_QLNXB_MANXB.DataPropertyName = "MANXB";
-            this.cln_QLNXB_MANXB.HeaderText = "Mã nhà xuất bản";
-            this.cln_QLNXB_MANXB.MinimumWidth = 6;
-            this.cln_QLNXB_MANXB.Name = "cln_QLNXB_MANXB";
-            // 
-            // cln_QLNXB_TENNXB
-            // 
-            this.cln_QLNXB_TENNXB.DataPropertyName = "TENNXB";
-            this.cln_QLNXB_TENNXB.HeaderText = "Tên nhà xuất bản";
-            this.cln_QLNXB_TENNXB.MinimumWidth = 6;
-            this.cln_QLNXB_TENNXB.Name = "cln_QLNXB_TENNXB";
-            // 
-            // cln_QLNXB_LIENHE
-            // 
-            this.cln_QLNXB_LIENHE.DataPropertyName = "LIENHE";
-            this.cln_QLNXB_LIENHE.HeaderText = "Liên hệ";
-            this.cln_QLNXB_LIENHE.MinimumWidth = 6;
-            this.cln_QLNXB_LIENHE.Name = "cln_QLNXB_LIENHE";
-            // 
-            // cln_QLNXB_DIACHI
-            // 
-            this.cln_QLNXB_DIACHI.DataPropertyName = "DIACHI";
-            this.cln_QLNXB_DIACHI.HeaderText = "Địa chỉ";
-            this.cln_QLNXB_DIACHI.MinimumWidth = 6;
-            this.cln_QLNXB_DIACHI.Name = "cln_QLNXB_DIACHI";
             // 
             // FormQuanLyNhaXuatBan
             // 
