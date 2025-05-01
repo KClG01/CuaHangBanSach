@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="KhachHang_BUS.cs" />
     <Compile Include="LoaiSach_BUS.cs" />
+    <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="NhaXuatBan_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TacGia_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDAO\AppDAO.csproj">

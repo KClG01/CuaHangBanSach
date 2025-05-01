@@ -13,5 +13,6 @@ namespace AppDTO
         public string TenTacGia { get; set; }
         public string LienHe {  get; set; }
         public string DiaChi {  get; set; }
+        public DateTime NgaySinh { get; set; }
     }
 }

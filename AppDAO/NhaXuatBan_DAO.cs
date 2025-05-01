@@ -65,7 +65,7 @@ namespace AppDAO
                 return false;
             }
         }
-        public bool XoaNhaXuatBan(int maNXB)
+        public bool XoaNhaXuatBan(string maNXB)
         {
             SqlConnection conn = DataProvider.TaoKetNoi();
             try

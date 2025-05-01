@@ -24,6 +24,7 @@ namespace AppGUI
         {
             dsNXB = nxb.dsNhaXuatBan();
             dgv_QLNXB.DataSource = dsNXB;
+            dgv_QLNXB.ClearSelection();
         }
         private void FormQuanLyNhaXuatBan_Load(object sender, EventArgs e)
         {
@@ -74,10 +75,10 @@ namespace AppGUI
             if(dgv_QLNXB.CurrentCell != null && dgv_QLNXB.CurrentRow.Index >= 0)
             {
                 int rowIndex = dgv_QLNXB.CurrentRow.Index;
-                txt_QLNXB_MANXB.Text = dsNXB[dgv_QLNXB.CurrentCell.RowIndex].MaNXB.ToString();
-                txt_QLNXB_TENNXB.Text = dsNXB[dgv_QLNXB.CurrentCell.RowIndex].TenNXB.ToString();
-                txt_QLNXB_DIACHI.Text = dsNXB[dgv_QLNXB.CurrentCell.RowIndex].DiaChi.ToString();
-                txt_QLNXB_LIENHE.Text = dsNXB[dgv_QLNXB.CurrentCell.RowIndex].LienHe.ToString();
+                txt_QLNXB_MANXB.Text = dsNXB[rowIndex].MaNXB.ToString();
+                txt_QLNXB_TENNXB.Text = dsNXB[rowIndex].TenNXB.ToString();
+                txt_QLNXB_DIACHI.Text = dsNXB[rowIndex].DiaChi.ToString();
+                txt_QLNXB_LIENHE.Text = dsNXB[rowIndex].LienHe.ToString();
                 txt_QLNXB_MANXB.Enabled = false;
             }
             else
@@ -96,10 +97,6 @@ namespace AppGUI
             {
                 layThongTin();
             }
-            else
-            {
-                nxb = null;
-            }
         }
         private void refresh()
         {
@@ -112,8 +109,8 @@ namespace AppGUI
             txt_QLNXB_DIACHI.Clear();
             txt_QLNXB_LIENHE.Clear();
             txt_QLNXB_NhapNoiDung.Clear();
-            dsNXB = nxb.dsNhaXuatBan();
-            dgv_QLNXB.DataSource = dsNXB;
+            lbl_ccs.Text = "Chọn loại tìm!";
+            txt_QLNXB_NhapNoiDung.Enabled = false;
         }
 
         private void btn_QLNXB_Re_Click(object sender, EventArgs e)
@@ -198,10 +195,9 @@ namespace AppGUI
             }
             if(MessageBox.Show("Bạn có chắc chắn muốn xóa nhà xuất bản này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             { 
-                if (nxb.XoaNhaXuatBan(int.Parse(txt_QLNXB_MANXB.Text)))
+                if (nxb.XoaNhaXuatBan(txt_QLNXB_MANXB.Text))
                 {
                     MessageBox.Show("Xóa nhà xuất bản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData();
                     refresh();
                 }
                 else
@@ -221,7 +217,7 @@ namespace AppGUI
             string keyword = txt_QLNXB_NhapNoiDung.Text.Trim();
             if (string.IsNullOrWhiteSpace(keyword))
             {
-                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập thông tin tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             List<NhaXuatBan_DTO> result = new List<NhaXuatBan_DTO>();
@@ -247,10 +243,12 @@ namespace AppGUI
         {
             if(cb_QLNXB_Selected.SelectedIndex == 0)
             {
+                txt_QLNXB_NhapNoiDung.Enabled = true;
                 lbl_ccs.Text = "Nhập mã:";
             }
             if (cb_QLNXB_Selected.SelectedIndex == 1)
             {
+                txt_QLNXB_NhapNoiDung.Enabled = true;
                 lbl_ccs.Text = "Nhập tên:";
             }
         }
