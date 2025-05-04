@@ -13,10 +13,7 @@ namespace AppDTO
         public string TenTacGia { get; set; }
         public string LienHe {  get; set; }
         public string DiaChi {  get; set; }
-<<<<<<< HEAD
         public DateTime NgaySinh { get; set; }
-=======
-        public string NgaySinh { get; set; }
->>>>>>> wMuoi50
+
     }
 }

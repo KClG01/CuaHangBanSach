@@ -295,20 +295,6 @@
             // 
             // cob_QLS_LOAISACH
             // 
-<<<<<<< HEAD
-            this.txt_QLS_LOAISACH.BackColor = System.Drawing.Color.Transparent;
-            this.txt_QLS_LOAISACH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txt_QLS_LOAISACH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txt_QLS_LOAISACH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_LOAISACH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_LOAISACH.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txt_QLS_LOAISACH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txt_QLS_LOAISACH.ItemHeight = 30;
-            this.txt_QLS_LOAISACH.Location = new System.Drawing.Point(1285, 184);
-            this.txt_QLS_LOAISACH.Name = "txt_QLS_LOAISACH";
-            this.txt_QLS_LOAISACH.Size = new System.Drawing.Size(220, 36);
-            this.txt_QLS_LOAISACH.TabIndex = 10;
-=======
             this.cob_QLS_LOAISACH.BackColor = System.Drawing.Color.Transparent;
             this.cob_QLS_LOAISACH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cob_QLS_LOAISACH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -321,7 +307,6 @@
             this.cob_QLS_LOAISACH.Name = "cob_QLS_LOAISACH";
             this.cob_QLS_LOAISACH.Size = new System.Drawing.Size(220, 36);
             this.cob_QLS_LOAISACH.TabIndex = 10;
->>>>>>> wMuoi50
             // 
             // panel_function
             // 
@@ -424,20 +409,6 @@
             // 
             // cob_QLS_Search
             // 
-<<<<<<< HEAD
-            this.cb_QLS_Selected.BackColor = System.Drawing.Color.Transparent;
-            this.cb_QLS_Selected.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_QLS_Selected.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_QLS_Selected.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_QLS_Selected.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_QLS_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_QLS_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_QLS_Selected.ItemHeight = 30;
-            this.cb_QLS_Selected.Location = new System.Drawing.Point(1135, 343);
-            this.cb_QLS_Selected.Name = "cb_QLS_Selected";
-            this.cb_QLS_Selected.Size = new System.Drawing.Size(244, 36);
-            this.cb_QLS_Selected.TabIndex = 54;
-=======
             this.cob_QLS_Search.BackColor = System.Drawing.Color.Transparent;
             this.cob_QLS_Search.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cob_QLS_Search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -455,7 +426,6 @@
             this.cob_QLS_Search.Name = "cob_QLS_Search";
             this.cob_QLS_Search.Size = new System.Drawing.Size(220, 36);
             this.cob_QLS_Search.TabIndex = 54;
->>>>>>> wMuoi50
             // 
             // label10
             // 
@@ -629,20 +599,6 @@
             // 
             // cob_QLS_TACGIA
             // 
-<<<<<<< HEAD
-            this.txt_QLS_TACGIA.BackColor = System.Drawing.Color.Transparent;
-            this.txt_QLS_TACGIA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txt_QLS_TACGIA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txt_QLS_TACGIA.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_TACGIA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_TACGIA.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txt_QLS_TACGIA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txt_QLS_TACGIA.ItemHeight = 30;
-            this.txt_QLS_TACGIA.Location = new System.Drawing.Point(749, 182);
-            this.txt_QLS_TACGIA.Name = "txt_QLS_TACGIA";
-            this.txt_QLS_TACGIA.Size = new System.Drawing.Size(278, 36);
-            this.txt_QLS_TACGIA.TabIndex = 16;
-=======
             this.cob_QLS_TACGIA.BackColor = System.Drawing.Color.Transparent;
             this.cob_QLS_TACGIA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cob_QLS_TACGIA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -655,24 +611,9 @@
             this.cob_QLS_TACGIA.Name = "cob_QLS_TACGIA";
             this.cob_QLS_TACGIA.Size = new System.Drawing.Size(220, 36);
             this.cob_QLS_TACGIA.TabIndex = 16;
->>>>>>> wMuoi50
             // 
             // cob_QLS_NXB
             // 
-<<<<<<< HEAD
-            this.txt_QLS_NXB.BackColor = System.Drawing.Color.Transparent;
-            this.txt_QLS_NXB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txt_QLS_NXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txt_QLS_NXB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_NXB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_NXB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txt_QLS_NXB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txt_QLS_NXB.ItemHeight = 30;
-            this.txt_QLS_NXB.Location = new System.Drawing.Point(281, 182);
-            this.txt_QLS_NXB.Name = "txt_QLS_NXB";
-            this.txt_QLS_NXB.Size = new System.Drawing.Size(254, 36);
-            this.txt_QLS_NXB.TabIndex = 14;
-=======
             this.cob_QLS_NXB.BackColor = System.Drawing.Color.Transparent;
             this.cob_QLS_NXB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cob_QLS_NXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -685,7 +626,6 @@
             this.cob_QLS_NXB.Name = "cob_QLS_NXB";
             this.cob_QLS_NXB.Size = new System.Drawing.Size(220, 36);
             this.cob_QLS_NXB.TabIndex = 14;
->>>>>>> wMuoi50
             // 
             // txt_QLS_MASP
             // 

@@ -334,30 +334,11 @@
             this.btn_QLHD_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Search.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.btn_QLHD_Search.Location = new System.Drawing.Point(1389, 401);
-=======
-            this.btn_QLHD_Search.Location = new System.Drawing.Point(1308, 314);
->>>>>>> wMuoi50
+            this.btn_QLHD_Search.Location = new System.Drawing.Point(0, 0);
             this.btn_QLHD_Search.Name = "btn_QLHD_Search";
             this.btn_QLHD_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLHD_Search.TabIndex = 0;
             this.btn_QLHD_Search.Text = "Tìm kiếm";
-<<<<<<< HEAD
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1093, 208);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 28);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Thành tiền:";
-=======
-            this.btn_QLHD_Search.Click += new System.EventHandler(this.btn_QLHD_Search_Click);
->>>>>>> wMuoi50
             // 
             // btn_QLHD_Del
             // 
@@ -372,21 +353,6 @@
             this.btn_QLHD_Del.Size = new System.Drawing.Size(150, 60);
             this.btn_QLHD_Del.TabIndex = 3;
             this.btn_QLHD_Del.Text = "Xóa";
-<<<<<<< HEAD
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(612, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 28);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Tiền thối:";
-=======
-            this.btn_QLHD_Del.Click += new System.EventHandler(this.btn_QLHD_Del_Click);
->>>>>>> wMuoi50
             // 
             // btn_QLHD_Edit
             // 
@@ -462,57 +428,6 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Mã hóa đơn:";
             // 
-<<<<<<< HEAD
-            // txt_QLHD_THANHTIEN
-            // 
-            this.txt_QLHD_THANHTIEN.Animated = true;
-            this.txt_QLHD_THANHTIEN.BorderRadius = 2;
-            this.txt_QLHD_THANHTIEN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_QLHD_THANHTIEN.DefaultText = "";
-            this.txt_QLHD_THANHTIEN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_QLHD_THANHTIEN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_QLHD_THANHTIEN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_THANHTIEN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_THANHTIEN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txt_QLHD_THANHTIEN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_THANHTIEN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txt_QLHD_THANHTIEN.ForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_THANHTIEN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_THANHTIEN.Location = new System.Drawing.Point(1243, 204);
-            this.txt_QLHD_THANHTIEN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txt_QLHD_THANHTIEN.Name = "txt_QLHD_THANHTIEN";
-            this.txt_QLHD_THANHTIEN.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_THANHTIEN.PlaceholderText = "Thành tiền";
-            this.txt_QLHD_THANHTIEN.SelectedText = "";
-            this.txt_QLHD_THANHTIEN.Size = new System.Drawing.Size(266, 40);
-            this.txt_QLHD_THANHTIEN.TabIndex = 13;
-            // 
-            // txt_QLHD_TIENTRA
-            // 
-            this.txt_QLHD_TIENTRA.Animated = true;
-            this.txt_QLHD_TIENTRA.BorderRadius = 2;
-            this.txt_QLHD_TIENTRA.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_QLHD_TIENTRA.DefaultText = "";
-            this.txt_QLHD_TIENTRA.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_QLHD_TIENTRA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_QLHD_TIENTRA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_TIENTRA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_TIENTRA.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txt_QLHD_TIENTRA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENTRA.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txt_QLHD_TIENTRA.ForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_TIENTRA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENTRA.Location = new System.Drawing.Point(736, 204);
-            this.txt_QLHD_TIENTRA.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txt_QLHD_TIENTRA.Name = "txt_QLHD_TIENTRA";
-            this.txt_QLHD_TIENTRA.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_TIENTRA.PlaceholderText = "Tiền thối";
-            this.txt_QLHD_TIENTRA.SelectedText = "";
-            this.txt_QLHD_TIENTRA.Size = new System.Drawing.Size(277, 40);
-            this.txt_QLHD_TIENTRA.TabIndex = 12;
-            // 
-=======
->>>>>>> wMuoi50
             // dtp_QLHD_NGAYTAO
             // 
             this.dtp_QLHD_NGAYTAO.Animated = true;
@@ -552,33 +467,6 @@
             this.txt_QLHD_MAKH.Size = new System.Drawing.Size(266, 40);
             this.txt_QLHD_MAKH.TabIndex = 10;
             // 
-<<<<<<< HEAD
-            // txt_QLHD_TIENNHAN
-            // 
-            this.txt_QLHD_TIENNHAN.Animated = true;
-            this.txt_QLHD_TIENNHAN.BorderRadius = 2;
-            this.txt_QLHD_TIENNHAN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_QLHD_TIENNHAN.DefaultText = "";
-            this.txt_QLHD_TIENNHAN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_QLHD_TIENNHAN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_QLHD_TIENNHAN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_TIENNHAN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_QLHD_TIENNHAN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txt_QLHD_TIENNHAN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENNHAN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txt_QLHD_TIENNHAN.ForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_TIENNHAN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENNHAN.Location = new System.Drawing.Point(232, 204);
-            this.txt_QLHD_TIENNHAN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txt_QLHD_TIENNHAN.Name = "txt_QLHD_TIENNHAN";
-            this.txt_QLHD_TIENNHAN.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txt_QLHD_TIENNHAN.PlaceholderText = "Tiền nhận";
-            this.txt_QLHD_TIENNHAN.SelectedText = "";
-            this.txt_QLHD_TIENNHAN.Size = new System.Drawing.Size(283, 40);
-            this.txt_QLHD_TIENNHAN.TabIndex = 8;
-            // 
-=======
->>>>>>> wMuoi50
             // txt_QLHD_MANV
             // 
             this.txt_QLHD_MANV.Animated = true;

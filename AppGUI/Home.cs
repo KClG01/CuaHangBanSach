@@ -277,26 +277,26 @@ namespace AppGUI
         }
 
         //Xuất lên home form bán sách
-        private void btn_Main_fnc_bansach_Click(object sender, EventArgs e)
-        {
-            lbl_Main_formTitle.Text = "Thống kê";
-            if(formSell == null)
-            {
-                formSell = new FormBanSach();
-                formSell.FormClosed += formSell_FormClosed;
-                formSell.MdiParent = this;
-                formSell.Dock = DockStyle.Fill;
-                formSell.Show();
-            }
-            else
-            {
-                formSell.Activate();
-            }
-        }
+        //private void btn_Main_fnc_bansach_Click(object sender, EventArgs e)
+        //{
+        //    lbl_Main_formTitle.Text = "Thống kê";
+        //    if(formSell == null)
+        //    {
+        //        formSell = new FormBanSach();
+        //        formSell.FormClosed += formSell_FormClosed;
+        //        formSell.MdiParent = this;
+        //        formSell.Dock = DockStyle.Fill;
+        //        formSell.Show();
+        //    }
+        //    else
+        //    {
+        //        formSell.Activate();
+        //    }
+        //}
 
-        private void formSell_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            formSell = null;
-        }
+        //private void formSell_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    formSell = null;
+        //}
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_CT_HOADON = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -41,6 +41,7 @@
             this.cln_QLHD_TIENTRA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_function = new System.Windows.Forms.Panel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txt_CTHD_KM = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cob_CTHD_TENSP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_CT_HOADON_TT = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,14 +64,13 @@
             this.txt_QLHD_MAKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLHD_MANV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLHD_MAHD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_CTHD_KM = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CT_HOADON)).BeginInit();
             this.panel_function.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CT_HOADON_SL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CTHD_KM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CT_HOADON_SL)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_QLLS_dgv
@@ -94,16 +94,16 @@
             // 
             // dgv_CT_HOADON
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_CT_HOADON.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_CT_HOADON.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.dgv_CT_HOADON.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_CT_HOADON.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_CT_HOADON.ColumnHeadersHeight = 34;
             this.dgv_CT_HOADON.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_CT_HOADON.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -112,14 +112,14 @@
             this.cln_QLHD_NGAYBAN,
             this.cln_QLHD_TIENNHAN,
             this.cln_QLHD_TIENTRA});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_CT_HOADON.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_CT_HOADON.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_CT_HOADON.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_CT_HOADON.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.dgv_CT_HOADON.Location = new System.Drawing.Point(0, 433);
@@ -240,6 +240,18 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(1704, 157);
             this.guna2GroupBox1.TabIndex = 50;
             this.guna2GroupBox1.Text = "Thông tin sản phấm";
+            // 
+            // txt_CTHD_KM
+            // 
+            this.txt_CTHD_KM.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CTHD_KM.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_CTHD_KM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_CTHD_KM.Location = new System.Drawing.Point(1448, 60);
+            this.txt_CTHD_KM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_CTHD_KM.Name = "txt_CTHD_KM";
+            this.txt_CTHD_KM.Size = new System.Drawing.Size(220, 40);
+            this.txt_CTHD_KM.TabIndex = 61;
+            this.txt_CTHD_KM.ValueChanged += new System.EventHandler(this.txt_CTHD_KM_ValueChanged);
             // 
             // cob_CTHD_TENSP
             // 
@@ -594,18 +606,6 @@
             this.txt_QLHD_MAHD.Size = new System.Drawing.Size(220, 40);
             this.txt_QLHD_MAHD.TabIndex = 6;
             // 
-            // txt_CTHD_KM
-            // 
-            this.txt_CTHD_KM.BackColor = System.Drawing.Color.Transparent;
-            this.txt_CTHD_KM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_CTHD_KM.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_CTHD_KM.Location = new System.Drawing.Point(1448, 60);
-            this.txt_CTHD_KM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_CTHD_KM.Name = "txt_CTHD_KM";
-            this.txt_CTHD_KM.Size = new System.Drawing.Size(220, 40);
-            this.txt_CTHD_KM.TabIndex = 61;
-            this.txt_CTHD_KM.ValueChanged += new System.EventHandler(this.txt_CTHD_KM_ValueChanged);
-            // 
             // frm_Edit_HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -622,8 +622,8 @@
             this.panel_function.PerformLayout();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CT_HOADON_SL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CTHD_KM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_CT_HOADON_SL)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtTongTienBan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSoLuongBan = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtTonKho = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongKe)).BeginInit();
             this.panel1.SuspendLayout();
@@ -115,6 +115,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lượng bán";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(41, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 28);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Thành tiền:";
             // 
             // txtTongTienBan
             // 
@@ -196,16 +206,6 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Bảng Thống Kê";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(41, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 28);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Thành tiền:";
             // 
             // FormThongKe
             // 

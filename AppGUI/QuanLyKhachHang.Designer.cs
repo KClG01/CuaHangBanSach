@@ -76,15 +76,9 @@
             this.dtp_QLKH_NGAYTAO.FillColor = System.Drawing.Color.White;
             this.dtp_QLKH_NGAYTAO.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp_QLKH_NGAYTAO.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-<<<<<<< HEAD
-            this.dtp_QLKH_NGAYTAO.Location = new System.Drawing.Point(1263, 109);
+            this.dtp_QLKH_NGAYTAO.Location = new System.Drawing.Point(0, 0);
             this.dtp_QLKH_NGAYTAO.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_QLKH_NGAYTAO.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-=======
-            this.dtp_QLKH_NGAYTAO.Location = new System.Drawing.Point(1107, 109);
-            this.dtp_QLKH_NGAYTAO.MaxDate = new System.DateTime(2025, 5, 3, 0, 0, 0, 0);
-            this.dtp_QLKH_NGAYTAO.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
->>>>>>> wMuoi50
             this.dtp_QLKH_NGAYTAO.Name = "dtp_QLKH_NGAYTAO";
             this.dtp_QLKH_NGAYTAO.Size = new System.Drawing.Size(261, 40);
             this.dtp_QLKH_NGAYTAO.TabIndex = 11;

@@ -233,7 +233,6 @@
             this.btn_Main_fnc_bansach.Text = "     Bán sách";
             this.btn_Main_fnc_bansach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Main_fnc_bansach.Visible = false;
-            this.btn_Main_fnc_bansach.Click += new System.EventHandler(this.btn_Main_fnc_bansach_Click);
             // 
             // btn_Main_fnc_thongke
             // 

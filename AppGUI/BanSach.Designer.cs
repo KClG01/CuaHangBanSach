@@ -60,6 +60,7 @@
             this.cln_SELL_TIENTRA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_SELL_THANHTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_function = new System.Windows.Forms.Panel();
+            this.btn_HoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_SELL_DONGIA = new Guna.UI2.WinForms.Guna2TextBox();
             this.nb_SELL_SOLUONG = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -69,7 +70,6 @@
             this.cb_SELL_KHACHHANG = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cb_SELL_NHANVIEN = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_SELL_Re = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_HoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SELL)).BeginInit();
@@ -497,6 +497,22 @@
             this.panel_function.Name = "panel_function";
             this.panel_function.Size = new System.Drawing.Size(1601, 455);
             this.panel_function.TabIndex = 10;
+            this.panel_function.Visible = false;
+            // 
+            // btn_HoaDon
+            // 
+            this.btn_HoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_HoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_HoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_HoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_HoaDon.FillColor = System.Drawing.Color.LimeGreen;
+            this.btn_HoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_HoaDon.Location = new System.Drawing.Point(1256, 351);
+            this.btn_HoaDon.Name = "btn_HoaDon";
+            this.btn_HoaDon.Size = new System.Drawing.Size(150, 60);
+            this.btn_HoaDon.TabIndex = 51;
+            this.btn_HoaDon.Text = "Lập hóa đơn";
             // 
             // label13
             // 
@@ -627,21 +643,6 @@
             this.btn_SELL_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_SELL_Re.TabIndex = 35;
             this.btn_SELL_Re.Text = "Tạo mới";
-            // 
-            // btn_HoaDon
-            // 
-            this.btn_HoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_HoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_HoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_HoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_HoaDon.FillColor = System.Drawing.Color.LimeGreen;
-            this.btn_HoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_HoaDon.Location = new System.Drawing.Point(1256, 351);
-            this.btn_HoaDon.Name = "btn_HoaDon";
-            this.btn_HoaDon.Size = new System.Drawing.Size(150, 60);
-            this.btn_HoaDon.TabIndex = 51;
-            this.btn_HoaDon.Text = "Lập hóa đơn";
             // 
             // FormBanSach
             // 
