@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CT_HoaDon_BUS.cs" />
+    <Compile Include="HoaDon_BUS.cs" />
     <Compile Include="KhachHang_BUS.cs" />
     <Compile Include="LoaiSach_BUS.cs" />
     <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="NhaXuatBan_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="TacGia_BUS.cs" />
+=======
+    <Compile Include="SanPham_BUS.cs" />
+>>>>>>> wMuoi50
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDAO\AppDAO.csproj">

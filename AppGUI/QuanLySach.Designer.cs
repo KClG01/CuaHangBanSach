@@ -35,22 +35,22 @@
             this.dgv_QLS = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cln_QLS_MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLS_TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLS_NXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLS_TACGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLS_LOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLS_NXB = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.cln_QLS_TACGIA = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.cln_QLS_LOAI = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.cln_QLS_GIANHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLS_GIABAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLS_SLTON = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_QLS_TENSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLS_GIABAN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLS_GIANHAP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_QLS_LOAISACH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cob_QLS_LOAISACH = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel_function = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_QLS_Re = new Guna.UI2.WinForms.Guna2Button();
             this.txt_QLS_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.cb_QLS_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cob_QLS_Search = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_QLS_Del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLS_Search = new Guna.UI2.WinForms.Guna2Button();
@@ -65,8 +65,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_QLS_SLTON = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.txt_QLS_TACGIA = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txt_QLS_NXB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cob_QLS_TACGIA = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cob_QLS_NXB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_QLS_MASP = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_QLS_dgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLS)).BeginInit();
@@ -146,6 +146,7 @@
             this.dgv_QLS.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_QLS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgv_QLS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLS_CellClick);
             // 
             // cln_QLS_MASP
             // 
@@ -153,6 +154,7 @@
             this.cln_QLS_MASP.HeaderText = "Mã sách";
             this.cln_QLS_MASP.MinimumWidth = 6;
             this.cln_QLS_MASP.Name = "cln_QLS_MASP";
+            this.cln_QLS_MASP.ReadOnly = true;
             // 
             // cln_QLS_TENSP
             // 
@@ -160,27 +162,41 @@
             this.cln_QLS_TENSP.HeaderText = "Tên sách";
             this.cln_QLS_TENSP.MinimumWidth = 6;
             this.cln_QLS_TENSP.Name = "cln_QLS_TENSP";
+            this.cln_QLS_TENSP.ReadOnly = true;
             // 
             // cln_QLS_NXB
             // 
-            this.cln_QLS_NXB.DataPropertyName = "MA_NXB";
+            this.cln_QLS_NXB.DataPropertyName = "MaNXB";
+            this.cln_QLS_NXB.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.cln_QLS_NXB.HeaderText = "Nhà xuất bản";
             this.cln_QLS_NXB.MinimumWidth = 6;
             this.cln_QLS_NXB.Name = "cln_QLS_NXB";
+            this.cln_QLS_NXB.ReadOnly = true;
+            this.cln_QLS_NXB.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cln_QLS_NXB.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // cln_QLS_TACGIA
             // 
-            this.cln_QLS_TACGIA.DataPropertyName = "MA_TACGIA";
+            this.cln_QLS_TACGIA.DataPropertyName = "MaTacGia";
+            this.cln_QLS_TACGIA.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.cln_QLS_TACGIA.HeaderText = "Tác giả";
             this.cln_QLS_TACGIA.MinimumWidth = 6;
             this.cln_QLS_TACGIA.Name = "cln_QLS_TACGIA";
+            this.cln_QLS_TACGIA.ReadOnly = true;
+            this.cln_QLS_TACGIA.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cln_QLS_TACGIA.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // cln_QLS_LOAI
             // 
-            this.cln_QLS_LOAI.DataPropertyName = "MA_LOAI";
+            this.cln_QLS_LOAI.DataPropertyName = "MaLoai";
+            this.cln_QLS_LOAI.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.cln_QLS_LOAI.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cln_QLS_LOAI.HeaderText = "Loại";
             this.cln_QLS_LOAI.MinimumWidth = 6;
             this.cln_QLS_LOAI.Name = "cln_QLS_LOAI";
+            this.cln_QLS_LOAI.ReadOnly = true;
+            this.cln_QLS_LOAI.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cln_QLS_LOAI.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // cln_QLS_GIANHAP
             // 
@@ -188,6 +204,7 @@
             this.cln_QLS_GIANHAP.HeaderText = "Giá nhập";
             this.cln_QLS_GIANHAP.MinimumWidth = 6;
             this.cln_QLS_GIANHAP.Name = "cln_QLS_GIANHAP";
+            this.cln_QLS_GIANHAP.ReadOnly = true;
             // 
             // cln_QLS_GIABAN
             // 
@@ -195,6 +212,7 @@
             this.cln_QLS_GIABAN.HeaderText = "Giá bán";
             this.cln_QLS_GIABAN.MinimumWidth = 6;
             this.cln_QLS_GIABAN.Name = "cln_QLS_GIABAN";
+            this.cln_QLS_GIABAN.ReadOnly = true;
             // 
             // cln_QLS_SLTON
             // 
@@ -202,6 +220,7 @@
             this.cln_QLS_SLTON.HeaderText = "Số lượng tồn";
             this.cln_QLS_SLTON.MinimumWidth = 6;
             this.cln_QLS_SLTON.Name = "cln_QLS_SLTON";
+            this.cln_QLS_SLTON.ReadOnly = true;
             // 
             // txt_QLS_TENSP
             // 
@@ -248,6 +267,7 @@
             this.txt_QLS_GIABAN.SelectedText = "";
             this.txt_QLS_GIABAN.Size = new System.Drawing.Size(278, 40);
             this.txt_QLS_GIABAN.TabIndex = 12;
+            this.txt_QLS_GIABAN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLS_GIABAN_KeyPress);
             // 
             // txt_QLS_GIANHAP
             // 
@@ -271,9 +291,11 @@
             this.txt_QLS_GIANHAP.SelectedText = "";
             this.txt_QLS_GIANHAP.Size = new System.Drawing.Size(254, 40);
             this.txt_QLS_GIANHAP.TabIndex = 11;
+            this.txt_QLS_GIANHAP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLS_GIANHAP_KeyPress);
             // 
-            // txt_QLS_LOAISACH
+            // cob_QLS_LOAISACH
             // 
+<<<<<<< HEAD
             this.txt_QLS_LOAISACH.BackColor = System.Drawing.Color.Transparent;
             this.txt_QLS_LOAISACH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_QLS_LOAISACH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -286,6 +308,20 @@
             this.txt_QLS_LOAISACH.Name = "txt_QLS_LOAISACH";
             this.txt_QLS_LOAISACH.Size = new System.Drawing.Size(220, 36);
             this.txt_QLS_LOAISACH.TabIndex = 10;
+=======
+            this.cob_QLS_LOAISACH.BackColor = System.Drawing.Color.Transparent;
+            this.cob_QLS_LOAISACH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cob_QLS_LOAISACH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cob_QLS_LOAISACH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_LOAISACH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_LOAISACH.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cob_QLS_LOAISACH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cob_QLS_LOAISACH.ItemHeight = 30;
+            this.cob_QLS_LOAISACH.Location = new System.Drawing.Point(1135, 184);
+            this.cob_QLS_LOAISACH.Name = "cob_QLS_LOAISACH";
+            this.cob_QLS_LOAISACH.Size = new System.Drawing.Size(220, 36);
+            this.cob_QLS_LOAISACH.TabIndex = 10;
+>>>>>>> wMuoi50
             // 
             // panel_function
             // 
@@ -294,7 +330,7 @@
             this.panel_function.Controls.Add(this.btn_QLS_Re);
             this.panel_function.Controls.Add(this.txt_QLS_NhapNoiDung);
             this.panel_function.Controls.Add(this.label9);
-            this.panel_function.Controls.Add(this.cb_QLS_Selected);
+            this.panel_function.Controls.Add(this.cob_QLS_Search);
             this.panel_function.Controls.Add(this.label10);
             this.panel_function.Controls.Add(this.btn_QLS_Del);
             this.panel_function.Controls.Add(this.btn_QLS_Search);
@@ -309,11 +345,11 @@
             this.panel_function.Controls.Add(this.label2);
             this.panel_function.Controls.Add(this.label1);
             this.panel_function.Controls.Add(this.txt_QLS_SLTON);
-            this.panel_function.Controls.Add(this.txt_QLS_TACGIA);
-            this.panel_function.Controls.Add(this.txt_QLS_NXB);
+            this.panel_function.Controls.Add(this.cob_QLS_TACGIA);
+            this.panel_function.Controls.Add(this.cob_QLS_NXB);
             this.panel_function.Controls.Add(this.txt_QLS_GIABAN);
             this.panel_function.Controls.Add(this.txt_QLS_GIANHAP);
-            this.panel_function.Controls.Add(this.txt_QLS_LOAISACH);
+            this.panel_function.Controls.Add(this.cob_QLS_LOAISACH);
             this.panel_function.Controls.Add(this.txt_QLS_TENSP);
             this.panel_function.Controls.Add(this.txt_QLS_MASP);
             this.panel_function.Dock = System.Windows.Forms.DockStyle.Top;
@@ -348,7 +384,8 @@
             this.btn_QLS_Re.Name = "btn_QLS_Re";
             this.btn_QLS_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_QLS_Re.TabIndex = 57;
-            this.btn_QLS_Re.Text = "Tạo mới";
+            this.btn_QLS_Re.Text = "Reset";
+            this.btn_QLS_Re.Click += new System.EventHandler(this.btn_QLS_Re_Click);
             // 
             // txt_QLS_NhapNoiDung
             // 
@@ -385,8 +422,9 @@
             this.label9.TabIndex = 55;
             this.label9.Text = "Nhập nội dung:";
             // 
-            // cb_QLS_Selected
+            // cob_QLS_Search
             // 
+<<<<<<< HEAD
             this.cb_QLS_Selected.BackColor = System.Drawing.Color.Transparent;
             this.cb_QLS_Selected.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cb_QLS_Selected.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -399,6 +437,25 @@
             this.cb_QLS_Selected.Name = "cb_QLS_Selected";
             this.cb_QLS_Selected.Size = new System.Drawing.Size(244, 36);
             this.cb_QLS_Selected.TabIndex = 54;
+=======
+            this.cob_QLS_Search.BackColor = System.Drawing.Color.Transparent;
+            this.cob_QLS_Search.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cob_QLS_Search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cob_QLS_Search.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_Search.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cob_QLS_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cob_QLS_Search.ItemHeight = 30;
+            this.cob_QLS_Search.Items.AddRange(new object[] {
+            "Tên Sách ",
+            "Nhà Xuất Bản ",
+            "Tác Giả",
+            "Loại Sách "});
+            this.cob_QLS_Search.Location = new System.Drawing.Point(1135, 343);
+            this.cob_QLS_Search.Name = "cob_QLS_Search";
+            this.cob_QLS_Search.Size = new System.Drawing.Size(220, 36);
+            this.cob_QLS_Search.TabIndex = 54;
+>>>>>>> wMuoi50
             // 
             // label10
             // 
@@ -424,6 +481,7 @@
             this.btn_QLS_Del.Size = new System.Drawing.Size(150, 60);
             this.btn_QLS_Del.TabIndex = 52;
             this.btn_QLS_Del.Text = "Xóa";
+            this.btn_QLS_Del.Click += new System.EventHandler(this.btn_QLS_Del_Click);
             // 
             // btn_QLS_Search
             // 
@@ -438,6 +496,7 @@
             this.btn_QLS_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLS_Search.TabIndex = 49;
             this.btn_QLS_Search.Text = "Tìm kiếm";
+            this.btn_QLS_Search.Click += new System.EventHandler(this.btn_QLS_Search_Click);
             // 
             // btn_QLS_Edit
             // 
@@ -452,6 +511,7 @@
             this.btn_QLS_Edit.Size = new System.Drawing.Size(150, 60);
             this.btn_QLS_Edit.TabIndex = 51;
             this.btn_QLS_Edit.Text = "Sửa";
+            this.btn_QLS_Edit.Click += new System.EventHandler(this.btn_QLS_Edit_Click);
             // 
             // btn_QLS_Add
             // 
@@ -466,6 +526,7 @@
             this.btn_QLS_Add.Size = new System.Drawing.Size(150, 60);
             this.btn_QLS_Add.TabIndex = 50;
             this.btn_QLS_Add.Text = "Thêm";
+            this.btn_QLS_Add.Click += new System.EventHandler(this.btn_QLS_Add_Click);
             // 
             // label8
             // 
@@ -566,8 +627,9 @@
             this.txt_QLS_SLTON.Size = new System.Drawing.Size(220, 40);
             this.txt_QLS_SLTON.TabIndex = 23;
             // 
-            // txt_QLS_TACGIA
+            // cob_QLS_TACGIA
             // 
+<<<<<<< HEAD
             this.txt_QLS_TACGIA.BackColor = System.Drawing.Color.Transparent;
             this.txt_QLS_TACGIA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_QLS_TACGIA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -580,9 +642,24 @@
             this.txt_QLS_TACGIA.Name = "txt_QLS_TACGIA";
             this.txt_QLS_TACGIA.Size = new System.Drawing.Size(278, 36);
             this.txt_QLS_TACGIA.TabIndex = 16;
+=======
+            this.cob_QLS_TACGIA.BackColor = System.Drawing.Color.Transparent;
+            this.cob_QLS_TACGIA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cob_QLS_TACGIA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cob_QLS_TACGIA.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_TACGIA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_TACGIA.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cob_QLS_TACGIA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cob_QLS_TACGIA.ItemHeight = 30;
+            this.cob_QLS_TACGIA.Location = new System.Drawing.Point(693, 182);
+            this.cob_QLS_TACGIA.Name = "cob_QLS_TACGIA";
+            this.cob_QLS_TACGIA.Size = new System.Drawing.Size(220, 36);
+            this.cob_QLS_TACGIA.TabIndex = 16;
+>>>>>>> wMuoi50
             // 
-            // txt_QLS_NXB
+            // cob_QLS_NXB
             // 
+<<<<<<< HEAD
             this.txt_QLS_NXB.BackColor = System.Drawing.Color.Transparent;
             this.txt_QLS_NXB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_QLS_NXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -595,6 +672,20 @@
             this.txt_QLS_NXB.Name = "txt_QLS_NXB";
             this.txt_QLS_NXB.Size = new System.Drawing.Size(254, 36);
             this.txt_QLS_NXB.TabIndex = 14;
+=======
+            this.cob_QLS_NXB.BackColor = System.Drawing.Color.Transparent;
+            this.cob_QLS_NXB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cob_QLS_NXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cob_QLS_NXB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_NXB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cob_QLS_NXB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cob_QLS_NXB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cob_QLS_NXB.ItemHeight = 30;
+            this.cob_QLS_NXB.Location = new System.Drawing.Point(281, 182);
+            this.cob_QLS_NXB.Name = "cob_QLS_NXB";
+            this.cob_QLS_NXB.Size = new System.Drawing.Size(220, 36);
+            this.cob_QLS_NXB.TabIndex = 14;
+>>>>>>> wMuoi50
             // 
             // txt_QLS_MASP
             // 
@@ -628,6 +719,7 @@
             this.Controls.Add(this.panel_function);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLySach";
+            this.Load += new System.EventHandler(this.FormQuanLySach_Load);
             this.pn_QLS_dgv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLS)).EndInit();
             this.panel_function.ResumeLayout(false);
@@ -643,19 +735,11 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_QLS_TENSP;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLS_GIABAN;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLS_GIANHAP;
-        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_LOAISACH;
+        private Guna.UI2.WinForms.Guna2ComboBox cob_QLS_LOAISACH;
         private System.Windows.Forms.Panel panel_function;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLS_MASP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_MASP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_TENSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_NXB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_TACGIA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_LOAI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIANHAP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIABAN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_SLTON;
-        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_TACGIA;
-        private Guna.UI2.WinForms.Guna2ComboBox txt_QLS_NXB;
+        private Guna.UI2.WinForms.Guna2ComboBox cob_QLS_TACGIA;
+        private Guna.UI2.WinForms.Guna2ComboBox cob_QLS_NXB;
         private Guna.UI2.WinForms.Guna2NumericUpDown txt_QLS_SLTON;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -668,12 +752,20 @@
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Re;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLS_NhapNoiDung;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_QLS_Selected;
+        private Guna.UI2.WinForms.Guna2ComboBox cob_QLS_Search;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Del;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Search;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Edit;
         private Guna.UI2.WinForms.Guna2Button btn_QLS_Add;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_MASP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_TENSP;
+        private System.Windows.Forms.DataGridViewComboBoxColumn cln_QLS_NXB;
+        private System.Windows.Forms.DataGridViewComboBoxColumn cln_QLS_TACGIA;
+        private System.Windows.Forms.DataGridViewComboBoxColumn cln_QLS_LOAI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIANHAP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_GIABAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLS_SLTON;
     }
 }

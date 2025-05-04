@@ -41,13 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CT_HoaDon_DAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="HoaDon_DAO.cs" />
     <Compile Include="KhachHang_DAO.cs" />
     <Compile Include="LoaiSach_DAO.cs" />
     <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="NhaXuatBan_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="TacGia_DAO.cs" />
+=======
+    <Compile Include="SanPham_DAO.cs" />
+>>>>>>> wMuoi50
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDTO\AppDTO.csproj">

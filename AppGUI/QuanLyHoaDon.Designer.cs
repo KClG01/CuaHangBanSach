@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgv_QLKH = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgv_QLHD = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cln_QLHD_MAHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLHD_MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_QLHD_MAKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,33 +49,27 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btn_QLHD_Re = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLHD_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.btn_QLHD_Del = new Guna.UI2.WinForms.Guna2Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.btn_QLHD_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.btn_QLHD_Add = new Guna.UI2.WinForms.Guna2Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_QLHD_THANHTIEN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_QLHD_TIENTRA = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtp_QLHD_NGAYTAO = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_QLHD_MAKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_QLHD_TIENNHAN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLHD_MANV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLHD_MAHD = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLKH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLHD)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_function.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgv_QLKH
+            // dgv_QLHD
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_QLHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,10 +77,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_QLKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_QLKH.ColumnHeadersHeight = 34;
-            this.dgv_QLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_QLHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_QLHD.ColumnHeadersHeight = 34;
+            this.dgv_QLHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cln_QLHD_MAHD,
             this.cln_QLHD_MANV,
             this.cln_QLHD_MAKH,
@@ -101,40 +95,41 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_QLKH.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_QLKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_QLKH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.Location = new System.Drawing.Point(0, 467);
-            this.dgv_QLKH.MultiSelect = false;
-            this.dgv_QLKH.Name = "dgv_QLKH";
-            this.dgv_QLKH.ReadOnly = true;
-            this.dgv_QLKH.RowHeadersVisible = false;
-            this.dgv_QLKH.RowHeadersWidth = 51;
-            this.dgv_QLKH.RowTemplate.Height = 24;
-            this.dgv_QLKH.Size = new System.Drawing.Size(1601, 573);
-            this.dgv_QLKH.TabIndex = 0;
-            this.dgv_QLKH.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_QLKH.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_QLKH.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_QLKH.ThemeStyle.HeaderStyle.Height = 34;
-            this.dgv_QLKH.ThemeStyle.ReadOnly = true;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLHD.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_QLHD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_QLHD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_QLHD.Location = new System.Drawing.Point(0, 467);
+            this.dgv_QLHD.MultiSelect = false;
+            this.dgv_QLHD.Name = "dgv_QLHD";
+            this.dgv_QLHD.ReadOnly = true;
+            this.dgv_QLHD.RowHeadersVisible = false;
+            this.dgv_QLHD.RowHeadersWidth = 51;
+            this.dgv_QLHD.RowTemplate.Height = 24;
+            this.dgv_QLHD.Size = new System.Drawing.Size(1601, 573);
+            this.dgv_QLHD.TabIndex = 0;
+            this.dgv_QLHD.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
+            this.dgv_QLHD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.dgv_QLHD.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_QLHD.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLHD.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_QLHD.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_QLHD.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_QLHD.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_QLHD.ThemeStyle.HeaderStyle.Height = 34;
+            this.dgv_QLHD.ThemeStyle.ReadOnly = true;
+            this.dgv_QLHD.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            this.dgv_QLHD.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_QLHD.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_QLHD.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgv_QLHD.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_QLHD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            this.dgv_QLHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLHD_CellClick);
             // 
             // cln_QLHD_MAHD
             // 
@@ -203,7 +198,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dgv_QLKH);
+            this.panel1.Controls.Add(this.dgv_QLHD);
             this.panel1.Controls.Add(this.panel_function);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -221,21 +216,15 @@
             this.panel_function.Controls.Add(this.label8);
             this.panel_function.Controls.Add(this.btn_QLHD_Re);
             this.panel_function.Controls.Add(this.btn_QLHD_Search);
-            this.panel_function.Controls.Add(this.label7);
             this.panel_function.Controls.Add(this.btn_QLHD_Del);
-            this.panel_function.Controls.Add(this.label6);
             this.panel_function.Controls.Add(this.btn_QLHD_Edit);
             this.panel_function.Controls.Add(this.btn_QLHD_Add);
-            this.panel_function.Controls.Add(this.label5);
             this.panel_function.Controls.Add(this.label4);
             this.panel_function.Controls.Add(this.label3);
             this.panel_function.Controls.Add(this.label2);
             this.panel_function.Controls.Add(this.label1);
-            this.panel_function.Controls.Add(this.txt_QLHD_THANHTIEN);
-            this.panel_function.Controls.Add(this.txt_QLHD_TIENTRA);
             this.panel_function.Controls.Add(this.dtp_QLHD_NGAYTAO);
             this.panel_function.Controls.Add(this.txt_QLHD_MAKH);
-            this.panel_function.Controls.Add(this.txt_QLHD_TIENNHAN);
             this.panel_function.Controls.Add(this.txt_QLHD_MANV);
             this.panel_function.Controls.Add(this.txt_QLHD_MAHD);
             this.panel_function.Dock = System.Windows.Forms.DockStyle.Top;
@@ -272,7 +261,7 @@
             this.txt_QLHD_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_NhapNoiDung.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_NhapNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_NhapNoiDung.Location = new System.Drawing.Point(1089, 401);
+            this.txt_QLHD_NhapNoiDung.Location = new System.Drawing.Point(1082, 314);
             this.txt_QLHD_NhapNoiDung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_NhapNoiDung.Name = "txt_QLHD_NhapNoiDung";
             this.txt_QLHD_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -286,7 +275,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(904, 404);
+            this.label9.Location = new System.Drawing.Point(897, 317);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(158, 28);
             this.label9.TabIndex = 38;
@@ -302,7 +291,11 @@
             this.cb_QLHD_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_QLHD_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_QLHD_Selected.ItemHeight = 30;
-            this.cb_QLHD_Selected.Location = new System.Drawing.Point(1089, 327);
+            this.cb_QLHD_Selected.Items.AddRange(new object[] {
+            "Mã Hóa Đơn",
+            "Mã Nhân Viên",
+            "Mã Khách Hàng"});
+            this.cb_QLHD_Selected.Location = new System.Drawing.Point(1082, 243);
             this.cb_QLHD_Selected.Name = "cb_QLHD_Selected";
             this.cb_QLHD_Selected.Size = new System.Drawing.Size(294, 36);
             this.cb_QLHD_Selected.TabIndex = 37;
@@ -312,7 +305,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(904, 330);
+            this.label8.Location = new System.Drawing.Point(897, 243);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 28);
             this.label8.TabIndex = 36;
@@ -326,11 +319,12 @@
             this.btn_QLHD_Re.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Re.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Re.ForeColor = System.Drawing.Color.White;
-            this.btn_QLHD_Re.Location = new System.Drawing.Point(720, 372);
+            this.btn_QLHD_Re.Location = new System.Drawing.Point(713, 285);
             this.btn_QLHD_Re.Name = "btn_QLHD_Re";
             this.btn_QLHD_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_QLHD_Re.TabIndex = 35;
-            this.btn_QLHD_Re.Text = "Tạo mới";
+            this.btn_QLHD_Re.Text = "Reset";
+            this.btn_QLHD_Re.Click += new System.EventHandler(this.btn_QLHD_Re_Click);
             // 
             // btn_QLHD_Search
             // 
@@ -340,11 +334,16 @@
             this.btn_QLHD_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Search.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btn_QLHD_Search.Location = new System.Drawing.Point(1389, 401);
+=======
+            this.btn_QLHD_Search.Location = new System.Drawing.Point(1308, 314);
+>>>>>>> wMuoi50
             this.btn_QLHD_Search.Name = "btn_QLHD_Search";
             this.btn_QLHD_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLHD_Search.TabIndex = 0;
             this.btn_QLHD_Search.Text = "Tìm kiếm";
+<<<<<<< HEAD
             // 
             // label7
             // 
@@ -356,6 +355,9 @@
             this.label7.Size = new System.Drawing.Size(119, 28);
             this.label7.TabIndex = 32;
             this.label7.Text = "Thành tiền:";
+=======
+            this.btn_QLHD_Search.Click += new System.EventHandler(this.btn_QLHD_Search_Click);
+>>>>>>> wMuoi50
             // 
             // btn_QLHD_Del
             // 
@@ -365,11 +367,12 @@
             this.btn_QLHD_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Del.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Del.ForeColor = System.Drawing.Color.White;
-            this.btn_QLHD_Del.Location = new System.Drawing.Point(499, 372);
+            this.btn_QLHD_Del.Location = new System.Drawing.Point(492, 285);
             this.btn_QLHD_Del.Name = "btn_QLHD_Del";
             this.btn_QLHD_Del.Size = new System.Drawing.Size(150, 60);
             this.btn_QLHD_Del.TabIndex = 3;
             this.btn_QLHD_Del.Text = "Xóa";
+<<<<<<< HEAD
             // 
             // label6
             // 
@@ -381,6 +384,9 @@
             this.label6.Size = new System.Drawing.Size(102, 28);
             this.label6.TabIndex = 31;
             this.label6.Text = "Tiền thối:";
+=======
+            this.btn_QLHD_Del.Click += new System.EventHandler(this.btn_QLHD_Del_Click);
+>>>>>>> wMuoi50
             // 
             // btn_QLHD_Edit
             // 
@@ -390,11 +396,12 @@
             this.btn_QLHD_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Edit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_QLHD_Edit.Location = new System.Drawing.Point(287, 372);
+            this.btn_QLHD_Edit.Location = new System.Drawing.Point(280, 285);
             this.btn_QLHD_Edit.Name = "btn_QLHD_Edit";
             this.btn_QLHD_Edit.Size = new System.Drawing.Size(150, 60);
             this.btn_QLHD_Edit.TabIndex = 2;
-            this.btn_QLHD_Edit.Text = "Sửa";
+            this.btn_QLHD_Edit.Text = "Cập nhật";
+            this.btn_QLHD_Edit.Click += new System.EventHandler(this.btn_QLHD_Edit_Click);
             // 
             // btn_QLHD_Add
             // 
@@ -404,30 +411,19 @@
             this.btn_QLHD_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_QLHD_Add.Location = new System.Drawing.Point(79, 372);
+            this.btn_QLHD_Add.Location = new System.Drawing.Point(72, 285);
             this.btn_QLHD_Add.Name = "btn_QLHD_Add";
             this.btn_QLHD_Add.Size = new System.Drawing.Size(150, 60);
             this.btn_QLHD_Add.TabIndex = 1;
             this.btn_QLHD_Add.Text = "Thêm";
             this.btn_QLHD_Add.Click += new System.EventHandler(this.btn_QLHD_Add_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(96, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 28);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Tiền nhận:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(13, 290);
+            this.label4.Location = new System.Drawing.Point(6, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(187, 28);
             this.label4.TabIndex = 29;
@@ -466,6 +462,7 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Mã hóa đơn:";
             // 
+<<<<<<< HEAD
             // txt_QLHD_THANHTIEN
             // 
             this.txt_QLHD_THANHTIEN.Animated = true;
@@ -514,6 +511,8 @@
             this.txt_QLHD_TIENTRA.Size = new System.Drawing.Size(277, 40);
             this.txt_QLHD_TIENTRA.TabIndex = 12;
             // 
+=======
+>>>>>>> wMuoi50
             // dtp_QLHD_NGAYTAO
             // 
             this.dtp_QLHD_NGAYTAO.Animated = true;
@@ -521,7 +520,7 @@
             this.dtp_QLHD_NGAYTAO.FillColor = System.Drawing.Color.White;
             this.dtp_QLHD_NGAYTAO.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp_QLHD_NGAYTAO.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_QLHD_NGAYTAO.Location = new System.Drawing.Point(235, 287);
+            this.dtp_QLHD_NGAYTAO.Location = new System.Drawing.Point(228, 200);
             this.dtp_QLHD_NGAYTAO.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_QLHD_NGAYTAO.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_QLHD_NGAYTAO.Name = "dtp_QLHD_NGAYTAO";
@@ -553,6 +552,7 @@
             this.txt_QLHD_MAKH.Size = new System.Drawing.Size(266, 40);
             this.txt_QLHD_MAKH.TabIndex = 10;
             // 
+<<<<<<< HEAD
             // txt_QLHD_TIENNHAN
             // 
             this.txt_QLHD_TIENNHAN.Animated = true;
@@ -577,6 +577,8 @@
             this.txt_QLHD_TIENNHAN.Size = new System.Drawing.Size(283, 40);
             this.txt_QLHD_TIENNHAN.TabIndex = 8;
             // 
+=======
+>>>>>>> wMuoi50
             // txt_QLHD_MANV
             // 
             this.txt_QLHD_MANV.Animated = true;
@@ -635,7 +637,8 @@
             this.Controls.Add(this.pn_QLLS_dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyHoaDon";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLKH)).EndInit();
+            this.Load += new System.EventHandler(this.FormQuanLyHoaDon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_QLHD)).EndInit();
             this.pn_QLLS_dgv.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel_function.ResumeLayout(false);
@@ -646,13 +649,12 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLKH;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_QLHD;
         private System.Windows.Forms.Panel pn_QLLS_dgv;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel_function;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_QLHD_NGAYTAO;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_MAKH;
-        private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_TIENNHAN;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_MANV;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_MAHD;
         private Guna.UI2.WinForms.Guna2Button btn_QLHD_Search;
@@ -666,15 +668,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLHD_TIENNHAN;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLHD_TIENTRA;
         private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLHD_THANHTIEN;
-        private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_THANHTIEN;
-        private Guna.UI2.WinForms.Guna2TextBox txt_QLHD_TIENTRA;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btn_QLHD_Re;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2ComboBox cb_QLHD_Selected;

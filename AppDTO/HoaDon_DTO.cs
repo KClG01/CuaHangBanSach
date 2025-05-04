@@ -8,7 +8,7 @@ namespace AppDTO
 {
     public class HoaDon_DTO
     {
-        public int MaHD {  get; set; }
+        public string MaHD {  get; set; }
         public string MaNV {  get; set; }
         public string MaKH {get; set; }
         public DateTime NgayBan { get; set; }
