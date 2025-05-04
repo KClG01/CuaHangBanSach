@@ -32,6 +32,7 @@ namespace AppGUI
             dgv_QLNV.AutoGenerateColumns = false;
             dgv_QLNV.Font = new Font("Arial", 13);
             LoadData();
+            dgv_QLNV.ClearSelection();
         }
 
         private void txt_QLNV_MAKH_KeyPress(object sender, KeyPressEventArgs e)
@@ -45,7 +46,7 @@ namespace AppGUI
 
         private void txt_QLNV_TENKH_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
@@ -57,6 +58,11 @@ namespace AppGUI
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (txt_QLNV_SDT.Text.Length >= 10 && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Số điện thoại không được quá 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
             }
         }
@@ -81,7 +87,19 @@ namespace AppGUI
 
         private void btn_QLNV_Email_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            string temp = txt_QLNV_Email.Text;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar) &&
+                e.KeyChar != '@' && e.KeyChar != '.')
+            {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (e.KeyChar == '@' && temp.Contains('@'))
+            {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (e.KeyChar == '.' && (temp.EndsWith(".") || temp.EndsWith("@")))
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
@@ -91,22 +109,18 @@ namespace AppGUI
         {
             if (dgv_QLNV.SelectedRows.Count > 0)
             {
-                int index = dgv_QLNV.CurrentCell.RowIndex;
+                // Lấy chỉ số dòng từ SelectedRows
+                int index = dgv_QLNV.SelectedRows[0].Index;
+                // Sử dụng dsNV đã được cập nhật
                 txt_QLNV_MANV.Text = dsNV[index].MaNV.ToString();
                 txt_QLNV_TENNV.Text = dsNV[index].TenNV.ToString();
                 txt_QLNV_SDT.Text = dsNV[index].SDT.ToString();
                 txt_QLNV_Email.Text = dsNV[index].Email.ToString();
                 txt_QLNV_DIACHI.Text = dsNV[index].DiaChi.ToString();
                 txt_QLNV_PASSWORD.Text = dsNV[index].Password.ToString();
-                txt_QLNV_SAF.Text = dsNV[index].SDT.ToString();
-                if (dsNV[index].GioiTinh == true)
-                {
-                    rad_QLNV_Male.Checked = true;
-                }
-                else
-                {
-                    rad_QLNV_Female.Checked = true;
-                }
+                txt_QLNV_SAF.Text = dsNV[index].Luong.ToString();
+                rad_QLNV_Male.Checked = dsNV[index].GioiTinh;
+                rad_QLNV_Female.Checked = !dsNV[index].GioiTinh;
             }
             else
             {
@@ -133,6 +147,7 @@ namespace AppGUI
 
         private void refresh()
         {
+            LoadData();
             btn_QLNV_Add.Enabled = true;
             txt_QLNV_MANV.Enabled = true;
             btn_QLNV_Add.FillColor = Color.FromArgb(0, 120, 215);
@@ -153,7 +168,8 @@ namespace AppGUI
             {
                 rad_QLNV_Female.Checked = false;
             }
-            LoadData();
+            lbl_index.Text = "Chọn loại tìm!";
+            txt_QLNV_NhapNoiDung.Enabled = false;
         }
         private void btn_QLNV_Add_Click(object sender, EventArgs e)
         {
@@ -195,7 +211,7 @@ namespace AppGUI
             if (nv.ThemNhanVien(nhanVien))
             {
                 MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadData();
+
                 refresh();
             }
             else
@@ -228,7 +244,7 @@ namespace AppGUI
                 if (nv.CapNhatNhanVien(nhanVien_DTO))
                 {
                     MessageBox.Show("Cập nhật nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData();
+
                     refresh();
                 }
                 else
@@ -247,7 +263,7 @@ namespace AppGUI
                     if (nv.XoaNhanVien(txt_QLNV_MANV.Text))
                     {
                         MessageBox.Show("Xóa nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
+
                         refresh();
                     }
                     else
@@ -293,45 +309,49 @@ namespace AppGUI
 
         private void btn_QLNV_Search_Click(object sender, EventArgs e)
         {
-            if(cb_QLNV_Selected.SelectedIndex == -1)
+            if (cb_QLNV_Selected.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn loại cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             string keyword = txt_QLNV_NhapNoiDung.Text.Trim();
             if (string.IsNullOrWhiteSpace(keyword))
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             List<NhanVien_DTO> result = new List<NhanVien_DTO>();
             if (cb_QLNV_Selected.SelectedIndex == 0)
             {
                 result = dsNV.Where(x => x.MaNV.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 1)
             {
                 result = dsNV.Where(x => x.TenNV.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 2)
             {
                 result = dsNV.Where(x => x.SDT.ToString().Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 3)
             {
                 result = dsNV.Where(x => x.Email.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
+
             if (result.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy nhân viên nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLNV.DataSource = null;
             }
             else
             {
-                dgv_QLNV.DataSource = result;
+                dsNV = result;
+                dgv_QLNV.DataSource = dsNV;
+
+                dgv_QLNV.Rows[0].Selected = true;
+                LayThongTin();
             }
         }
 

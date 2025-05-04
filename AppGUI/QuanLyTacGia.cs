@@ -32,6 +32,7 @@ namespace AppGUI
         {
             dgv_QLTG.Font = new Font("Arial", 13);
             dgv_QLTG.AutoGenerateColumns = false;
+            dgv_QLTG.ClearSelection();
             LoadData();
         }
         private void txt_QLTG_MATG_KeyPress(object sender, KeyPressEventArgs e)
@@ -88,6 +89,7 @@ namespace AppGUI
                 dtp_QLTG_NGSINH.Value = dsTG[index].NgaySinh;
                 txt_QLTG_LIENHE.Text = dsTG[index].LienHe.ToString();
                 txt_QLTG_BUTDANH.Text = dsTG[index].ButDanh.ToString();
+                txt_QLTG_DIACHI.Text = dsTG[index].DiaChi.ToString();
                 txt_QLTG_MATG.Enabled = false;
             }
             else
@@ -129,7 +131,7 @@ namespace AppGUI
             if (tgia.ThemTacGia(tgia_DTO))
             {
                 MessageBox.Show("Thêm tác giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadData();
+
                 refresh();
             }
             else
@@ -139,18 +141,21 @@ namespace AppGUI
         }
         private void refresh()
         {
+            LoadData();
             btn_QLTG_Add.Enabled = true;
             txt_QLTG_MATG.Enabled = true;
             btn_QLTG_Add.FillColor = Color.FromArgb(0, 120, 215);
-            cb_QLTG_Selected.SelectedIndex = -1;
+
             txt_QLTG_MATG.Clear();
             txt_QLTG_TENTG.Clear();
+            dgv_QLTG.ClearSelection();
             dtp_QLTG_NGSINH.Value = DateTime.Now.AddYears(-30);
             txt_QLTG_LIENHE.Clear();
             txt_QLTG_BUTDANH.Clear();
             txt_QLTG_DIACHI.Clear();
             lbl_index.Text = "Chọn loại tìm!";
-            cb_QLTG_Selected.Enabled = false;
+            txt_QLTG_NhapNoiDung.Enabled = false;
+
         }
         private void btn_QLTG_Edit_Click(object sender, EventArgs e)
         {
@@ -173,8 +178,8 @@ namespace AppGUI
                 if (tgia.CapNhatTacGia(tgia_DTO))
                 {
                     MessageBox.Show("Cập nhật tác giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     LoadData();
-                    refresh();
                 }
                 else
                 {
@@ -192,8 +197,8 @@ namespace AppGUI
                     if (tgia.XoaTacGia(txt_QLTG_MATG.Text))
                     {
                         MessageBox.Show("Xóa tác giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
                         refresh();
+
                     }
                     else
                     {
@@ -211,14 +216,17 @@ namespace AppGUI
         {
             refresh();
         }
-        
+
         private void dgv_QLTG_SelectionChanged(object sender, EventArgs e)
         {
-            btn_QLTG_Add.Enabled = false;
-            btn_QLTG_Add.FillColor = Color.Gray;
-            if (dgv_QLTG.SelectedRows.Count > 0)
+            if (dgv_QLTG.CurrentCell != null && dgv_QLTG.SelectedRows.Count > 0)
             {
                 LayThongTin();
+                btn_QLTG_Add.Enabled = false;
+            }
+            else
+            {
+                btn_QLTG_Add.Enabled = true;
             }
         }
         private void btn_QLTG_Search_Click(object sender, EventArgs e)
@@ -228,7 +236,7 @@ namespace AppGUI
                 MessageBox.Show("Vui lòng chọn loại cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string keyword = txt_QLTG_MATG.Text.Trim();
+            string keyword = txt_QLTG_NhapNoiDung.Text.Trim();
             if (string.IsNullOrWhiteSpace(keyword))
             {
                 MessageBox.Show("Vui lòng nhập thông tin cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -253,10 +261,15 @@ namespace AppGUI
             if (result.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy tác giả nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLTG.DataSource = null;
             }
             else
             {
-                dgv_QLTG.DataSource = result;
+                dsTG = result;
+                dgv_QLTG.DataSource = dsTG;
+
+                dgv_QLTG.Rows[0].Selected = true;
+                LayThongTin();
             }
         }
 
@@ -264,17 +277,17 @@ namespace AppGUI
         {
             if(cb_QLTG_Selected.SelectedIndex == 0)
             {
-                cb_QLTG_Selected.Enabled = true;
+                txt_QLTG_NhapNoiDung.Enabled = true;
                 lbl_index.Text = "Nhập mã:";
             }
             if (cb_QLTG_Selected.SelectedIndex == 1)
             {
-                cb_QLTG_Selected.Enabled = true;
+                txt_QLTG_NhapNoiDung.Enabled = true;
                 lbl_index.Text = "Nhập tên:";
             }
             if (cb_QLTG_Selected.SelectedIndex == 2)
             {
-                cb_QLTG_Selected.Enabled = true;
+                txt_QLTG_NhapNoiDung.Enabled = true;
                 lbl_index.Text = "Nhập bút danh:";
             }
         }

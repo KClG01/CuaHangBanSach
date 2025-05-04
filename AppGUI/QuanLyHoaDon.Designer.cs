@@ -278,7 +278,7 @@
             this.txt_QLHD_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_NhapNoiDung.PlaceholderText = "";
             this.txt_QLHD_NhapNoiDung.SelectedText = "";
-            this.txt_QLHD_NhapNoiDung.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_NhapNoiDung.Size = new System.Drawing.Size(294, 40);
             this.txt_QLHD_NhapNoiDung.TabIndex = 39;
             // 
             // label9
@@ -304,7 +304,7 @@
             this.cb_QLHD_Selected.ItemHeight = 30;
             this.cb_QLHD_Selected.Location = new System.Drawing.Point(1089, 327);
             this.cb_QLHD_Selected.Name = "cb_QLHD_Selected";
-            this.cb_QLHD_Selected.Size = new System.Drawing.Size(220, 36);
+            this.cb_QLHD_Selected.Size = new System.Drawing.Size(294, 36);
             this.cb_QLHD_Selected.TabIndex = 37;
             // 
             // label8
@@ -340,7 +340,7 @@
             this.btn_QLHD_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLHD_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHD_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_QLHD_Search.Location = new System.Drawing.Point(1315, 401);
+            this.btn_QLHD_Search.Location = new System.Drawing.Point(1389, 401);
             this.btn_QLHD_Search.Name = "btn_QLHD_Search";
             this.btn_QLHD_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLHD_Search.TabIndex = 0;
@@ -351,7 +351,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(939, 208);
+            this.label7.Location = new System.Drawing.Point(1093, 208);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 28);
             this.label7.TabIndex = 32;
@@ -376,7 +376,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(519, 208);
+            this.label6.Location = new System.Drawing.Point(612, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 28);
             this.label6.TabIndex = 31;
@@ -438,7 +438,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(896, 127);
+            this.label3.Location = new System.Drawing.Point(1050, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 28);
             this.label3.TabIndex = 28;
@@ -449,7 +449,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(475, 127);
+            this.label2.Location = new System.Drawing.Point(568, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 28);
             this.label2.TabIndex = 27;
@@ -481,13 +481,13 @@
             this.txt_QLHD_THANHTIEN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_THANHTIEN.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_THANHTIEN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_THANHTIEN.Location = new System.Drawing.Point(1089, 204);
+            this.txt_QLHD_THANHTIEN.Location = new System.Drawing.Point(1243, 204);
             this.txt_QLHD_THANHTIEN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_THANHTIEN.Name = "txt_QLHD_THANHTIEN";
             this.txt_QLHD_THANHTIEN.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_THANHTIEN.PlaceholderText = "Thành tiền";
             this.txt_QLHD_THANHTIEN.SelectedText = "";
-            this.txt_QLHD_THANHTIEN.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_THANHTIEN.Size = new System.Drawing.Size(266, 40);
             this.txt_QLHD_THANHTIEN.TabIndex = 13;
             // 
             // txt_QLHD_TIENTRA
@@ -505,13 +505,13 @@
             this.txt_QLHD_TIENTRA.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_TIENTRA.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_TIENTRA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_TIENTRA.Location = new System.Drawing.Point(643, 204);
+            this.txt_QLHD_TIENTRA.Location = new System.Drawing.Point(736, 204);
             this.txt_QLHD_TIENTRA.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_TIENTRA.Name = "txt_QLHD_TIENTRA";
             this.txt_QLHD_TIENTRA.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_TIENTRA.PlaceholderText = "Tiền thối";
             this.txt_QLHD_TIENTRA.SelectedText = "";
-            this.txt_QLHD_TIENTRA.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_TIENTRA.Size = new System.Drawing.Size(277, 40);
             this.txt_QLHD_TIENTRA.TabIndex = 12;
             // 
             // dtp_QLHD_NGAYTAO
@@ -525,7 +525,7 @@
             this.dtp_QLHD_NGAYTAO.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_QLHD_NGAYTAO.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_QLHD_NGAYTAO.Name = "dtp_QLHD_NGAYTAO";
-            this.dtp_QLHD_NGAYTAO.Size = new System.Drawing.Size(220, 40);
+            this.dtp_QLHD_NGAYTAO.Size = new System.Drawing.Size(283, 40);
             this.dtp_QLHD_NGAYTAO.TabIndex = 11;
             this.dtp_QLHD_NGAYTAO.Value = new System.DateTime(2025, 4, 8, 8, 55, 25, 913);
             // 
@@ -544,13 +544,13 @@
             this.txt_QLHD_MAKH.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_MAKH.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MAKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_MAKH.Location = new System.Drawing.Point(1089, 121);
+            this.txt_QLHD_MAKH.Location = new System.Drawing.Point(1243, 121);
             this.txt_QLHD_MAKH.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_MAKH.Name = "txt_QLHD_MAKH";
             this.txt_QLHD_MAKH.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MAKH.PlaceholderText = "Mã khách hàng";
             this.txt_QLHD_MAKH.SelectedText = "";
-            this.txt_QLHD_MAKH.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_MAKH.Size = new System.Drawing.Size(266, 40);
             this.txt_QLHD_MAKH.TabIndex = 10;
             // 
             // txt_QLHD_TIENNHAN
@@ -574,7 +574,7 @@
             this.txt_QLHD_TIENNHAN.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_TIENNHAN.PlaceholderText = "Tiền nhận";
             this.txt_QLHD_TIENNHAN.SelectedText = "";
-            this.txt_QLHD_TIENNHAN.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_TIENNHAN.Size = new System.Drawing.Size(283, 40);
             this.txt_QLHD_TIENNHAN.TabIndex = 8;
             // 
             // txt_QLHD_MANV
@@ -592,13 +592,13 @@
             this.txt_QLHD_MANV.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLHD_MANV.ForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MANV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLHD_MANV.Location = new System.Drawing.Point(643, 121);
+            this.txt_QLHD_MANV.Location = new System.Drawing.Point(736, 121);
             this.txt_QLHD_MANV.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLHD_MANV.Name = "txt_QLHD_MANV";
             this.txt_QLHD_MANV.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MANV.PlaceholderText = "Mã nhân viên";
             this.txt_QLHD_MANV.SelectedText = "";
-            this.txt_QLHD_MANV.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_MANV.Size = new System.Drawing.Size(277, 40);
             this.txt_QLHD_MANV.TabIndex = 7;
             // 
             // txt_QLHD_MAHD
@@ -624,7 +624,7 @@
             this.txt_QLHD_MAHD.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLHD_MAHD.PlaceholderText = "Mã hóa đơn";
             this.txt_QLHD_MAHD.SelectedText = "";
-            this.txt_QLHD_MAHD.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLHD_MAHD.Size = new System.Drawing.Size(283, 40);
             this.txt_QLHD_MAHD.TabIndex = 6;
             // 
             // FormQuanLyHoaDon
