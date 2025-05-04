@@ -26,15 +26,19 @@ namespace AppGUI
         {
             dsLS = ls.dsLoaiSach();
             dgv_QLLS.DataSource = dsLS;
+            dgv_QLLS.ClearSelection();
         }
         private void FormQuanLyLoaiSach_Load(object sender, EventArgs e)
         {
             dgv_QLLS.Font = new Font("Arial", 13);
             LoadData();
+            dgv_QLLS.ClearSelection();
+            dgv_QLLS.AutoGenerateColumns = false;
+            txt_QLLS_NhapNoiDung.Enabled = false;
         }
         private void txt_QLLS_MA_LOAI_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
@@ -57,11 +61,6 @@ namespace AppGUI
             {
                 layThongTin();
             }
-            else
-            {
-                ls = null;
-            }
-
         }
         private void layThongTin()
         {
@@ -79,15 +78,16 @@ namespace AppGUI
         }
         private void refresh()
         {
+            LoadData();
             btn_QLLS_Add.Enabled = true;
             txt_QLLS_MA_LOAI.Enabled = true;
-            btn_QLLS_Add.FillColor = Color.FromArgb(94, 148, 255);
+            btn_QLLS_Add.FillColor = Color.FromArgb(0, 120, 215);
             txt_QLLS_MA_LOAI.Clear();
             txt_QLLS_TENLOAI.Clear();
             txt_QLLS_NhapNoiDung.Clear();
             cb_QLLS_Selected.SelectedIndex = -1;
-            lbl_index.Text = "Chọn kiểu:";
-            toolTip.SetToolTip(btn_QLLS_Add, "Thêm loại sách mới.");
+            lbl_index.Text = "Chọn loại tìm!";
+            txt_QLLS_NhapNoiDung.Enabled = false;
         }
         private void btn_QLLS_Re_Click(object sender, EventArgs e)
         {
@@ -103,27 +103,27 @@ namespace AppGUI
             else
             {
                 LoaiSach_BUS bus = new LoaiSach_BUS();
-                if (bus.KiemTraTonTaiMaLoai(int.Parse(txt_QLLS_MA_LOAI.Text)))
+                if (bus.KiemTraTonTaiMaLoai(txt_QLLS_MA_LOAI.Text))
                 {
                     MessageBox.Show("Mã loại đã tồn tại. Vui lòng nhập mã loại khác.");
                     return;
                 }
                 LoaiSP_DTO ls = new LoaiSP_DTO
                 {
-                    MaLoai = int.Parse(txt_QLLS_MA_LOAI.Text),
+                    MaLoai = txt_QLLS_MA_LOAI.Text,
                     TenLoai = txt_QLLS_TENLOAI.Text
                 };
 
                 if (bus.ThemLoaiSach(ls))
                 {
-                    MessageBox.Show("Thêm thành công");
+                    MessageBox.Show("Thêm loại sách thành công");
                     txt_QLLS_MA_LOAI.Clear();
                     txt_QLLS_TENLOAI.Clear();
-                    LoadData();
+                    refresh();
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại");
+                    MessageBox.Show("Thêm loại sách thất bại");
                 }
             }
         }
@@ -138,17 +138,17 @@ namespace AppGUI
                 LoaiSach_BUS bus = new LoaiSach_BUS();
                 LoaiSP_DTO ls = new LoaiSP_DTO
                 {
-                    MaLoai = int.Parse(txt_QLLS_MA_LOAI.Text),
+                    MaLoai = txt_QLLS_MA_LOAI.Text,
                     TenLoai = txt_QLLS_TENLOAI.Text
                 };
                 if (bus.CapNhatLoaiSach(ls))
                 {
-                    MessageBox.Show("Cập nhật thành công");
-                    LoadData();
+                    MessageBox.Show("Cập nhật loại sách thành công");
+                    refresh();
                 }
                 else
                 {
-                    MessageBox.Show("Cập nhật thất bại");
+                    MessageBox.Show("Cập nhật loại sách thất bại");
                 }
             }
         }
@@ -162,14 +162,14 @@ namespace AppGUI
             }
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa loại sách này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (ls.XoaLoaiSach(int.Parse(txt_QLLS_MA_LOAI.Text)))
+                if (ls.XoaLoaiSach(txt_QLLS_MA_LOAI.Text))
                 {
-                    MessageBox.Show("Xóa thành công");
-                    LoadData();
+                    MessageBox.Show("Xóa loại sách thành công");
+                    refresh();
                 }
                 else
                 {
-                    MessageBox.Show("Xóa thất bại");
+                    MessageBox.Show("Xóa loại sách thất bại");
                 }
             }
         }
@@ -177,10 +177,12 @@ namespace AppGUI
         {
             if (cb_QLLS_Selected.SelectedIndex == 0)
             {
+                txt_QLLS_NhapNoiDung.Enabled = true;
                 lbl_index.Text = "Nhập mã:";
             }
             if (cb_QLLS_Selected.SelectedIndex == 1)
             {
+                txt_QLLS_NhapNoiDung.Enabled = true;
                 lbl_index.Text = "Nhập tên:";
             }
         }

@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.pn_bookContainer = new System.Windows.Forms.Panel();
-            this.pn_Menu_fncSlected1 = new System.Windows.Forms.Panel();
             this.btn_Main_fnc_qltacgia = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_qlnxb = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Main_fnc_qlloaisach = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +64,6 @@
             // 
             // pn_bookContainer
             // 
-            this.pn_bookContainer.Controls.Add(this.pn_Menu_fncSlected1);
             this.pn_bookContainer.Controls.Add(this.btn_Main_fnc_qltacgia);
             this.pn_bookContainer.Controls.Add(this.btn_Main_fnc_qlnxb);
             this.pn_bookContainer.Controls.Add(this.btn_Main_fnc_qlloaisach);
@@ -76,15 +74,6 @@
             this.pn_bookContainer.Name = "pn_bookContainer";
             this.pn_bookContainer.Size = new System.Drawing.Size(319, 40);
             this.pn_bookContainer.TabIndex = 15;
-            // 
-            // pn_Menu_fncSlected1
-            // 
-            this.pn_Menu_fncSlected1.BackColor = System.Drawing.Color.White;
-            this.pn_Menu_fncSlected1.Location = new System.Drawing.Point(0, 3);
-            this.pn_Menu_fncSlected1.Name = "pn_Menu_fncSlected1";
-            this.pn_Menu_fncSlected1.Size = new System.Drawing.Size(5, 40);
-            this.pn_Menu_fncSlected1.TabIndex = 25;
-            this.pn_Menu_fncSlected1.Visible = false;
             // 
             // btn_Main_fnc_qltacgia
             // 
@@ -229,6 +218,7 @@
             this.btn_Main_fnc_bansach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Main_fnc_bansach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Main_fnc_bansach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Main_fnc_bansach.Enabled = false;
             this.btn_Main_fnc_bansach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(30)))));
             this.btn_Main_fnc_bansach.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_Main_fnc_bansach.ForeColor = System.Drawing.Color.White;
@@ -242,6 +232,7 @@
             this.btn_Main_fnc_bansach.TabIndex = 4;
             this.btn_Main_fnc_bansach.Text = "     Bán sách";
             this.btn_Main_fnc_bansach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Main_fnc_bansach.Visible = false;
             this.btn_Main_fnc_bansach.Click += new System.EventHandler(this.btn_Main_fnc_bansach_Click);
             // 
             // btn_Main_fnc_thongke
@@ -477,7 +468,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Main_fnc_nhanvien;
         private Guna.UI2.WinForms.Guna2Button btn_Main_logout;
         private Guna.UI2.WinForms.Guna2Button btn_Main_SideBar;
-        private System.Windows.Forms.Panel pn_Menu_fncSlected1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Main_formTitle;
         private Guna.UI2.WinForms.Guna2Button btn_Main_fnc_thongke;
         private System.Windows.Forms.Panel panel1;

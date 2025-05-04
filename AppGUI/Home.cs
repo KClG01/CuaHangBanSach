@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace AppGUI
@@ -22,6 +21,7 @@ namespace AppGUI
         FormQuanLyHoaDon formQLHD;
         FormQuanLyNhanVien formQLNV;
         FormBanSach formSell;
+        FormThongKe formtk;
         public FormHome()
         {
             InitializeComponent();
@@ -32,6 +32,7 @@ namespace AppGUI
             this.WindowState = FormWindowState.Maximized;
         }
         //Button khoát
+
         private void btn_Main_Close_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -103,8 +104,6 @@ namespace AppGUI
         private void btn_Main_fnc_qlbook_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý sách";
-            pn_Menu_fncSlected1.Top = btn_Main_fnc_qlbook.Top;
-            pn_Menu_fncSlected1.Visible = true;
             if (formQLS == null)
             {
                 formQLS = new FormQuanLySach();
@@ -126,8 +125,6 @@ namespace AppGUI
         private void btn_Main_fnc_qlloaisach_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý loại sách";
-            pn_Menu_fncSlected1.Top = btn_Main_fnc_qlloaisach.Top;
-            pn_Menu_fncSlected1.Visible = true;
             if (formQLLS == null)
             {
                 formQLLS = new FormQuanLyLoaiSach();
@@ -149,8 +146,6 @@ namespace AppGUI
         private void btn_Main_fnc_qlnxb_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý nhà xuất bản";
-            pn_Menu_fncSlected1.Top = btn_Main_fnc_qlnxb.Top;
-            pn_Menu_fncSlected1.Visible = true;
             if (formQLNXB == null)
             {
                 formQLNXB = new FormQuanLyNhaXuatBan();
@@ -173,8 +168,6 @@ namespace AppGUI
         private void btn_Main_fnc_qltacgia_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Quản lý tác giả";
-            pn_Menu_fncSlected1.Top = btn_Main_fnc_qltacgia.Top;
-            pn_Menu_fncSlected1.Visible = true;
             if (formQLTG == null)
             {
                 formQLTG = new FormQuanLyTacGia();
@@ -264,7 +257,26 @@ namespace AppGUI
         private void btn_Main_fnc_thongke_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Thống kê";
+            if (formtk == null)
+            {
+                formtk = new FormThongKe();
+                formtk.FormClosed += formtk_FormClosed;
+                formtk.MdiParent = this;
+                formtk.Dock = DockStyle.Fill;
+                formtk.Show();
+            }
+            else
+            {
+                formtk.Activate();
+            }
         }
+
+        private void formtk_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formtk = null;
+        }
+
+        //Xuất lên home form bán sách
         private void btn_Main_fnc_bansach_Click(object sender, EventArgs e)
         {
             lbl_Main_formTitle.Text = "Thống kê";

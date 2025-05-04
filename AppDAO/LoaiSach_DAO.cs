@@ -21,7 +21,7 @@ namespace AppDAO
             while (dr.Read())
             {
                 LoaiSP_DTO loaiSach = new LoaiSP_DTO();
-                loaiSach.MaLoai = int.Parse(dr["MA_LOAI"].ToString());
+                loaiSach.MaLoai = dr["MA_LOAI"].ToString();
                 loaiSach.TenLoai = dr["TENLOAI"].ToString();
                 dsLS.Add(loaiSach);
             }
@@ -29,7 +29,7 @@ namespace AppDAO
             conn.Close();
             return dsLS;
         }
-        public bool KiemTraTonTaiMaLoai(int maLoai)
+        public bool KiemTraTonTaiMaLoai(string maLoai)
         {
             string query = "SELECT COUNT(*) FROM LOAI_SP WHERE MA_LOAI = @MaLoai";
             using (SqlConnection conn = DataProvider.TaoKetNoi())
@@ -62,7 +62,7 @@ namespace AppDAO
                 return false;
             }
         }
-        public bool XoaLoaiSach(int maLoai)
+        public bool XoaLoaiSach(string maLoai)
         {
             SqlConnection conn = DataProvider.TaoKetNoi();
             try

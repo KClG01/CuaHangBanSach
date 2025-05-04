@@ -32,6 +32,7 @@ namespace AppGUI
             dgv_QLNV.AutoGenerateColumns = false;
             dgv_QLNV.Font = new Font("Arial", 13);
             LoadData();
+            dgv_QLNV.ClearSelection();
         }
 
         private void txt_QLNV_MAKH_KeyPress(object sender, KeyPressEventArgs e)
@@ -45,7 +46,7 @@ namespace AppGUI
 
         private void txt_QLNV_TENKH_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
@@ -57,6 +58,11 @@ namespace AppGUI
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (txt_QLNV_SDT.Text.Length >= 10 && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Số điện thoại không được quá 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
             }
         }
@@ -81,7 +87,19 @@ namespace AppGUI
 
         private void btn_QLNV_Email_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            string temp = txt_QLNV_Email.Text;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar) &&
+                e.KeyChar != '@' && e.KeyChar != '.')
+            {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (e.KeyChar == '@' && temp.Contains('@'))
+            {
+                MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+            if (e.KeyChar == '.' && (temp.EndsWith(".") || temp.EndsWith("@")))
             {
                 MessageBox.Show("Vui lòng nhập đúng dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
@@ -133,6 +151,7 @@ namespace AppGUI
 
         private void refresh()
         {
+            LoadData();
             btn_QLNV_Add.Enabled = true;
             txt_QLNV_MANV.Enabled = true;
             btn_QLNV_Add.FillColor = Color.FromArgb(0, 120, 215);
@@ -153,7 +172,8 @@ namespace AppGUI
             {
                 rad_QLNV_Female.Checked = false;
             }
-            LoadData();
+            lbl_index.Text = "Chọn loại tìm!";
+            txt_QLNV_NhapNoiDung.Enabled = false;
         }
         private void btn_QLNV_Add_Click(object sender, EventArgs e)
         {
@@ -195,7 +215,7 @@ namespace AppGUI
             if (nv.ThemNhanVien(nhanVien))
             {
                 MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadData();
+
                 refresh();
             }
             else
@@ -228,7 +248,7 @@ namespace AppGUI
                 if (nv.CapNhatNhanVien(nhanVien_DTO))
                 {
                     MessageBox.Show("Cập nhật nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData();
+
                     refresh();
                 }
                 else
@@ -247,7 +267,7 @@ namespace AppGUI
                     if (nv.XoaNhanVien(txt_QLNV_MANV.Text))
                     {
                         MessageBox.Show("Xóa nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
+
                         refresh();
                     }
                     else

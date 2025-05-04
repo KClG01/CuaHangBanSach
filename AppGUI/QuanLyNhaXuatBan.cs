@@ -31,6 +31,7 @@ namespace AppGUI
             dgv_QLNXB.Font = new Font("Arial", 13);
             LoadData();
             dgv_QLNXB.AutoGenerateColumns = false;
+            dgv_QLNXB.ClearSelection();
         }
 
         private void txt_QLNXB_MANXB_KeyPress(object sender, KeyPressEventArgs e)
@@ -74,7 +75,7 @@ namespace AppGUI
         {
             if(dgv_QLNXB.CurrentCell != null && dgv_QLNXB.CurrentRow.Index >= 0)
             {
-                int rowIndex = dgv_QLNXB.CurrentRow.Index;
+                int rowIndex = dgv_QLNXB.CurrentCell.RowIndex;
                 txt_QLNXB_MANXB.Text = dsNXB[rowIndex].MaNXB.ToString();
                 txt_QLNXB_TENNXB.Text = dsNXB[rowIndex].TenNXB.ToString();
                 txt_QLNXB_DIACHI.Text = dsNXB[rowIndex].DiaChi.ToString();
@@ -100,6 +101,7 @@ namespace AppGUI
         }
         private void refresh()
         {
+            LoadData();
             btn_QLNXB_Add.Enabled = true;
             txt_QLNXB_MANXB.Enabled = true;
             btn_QLNXB_Add.FillColor = Color.FromArgb(0, 120, 215);
@@ -145,7 +147,7 @@ namespace AppGUI
                     if (nxb.ThemNhaXuatBan(nhaXuatBan_DTO))
                     {
                         MessageBox.Show("Thêm nhà xuất bản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
+
                         refresh();
                     }
                     else
@@ -176,7 +178,7 @@ namespace AppGUI
                 if (nxb.CapNhatNhaXuatBan(nhaXuatBan_DTO))
                 {
                     MessageBox.Show("Cập nhật nhà xuất bản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData();
+
                     refresh();
                 }
                 else
@@ -198,6 +200,7 @@ namespace AppGUI
                 if (nxb.XoaNhaXuatBan(txt_QLNXB_MANXB.Text))
                 {
                     MessageBox.Show("Xóa nhà xuất bản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     refresh();
                 }
                 else
@@ -211,7 +214,7 @@ namespace AppGUI
         {
             if(cb_QLNXB_Selected.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng chọn nhà xuất bản để tìm kiếm");
+                MessageBox.Show("Vui lòng chọn loại cần tìm!");
                 return;
             }
             string keyword = txt_QLNXB_NhapNoiDung.Text.Trim();
