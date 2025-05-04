@@ -28,8 +28,10 @@ namespace AppDAO
         public static int Xoa(string strXoa, SqlConnection conn)
         {
             SqlCommand comm = new SqlCommand(strXoa, conn);
+
             return comm.ExecuteNonQuery();
         }
+
 
     }
 }

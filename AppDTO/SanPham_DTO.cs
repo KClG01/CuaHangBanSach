@@ -12,10 +12,9 @@ namespace AppDTO
         public string TenSp { get; set; }
         public string MaTacGia {  get; set; }
         public string MaNXB {  get; set; }
-        public int MaLoai {  get; set; }
+        public string MaLoai {  get; set; }
         public double GiaNhap {  get; set; }
         public double GiaBan {  get; set; }
         public int SLTon {  get; set; }
-        public int TrangThai {  get; set; }
     }
 }

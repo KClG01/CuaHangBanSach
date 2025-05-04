@@ -107,7 +107,7 @@ namespace AppGUI
                 }
                 LoaiSP_DTO ls = new LoaiSP_DTO
                 {
-                    MaLoai = int.Parse(txt_QLLS_MA_LOAI.Text),
+                    MaLoai = txt_QLLS_MA_LOAI.Text,
                     TenLoai = txt_QLLS_TENLOAI.Text
                 };
 
@@ -136,7 +136,7 @@ namespace AppGUI
                 LoaiSach_BUS bus = new LoaiSach_BUS();
                 LoaiSP_DTO ls = new LoaiSP_DTO
                 {
-                    MaLoai = int.Parse(txt_QLLS_MA_LOAI.Text),
+                    MaLoai = txt_QLLS_MA_LOAI.Text,
                     TenLoai = txt_QLLS_TENLOAI.Text
                 };
                 if (bus.CapNhatLoaiSach(ls))

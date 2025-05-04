@@ -9,8 +9,8 @@ namespace AppDTO
     
     public class CTHoaDon_DTO
     {
-        public int MaNV {  get; set; }
-        public int MaHD {  get; set; }
+        public int MaSP {  get; set; }
+        public string MaHD {  get; set; }
         public int SoLuong {  get; set; }
         public double DonGia {  get; set; }
         public float KhuyenMai {  get; set; }

@@ -21,7 +21,7 @@ namespace AppDAO
             while (dr.Read())
             {
                 LoaiSP_DTO loaiSach = new LoaiSP_DTO();
-                loaiSach.MaLoai = int.Parse(dr["MA_LOAI"].ToString());
+                loaiSach.MaLoai = dr["MA_LOAI"].ToString();
                 loaiSach.TenLoai = dr["TENLOAI"].ToString();
                 dsLS.Add(loaiSach);
             }

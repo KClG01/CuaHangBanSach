@@ -77,12 +77,12 @@
             this.dtp_QLKH_NGAYTAO.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp_QLKH_NGAYTAO.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_QLKH_NGAYTAO.Location = new System.Drawing.Point(1107, 109);
-            this.dtp_QLKH_NGAYTAO.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_QLKH_NGAYTAO.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_QLKH_NGAYTAO.MaxDate = new System.DateTime(2025, 5, 3, 0, 0, 0, 0);
+            this.dtp_QLKH_NGAYTAO.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtp_QLKH_NGAYTAO.Name = "dtp_QLKH_NGAYTAO";
             this.dtp_QLKH_NGAYTAO.Size = new System.Drawing.Size(220, 40);
             this.dtp_QLKH_NGAYTAO.TabIndex = 11;
-            this.dtp_QLKH_NGAYTAO.Value = new System.DateTime(2025, 4, 8, 8, 55, 25, 913);
+            this.dtp_QLKH_NGAYTAO.Value = new System.DateTime(2025, 5, 2, 0, 50, 41, 0);
             // 
             // txt_QLKH_SDT
             // 
@@ -107,6 +107,7 @@
             this.txt_QLKH_SDT.SelectedText = "";
             this.txt_QLKH_SDT.Size = new System.Drawing.Size(220, 40);
             this.txt_QLKH_SDT.TabIndex = 10;
+            this.txt_QLKH_SDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLKH_SDT_KeyPress);
             // 
             // txt_QLKH_MAKH
             // 
@@ -130,6 +131,7 @@
             this.txt_QLKH_MAKH.Name = "txt_QLKH_MAKH";
             this.txt_QLKH_MAKH.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLKH_MAKH.PlaceholderText = "Mã khách hàng";
+            this.txt_QLKH_MAKH.ReadOnly = true;
             this.txt_QLKH_MAKH.SelectedText = "";
             this.txt_QLKH_MAKH.Size = new System.Drawing.Size(220, 40);
             this.txt_QLKH_MAKH.TabIndex = 6;
@@ -223,6 +225,11 @@
             this.cb_QLKH_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_QLKH_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_QLKH_Selected.ItemHeight = 30;
+            this.cb_QLKH_Selected.Items.AddRange(new object[] {
+            "Họ Tên",
+            "SĐT ",
+            "Địa Chỉ",
+            "Email"});
             this.cb_QLKH_Selected.Location = new System.Drawing.Point(1106, 334);
             this.cb_QLKH_Selected.Name = "cb_QLKH_Selected";
             this.cb_QLKH_Selected.Size = new System.Drawing.Size(220, 36);
@@ -251,7 +258,8 @@
             this.btn_QLKH_Re.Name = "btn_QLKH_Re";
             this.btn_QLKH_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_QLKH_Re.TabIndex = 36;
-            this.btn_QLKH_Re.Text = "Tạo mới";
+            this.btn_QLKH_Re.Text = "Reset";
+            this.btn_QLKH_Re.Click += new System.EventHandler(this.btn_QLKH_Re_Click);
             // 
             // btn_QLKH_Del
             // 
@@ -266,6 +274,7 @@
             this.btn_QLKH_Del.Size = new System.Drawing.Size(150, 60);
             this.btn_QLKH_Del.TabIndex = 3;
             this.btn_QLKH_Del.Text = "Xóa";
+            this.btn_QLKH_Del.Click += new System.EventHandler(this.btn_QLKH_Del_Click);
             // 
             // btn_QLKH_Search
             // 
@@ -280,6 +289,7 @@
             this.btn_QLKH_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLKH_Search.TabIndex = 0;
             this.btn_QLKH_Search.Text = "Tìm kiếm";
+            this.btn_QLKH_Search.Click += new System.EventHandler(this.btn_QLKH_Search_Click);
             // 
             // btn_QLKH_Add
             // 
@@ -294,6 +304,7 @@
             this.btn_QLKH_Add.Size = new System.Drawing.Size(150, 60);
             this.btn_QLKH_Add.TabIndex = 1;
             this.btn_QLKH_Add.Text = "Thêm";
+            this.btn_QLKH_Add.Click += new System.EventHandler(this.btn_QLKH_Add_Click);
             // 
             // label6
             // 
@@ -319,6 +330,7 @@
             this.btn_QLKH_Edit.Size = new System.Drawing.Size(150, 60);
             this.btn_QLKH_Edit.TabIndex = 2;
             this.btn_QLKH_Edit.Text = "Sửa";
+            this.btn_QLKH_Edit.Click += new System.EventHandler(this.btn_QLKH_Edit_Click);
             // 
             // label5
             // 
@@ -447,6 +459,7 @@
             this.txt_QLKH_TENKH.SelectedText = "";
             this.txt_QLKH_TENKH.Size = new System.Drawing.Size(220, 40);
             this.txt_QLKH_TENKH.TabIndex = 7;
+            this.txt_QLKH_TENKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLKH_TENKH_KeyPress);
             // 
             // pn_QLLS_dgv
             // 
@@ -529,6 +542,7 @@
             this.dgv_QLKH.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgv_QLKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_QLKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLKH_CellClick);
             // 
             // cln_QLKH_MAKH
             // 
