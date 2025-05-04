@@ -44,8 +44,10 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="KhachHang_DAO.cs" />
     <Compile Include="LoaiSach_DAO.cs" />
+    <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="NhaXuatBan_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TacGia_DAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDTO\AppDTO.csproj">

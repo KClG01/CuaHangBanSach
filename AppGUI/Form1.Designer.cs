@@ -35,19 +35,19 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ShowP = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DN_reg = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.txt_DN_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_DN_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_DN_Login = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_DN_forgotPS = new System.Windows.Forms.LinkLabel();
             this.lblPsw = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.lbl_Bar = new System.Windows.Forms.Label();
-            this.btn_DN_Close = new System.Windows.Forms.Button();
             this.pnBar = new System.Windows.Forms.Panel();
-            this.btn_DN_reg = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DN_Close = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -104,12 +104,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btn_ShowP);
             this.panel1.Controls.Add(this.btn_DN_reg);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txt_DN_password);
             this.panel1.Controls.Add(this.txt_DN_username);
             this.panel1.Controls.Add(this.btn_DN_Login);
-            this.panel1.Controls.Add(this.lbl_DN_forgotPS);
             this.panel1.Controls.Add(this.lblPsw);
             this.panel1.Controls.Add(this.lblMaNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -117,6 +117,40 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 690);
             this.panel1.TabIndex = 20;
+            // 
+            // btn_ShowP
+            // 
+            this.btn_ShowP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ShowP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ShowP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ShowP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ShowP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.btn_ShowP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ShowP.ForeColor = System.Drawing.Color.White;
+            this.btn_ShowP.Image = global::AppGUI.Properties.Resources.Eye;
+            this.btn_ShowP.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_ShowP.Location = new System.Drawing.Point(343, 237);
+            this.btn_ShowP.Name = "btn_ShowP";
+            this.btn_ShowP.Size = new System.Drawing.Size(35, 35);
+            this.btn_ShowP.TabIndex = 22;
+            this.btn_ShowP.Click += new System.EventHandler(this.btn_ShowP_Click);
+            // 
+            // btn_DN_reg
+            // 
+            this.btn_DN_reg.BorderRadius = 10;
+            this.btn_DN_reg.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DN_reg.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DN_reg.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DN_reg.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DN_reg.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DN_reg.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DN_reg.ForeColor = System.Drawing.Color.Gray;
+            this.btn_DN_reg.Location = new System.Drawing.Point(135, 406);
+            this.btn_DN_reg.Name = "btn_DN_reg";
+            this.btn_DN_reg.Size = new System.Drawing.Size(180, 29);
+            this.btn_DN_reg.TabIndex = 21;
+            this.btn_DN_reg.Text = "Tạo tài khoản?";
+            this.btn_DN_reg.Click += new System.EventHandler(this.btn_DN_reg_Click);
             // 
             // panel3
             // 
@@ -157,7 +191,6 @@
             this.txt_DN_password.Location = new System.Drawing.Point(69, 223);
             this.txt_DN_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_DN_password.Name = "txt_DN_password";
-            this.txt_DN_password.PasswordChar = '*';
             this.txt_DN_password.PlaceholderText = "Password";
             this.txt_DN_password.SelectedText = "";
             this.txt_DN_password.Size = new System.Drawing.Size(320, 60);
@@ -202,17 +235,6 @@
             this.btn_DN_Login.Text = "LOGIN";
             this.btn_DN_Login.Click += new System.EventHandler(this.btn_DN_Login_Click);
             // 
-            // lbl_DN_forgotPS
-            // 
-            this.lbl_DN_forgotPS.AutoSize = true;
-            this.lbl_DN_forgotPS.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DN_forgotPS.Location = new System.Drawing.Point(266, 287);
-            this.lbl_DN_forgotPS.Name = "lbl_DN_forgotPS";
-            this.lbl_DN_forgotPS.Size = new System.Drawing.Size(123, 20);
-            this.lbl_DN_forgotPS.TabIndex = 14;
-            this.lbl_DN_forgotPS.TabStop = true;
-            this.lbl_DN_forgotPS.Text = "Quên mật khẩu?";
-            // 
             // lblPsw
             // 
             this.lblPsw.AutoSize = true;
@@ -253,6 +275,17 @@
             this.lbl_Bar.TabIndex = 14;
             this.lbl_Bar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pnBar
+            // 
+            this.pnBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
+            this.pnBar.Controls.Add(this.lbl_Bar);
+            this.pnBar.Controls.Add(this.btn_DN_Close);
+            this.pnBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnBar.Location = new System.Drawing.Point(0, 0);
+            this.pnBar.Name = "pnBar";
+            this.pnBar.Size = new System.Drawing.Size(1280, 30);
+            this.pnBar.TabIndex = 19;
+            // 
             // btn_DN_Close
             // 
             this.btn_DN_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_DN_Close.BackgroundImage")));
@@ -267,34 +300,6 @@
             this.btn_DN_Close.TabIndex = 14;
             this.btn_DN_Close.UseVisualStyleBackColor = true;
             this.btn_DN_Close.Click += new System.EventHandler(this.btn_DN_Close_Click);
-            // 
-            // pnBar
-            // 
-            this.pnBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(5)))), ((int)(((byte)(50)))));
-            this.pnBar.Controls.Add(this.lbl_Bar);
-            this.pnBar.Controls.Add(this.btn_DN_Close);
-            this.pnBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnBar.Location = new System.Drawing.Point(0, 0);
-            this.pnBar.Name = "pnBar";
-            this.pnBar.Size = new System.Drawing.Size(1280, 30);
-            this.pnBar.TabIndex = 19;
-            // 
-            // btn_DN_reg
-            // 
-            this.btn_DN_reg.BorderRadius = 10;
-            this.btn_DN_reg.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DN_reg.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DN_reg.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DN_reg.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DN_reg.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DN_reg.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DN_reg.ForeColor = System.Drawing.Color.Gray;
-            this.btn_DN_reg.Location = new System.Drawing.Point(135, 406);
-            this.btn_DN_reg.Name = "btn_DN_reg";
-            this.btn_DN_reg.Size = new System.Drawing.Size(180, 29);
-            this.btn_DN_reg.TabIndex = 21;
-            this.btn_DN_reg.Text = "Tạo tài khoản?";
-            this.btn_DN_reg.Click += new System.EventHandler(this.btn_DN_reg_Click);
             // 
             // FormLogin
             // 
@@ -329,7 +334,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_DN_password;
         private Guna.UI2.WinForms.Guna2TextBox txt_DN_username;
         private Guna.UI2.WinForms.Guna2Button btn_DN_Login;
-        private System.Windows.Forms.LinkLabel lbl_DN_forgotPS;
         private System.Windows.Forms.Label lblPsw;
         private System.Windows.Forms.Label lblMaNV;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
@@ -338,6 +342,7 @@
         private System.Windows.Forms.Button btn_DN_Close;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button btn_DN_reg;
+        private Guna.UI2.WinForms.Guna2Button btn_ShowP;
     }
 }
 

@@ -25,7 +25,7 @@ namespace AppBUS
         {
             return dsLS.ThemLoaiSach(loaiSach);
         }
-        public bool XoaLoaiSach(int maLoai)
+        public bool XoaLoaiSach(string maLoai)
         {
             return dsLS.XoaLoaiSach(maLoai);
         }
@@ -33,7 +33,7 @@ namespace AppBUS
         {
             return dsLS.CapNhatLoaiSach(loaiSach);
         }
-        public bool KiemTraTonTaiMaLoai(int maLoai)
+        public bool KiemTraTonTaiMaLoai(string maLoai)
         {
             return dsLS.KiemTraTonTaiMaLoai(maLoai);
         }

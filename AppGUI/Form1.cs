@@ -33,5 +33,19 @@ namespace AppGUI
             register.Show();
             this.Hide();
         }
+
+        private void btn_ShowP_Click(object sender, EventArgs e)
+        {
+            if(txt_DN_password.UseSystemPasswordChar == true)
+            {
+                txt_DN_password.UseSystemPasswordChar = false;
+                btn_ShowP.Image = Properties.Resources.Eye;
+            }
+            else
+            {
+                txt_DN_password.UseSystemPasswordChar = true;
+                btn_ShowP.Image = Properties.Resources.Closed_Eye;
+            }
+        }
     }
 }

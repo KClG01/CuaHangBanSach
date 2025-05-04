@@ -32,19 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_QLTG = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.cln_QLTG_MATG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLTG_TENTG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLTG_BUTDANH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLTG_NGSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLTG_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cln_QLTG_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_QLLS_dgv = new System.Windows.Forms.Panel();
             this.txt_QLTG_TENTG = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_function = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_QLTG_Re = new Guna.UI2.WinForms.Guna2Button();
             this.txt_QLTG_NhapNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_index = new System.Windows.Forms.Label();
             this.cb_QLTG_Selected = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_QLTG_Del = new Guna.UI2.WinForms.Guna2Button();
@@ -62,6 +56,12 @@
             this.txt_QLTG_DIACHI = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLTG_LIENHE = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_QLTG_MATG = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cln_QLTG_MATG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLTG_TENTG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLTG_BUTDANH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLTG_NGSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLTG_LIENHE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cln_QLTG_DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLTG)).BeginInit();
             this.pn_QLLS_dgv.SuspendLayout();
             this.panel_function.SuspendLayout();
@@ -128,48 +128,7 @@
             this.dgv_QLTG.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_QLTG.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.dgv_QLTG.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // cln_QLTG_MATG
-            // 
-            this.cln_QLTG_MATG.DataPropertyName = "MA_TG";
-            this.cln_QLTG_MATG.HeaderText = "Mã tác giả";
-            this.cln_QLTG_MATG.MinimumWidth = 6;
-            this.cln_QLTG_MATG.Name = "cln_QLTG_MATG";
-            // 
-            // cln_QLTG_TENTG
-            // 
-            this.cln_QLTG_TENTG.DataPropertyName = "TENTG";
-            this.cln_QLTG_TENTG.HeaderText = "Tên tác giả";
-            this.cln_QLTG_TENTG.MinimumWidth = 6;
-            this.cln_QLTG_TENTG.Name = "cln_QLTG_TENTG";
-            // 
-            // cln_QLTG_BUTDANH
-            // 
-            this.cln_QLTG_BUTDANH.DataPropertyName = "BUTDANH";
-            this.cln_QLTG_BUTDANH.HeaderText = "Bút danh";
-            this.cln_QLTG_BUTDANH.MinimumWidth = 6;
-            this.cln_QLTG_BUTDANH.Name = "cln_QLTG_BUTDANH";
-            // 
-            // cln_QLTG_NGSINH
-            // 
-            this.cln_QLTG_NGSINH.DataPropertyName = "NGSINH";
-            this.cln_QLTG_NGSINH.HeaderText = "Ngày sinh";
-            this.cln_QLTG_NGSINH.MinimumWidth = 6;
-            this.cln_QLTG_NGSINH.Name = "cln_QLTG_NGSINH";
-            // 
-            // cln_QLTG_LIENHE
-            // 
-            this.cln_QLTG_LIENHE.DataPropertyName = "LIENHE";
-            this.cln_QLTG_LIENHE.HeaderText = "Liên hệ";
-            this.cln_QLTG_LIENHE.MinimumWidth = 6;
-            this.cln_QLTG_LIENHE.Name = "cln_QLTG_LIENHE";
-            // 
-            // cln_QLTG_DIACHI
-            // 
-            this.cln_QLTG_DIACHI.DataPropertyName = "DIACHI";
-            this.cln_QLTG_DIACHI.HeaderText = "Địa chỉ";
-            this.cln_QLTG_DIACHI.MinimumWidth = 6;
-            this.cln_QLTG_DIACHI.Name = "cln_QLTG_DIACHI";
+            this.dgv_QLTG.SelectionChanged += new System.EventHandler(this.dgv_QLTG_SelectionChanged);
             // 
             // pn_QLLS_dgv
             // 
@@ -203,6 +162,7 @@
             this.txt_QLTG_TENTG.SelectedText = "";
             this.txt_QLTG_TENTG.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_TENTG.TabIndex = 7;
+            this.txt_QLTG_TENTG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLTG_TENTG_KeyPress);
             // 
             // panel_function
             // 
@@ -210,7 +170,7 @@
             this.panel_function.Controls.Add(this.label11);
             this.panel_function.Controls.Add(this.btn_QLTG_Re);
             this.panel_function.Controls.Add(this.txt_QLTG_NhapNoiDung);
-            this.panel_function.Controls.Add(this.label9);
+            this.panel_function.Controls.Add(this.lbl_index);
             this.panel_function.Controls.Add(this.cb_QLTG_Selected);
             this.panel_function.Controls.Add(this.label8);
             this.panel_function.Controls.Add(this.btn_QLTG_Del);
@@ -261,6 +221,7 @@
             this.btn_QLTG_Re.Size = new System.Drawing.Size(150, 60);
             this.btn_QLTG_Re.TabIndex = 66;
             this.btn_QLTG_Re.Text = "Tạo mới";
+            this.btn_QLTG_Re.Click += new System.EventHandler(this.btn_QLTG_Re_Click);
             // 
             // txt_QLTG_NhapNoiDung
             // 
@@ -272,6 +233,7 @@
             this.txt_QLTG_NhapNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_QLTG_NhapNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_QLTG_NhapNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_QLTG_NhapNoiDung.Enabled = false;
             this.txt_QLTG_NhapNoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txt_QLTG_NhapNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_QLTG_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
@@ -286,16 +248,16 @@
             this.txt_QLTG_NhapNoiDung.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_NhapNoiDung.TabIndex = 65;
             // 
-            // label9
+            // lbl_index
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(935, 433);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 28);
-            this.label9.TabIndex = 64;
-            this.label9.Text = "Nhập nội dung:";
+            this.lbl_index.AutoSize = true;
+            this.lbl_index.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_index.ForeColor = System.Drawing.Color.Red;
+            this.lbl_index.Location = new System.Drawing.Point(935, 433);
+            this.lbl_index.Name = "lbl_index";
+            this.lbl_index.Size = new System.Drawing.Size(183, 28);
+            this.lbl_index.TabIndex = 64;
+            this.lbl_index.Text = "Chọn loại cần tìm:";
             // 
             // cb_QLTG_Selected
             // 
@@ -307,10 +269,15 @@
             this.cb_QLTG_Selected.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_QLTG_Selected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_QLTG_Selected.ItemHeight = 30;
+            this.cb_QLTG_Selected.Items.AddRange(new object[] {
+            "Mã tác giả",
+            "Tên tác giả",
+            "Bút danh"});
             this.cb_QLTG_Selected.Location = new System.Drawing.Point(1120, 356);
             this.cb_QLTG_Selected.Name = "cb_QLTG_Selected";
             this.cb_QLTG_Selected.Size = new System.Drawing.Size(255, 36);
             this.cb_QLTG_Selected.TabIndex = 63;
+            this.cb_QLTG_Selected.SelectedIndexChanged += new System.EventHandler(this.cb_QLTG_Selected_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -336,6 +303,7 @@
             this.btn_QLTG_Del.Size = new System.Drawing.Size(150, 60);
             this.btn_QLTG_Del.TabIndex = 61;
             this.btn_QLTG_Del.Text = "Xóa";
+            this.btn_QLTG_Del.Click += new System.EventHandler(this.btn_QLTG_Del_Click);
             // 
             // btn_QLTG_Search
             // 
@@ -350,6 +318,7 @@
             this.btn_QLTG_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLTG_Search.TabIndex = 58;
             this.btn_QLTG_Search.Text = "Tìm kiếm";
+            this.btn_QLTG_Search.Click += new System.EventHandler(this.btn_QLTG_Search_Click);
             // 
             // btn_QLTG_Edit
             // 
@@ -364,6 +333,7 @@
             this.btn_QLTG_Edit.Size = new System.Drawing.Size(150, 60);
             this.btn_QLTG_Edit.TabIndex = 60;
             this.btn_QLTG_Edit.Text = "Sửa";
+            this.btn_QLTG_Edit.Click += new System.EventHandler(this.btn_QLTG_Edit_Click);
             // 
             // btn_QLTG_Add
             // 
@@ -378,6 +348,7 @@
             this.btn_QLTG_Add.Size = new System.Drawing.Size(150, 60);
             this.btn_QLTG_Add.TabIndex = 59;
             this.btn_QLTG_Add.Text = "Thêm";
+            this.btn_QLTG_Add.Click += new System.EventHandler(this.btn_QLTG_Add_Click);
             // 
             // label6
             // 
@@ -483,6 +454,7 @@
             this.txt_QLTG_BUTDANH.SelectedText = "";
             this.txt_QLTG_BUTDANH.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_BUTDANH.TabIndex = 10;
+            this.txt_QLTG_BUTDANH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLTG_BUTDANH_KeyPress);
             // 
             // txt_QLTG_DIACHI
             // 
@@ -508,6 +480,7 @@
             this.txt_QLTG_DIACHI.SelectedText = "";
             this.txt_QLTG_DIACHI.Size = new System.Drawing.Size(255, 80);
             this.txt_QLTG_DIACHI.TabIndex = 9;
+            this.txt_QLTG_DIACHI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLTG_DIACHI_KeyPress);
             // 
             // txt_QLTG_LIENHE
             // 
@@ -532,6 +505,7 @@
             this.txt_QLTG_LIENHE.SelectedText = "";
             this.txt_QLTG_LIENHE.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_LIENHE.TabIndex = 8;
+            this.txt_QLTG_LIENHE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLTG_LIENHE_KeyPress);
             // 
             // txt_QLTG_MATG
             // 
@@ -558,6 +532,49 @@
             this.txt_QLTG_MATG.SelectedText = "";
             this.txt_QLTG_MATG.Size = new System.Drawing.Size(255, 40);
             this.txt_QLTG_MATG.TabIndex = 6;
+            this.txt_QLTG_MATG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLTG_MATG_KeyPress);
+            // 
+            // cln_QLTG_MATG
+            // 
+            this.cln_QLTG_MATG.DataPropertyName = "MaTacGia";
+            this.cln_QLTG_MATG.HeaderText = "Mã tác giả";
+            this.cln_QLTG_MATG.MinimumWidth = 6;
+            this.cln_QLTG_MATG.Name = "cln_QLTG_MATG";
+            // 
+            // cln_QLTG_TENTG
+            // 
+            this.cln_QLTG_TENTG.DataPropertyName = "TenTacGia";
+            this.cln_QLTG_TENTG.HeaderText = "Tên tác giả";
+            this.cln_QLTG_TENTG.MinimumWidth = 6;
+            this.cln_QLTG_TENTG.Name = "cln_QLTG_TENTG";
+            // 
+            // cln_QLTG_BUTDANH
+            // 
+            this.cln_QLTG_BUTDANH.DataPropertyName = "BUTDANH";
+            this.cln_QLTG_BUTDANH.HeaderText = "Bút danh";
+            this.cln_QLTG_BUTDANH.MinimumWidth = 6;
+            this.cln_QLTG_BUTDANH.Name = "cln_QLTG_BUTDANH";
+            // 
+            // cln_QLTG_NGSINH
+            // 
+            this.cln_QLTG_NGSINH.DataPropertyName = "NgaySinh";
+            this.cln_QLTG_NGSINH.HeaderText = "Ngày sinh";
+            this.cln_QLTG_NGSINH.MinimumWidth = 6;
+            this.cln_QLTG_NGSINH.Name = "cln_QLTG_NGSINH";
+            // 
+            // cln_QLTG_LIENHE
+            // 
+            this.cln_QLTG_LIENHE.DataPropertyName = "LIENHE";
+            this.cln_QLTG_LIENHE.HeaderText = "Liên hệ";
+            this.cln_QLTG_LIENHE.MinimumWidth = 6;
+            this.cln_QLTG_LIENHE.Name = "cln_QLTG_LIENHE";
+            // 
+            // cln_QLTG_DIACHI
+            // 
+            this.cln_QLTG_DIACHI.DataPropertyName = "DIACHI";
+            this.cln_QLTG_DIACHI.HeaderText = "Địa chỉ";
+            this.cln_QLTG_DIACHI.MinimumWidth = 6;
+            this.cln_QLTG_DIACHI.Name = "cln_QLTG_DIACHI";
             // 
             // FormQuanLyTacGia
             // 
@@ -568,6 +585,7 @@
             this.Controls.Add(this.panel_function);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyTacGia";
+            this.Load += new System.EventHandler(this.FormQuanLyTacGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLTG)).EndInit();
             this.pn_QLLS_dgv.ResumeLayout(false);
             this.panel_function.ResumeLayout(false);
@@ -585,12 +603,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_DIACHI;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_LIENHE;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_MATG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_MATG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_TENTG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_BUTDANH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_NGSINH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_LIENHE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_DIACHI;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_BUTDANH;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_QLTG_NGSINH;
         private System.Windows.Forms.Label label6;
@@ -601,7 +613,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btn_QLTG_Re;
         private Guna.UI2.WinForms.Guna2TextBox txt_QLTG_NhapNoiDung;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_index;
         private Guna.UI2.WinForms.Guna2ComboBox cb_QLTG_Selected;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button btn_QLTG_Del;
@@ -609,5 +621,11 @@
         private Guna.UI2.WinForms.Guna2Button btn_QLTG_Edit;
         private Guna.UI2.WinForms.Guna2Button btn_QLTG_Add;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_MATG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_TENTG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_BUTDANH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_NGSINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_LIENHE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cln_QLTG_DIACHI;
     }
 }

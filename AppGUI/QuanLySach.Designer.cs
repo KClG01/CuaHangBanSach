@@ -217,13 +217,13 @@
             this.txt_QLS_TENSP.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLS_TENSP.ForeColor = System.Drawing.Color.Black;
             this.txt_QLS_TENSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_TENSP.Location = new System.Drawing.Point(693, 94);
+            this.txt_QLS_TENSP.Location = new System.Drawing.Point(749, 94);
             this.txt_QLS_TENSP.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLS_TENSP.Name = "txt_QLS_TENSP";
             this.txt_QLS_TENSP.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLS_TENSP.PlaceholderText = "Tên sách";
             this.txt_QLS_TENSP.SelectedText = "";
-            this.txt_QLS_TENSP.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLS_TENSP.Size = new System.Drawing.Size(278, 40);
             this.txt_QLS_TENSP.TabIndex = 7;
             // 
             // txt_QLS_GIABAN
@@ -240,13 +240,13 @@
             this.txt_QLS_GIABAN.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLS_GIABAN.ForeColor = System.Drawing.Color.Black;
             this.txt_QLS_GIABAN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLS_GIABAN.Location = new System.Drawing.Point(693, 269);
+            this.txt_QLS_GIABAN.Location = new System.Drawing.Point(749, 269);
             this.txt_QLS_GIABAN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLS_GIABAN.Name = "txt_QLS_GIABAN";
             this.txt_QLS_GIABAN.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLS_GIABAN.PlaceholderText = "Giá bán";
             this.txt_QLS_GIABAN.SelectedText = "";
-            this.txt_QLS_GIABAN.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLS_GIABAN.Size = new System.Drawing.Size(278, 40);
             this.txt_QLS_GIABAN.TabIndex = 12;
             // 
             // txt_QLS_GIANHAP
@@ -269,7 +269,7 @@
             this.txt_QLS_GIANHAP.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLS_GIANHAP.PlaceholderText = "Giá nhập";
             this.txt_QLS_GIANHAP.SelectedText = "";
-            this.txt_QLS_GIANHAP.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLS_GIANHAP.Size = new System.Drawing.Size(254, 40);
             this.txt_QLS_GIANHAP.TabIndex = 11;
             // 
             // txt_QLS_LOAISACH
@@ -282,7 +282,7 @@
             this.txt_QLS_LOAISACH.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_QLS_LOAISACH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txt_QLS_LOAISACH.ItemHeight = 30;
-            this.txt_QLS_LOAISACH.Location = new System.Drawing.Point(1135, 184);
+            this.txt_QLS_LOAISACH.Location = new System.Drawing.Point(1285, 184);
             this.txt_QLS_LOAISACH.Name = "txt_QLS_LOAISACH";
             this.txt_QLS_LOAISACH.Size = new System.Drawing.Size(220, 36);
             this.txt_QLS_LOAISACH.TabIndex = 10;
@@ -371,7 +371,7 @@
             this.txt_QLS_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLS_NhapNoiDung.PlaceholderText = "";
             this.txt_QLS_NhapNoiDung.SelectedText = "";
-            this.txt_QLS_NhapNoiDung.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLS_NhapNoiDung.Size = new System.Drawing.Size(244, 40);
             this.txt_QLS_NhapNoiDung.TabIndex = 56;
             // 
             // label9
@@ -397,7 +397,7 @@
             this.cb_QLS_Selected.ItemHeight = 30;
             this.cb_QLS_Selected.Location = new System.Drawing.Point(1135, 343);
             this.cb_QLS_Selected.Name = "cb_QLS_Selected";
-            this.cb_QLS_Selected.Size = new System.Drawing.Size(220, 36);
+            this.cb_QLS_Selected.Size = new System.Drawing.Size(244, 36);
             this.cb_QLS_Selected.TabIndex = 54;
             // 
             // label10
@@ -433,7 +433,7 @@
             this.btn_QLS_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLS_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLS_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_QLS_Search.Location = new System.Drawing.Point(1361, 417);
+            this.btn_QLS_Search.Location = new System.Drawing.Point(1385, 417);
             this.btn_QLS_Search.Name = "btn_QLS_Search";
             this.btn_QLS_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLS_Search.TabIndex = 49;
@@ -472,7 +472,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(959, 99);
+            this.label8.Location = new System.Drawing.Point(1109, 99);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(140, 28);
             this.label8.TabIndex = 32;
@@ -483,7 +483,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(570, 272);
+            this.label7.Location = new System.Drawing.Point(626, 272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 28);
             this.label7.TabIndex = 31;
@@ -505,7 +505,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1000, 184);
+            this.label5.Location = new System.Drawing.Point(1150, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 28);
             this.label5.TabIndex = 29;
@@ -516,7 +516,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(576, 184);
+            this.label4.Location = new System.Drawing.Point(632, 184);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 28);
             this.label4.TabIndex = 28;
@@ -538,7 +538,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(556, 99);
+            this.label2.Location = new System.Drawing.Point(612, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 28);
             this.label2.TabIndex = 26;
@@ -560,7 +560,7 @@
             this.txt_QLS_SLTON.BackColor = System.Drawing.Color.Transparent;
             this.txt_QLS_SLTON.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_QLS_SLTON.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_QLS_SLTON.Location = new System.Drawing.Point(1135, 94);
+            this.txt_QLS_SLTON.Location = new System.Drawing.Point(1285, 94);
             this.txt_QLS_SLTON.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_QLS_SLTON.Name = "txt_QLS_SLTON";
             this.txt_QLS_SLTON.Size = new System.Drawing.Size(220, 40);
@@ -576,9 +576,9 @@
             this.txt_QLS_TACGIA.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_QLS_TACGIA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txt_QLS_TACGIA.ItemHeight = 30;
-            this.txt_QLS_TACGIA.Location = new System.Drawing.Point(693, 182);
+            this.txt_QLS_TACGIA.Location = new System.Drawing.Point(749, 182);
             this.txt_QLS_TACGIA.Name = "txt_QLS_TACGIA";
-            this.txt_QLS_TACGIA.Size = new System.Drawing.Size(220, 36);
+            this.txt_QLS_TACGIA.Size = new System.Drawing.Size(278, 36);
             this.txt_QLS_TACGIA.TabIndex = 16;
             // 
             // txt_QLS_NXB
@@ -593,7 +593,7 @@
             this.txt_QLS_NXB.ItemHeight = 30;
             this.txt_QLS_NXB.Location = new System.Drawing.Point(281, 182);
             this.txt_QLS_NXB.Name = "txt_QLS_NXB";
-            this.txt_QLS_NXB.Size = new System.Drawing.Size(220, 36);
+            this.txt_QLS_NXB.Size = new System.Drawing.Size(254, 36);
             this.txt_QLS_NXB.TabIndex = 14;
             // 
             // txt_QLS_MASP
@@ -616,7 +616,7 @@
             this.txt_QLS_MASP.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLS_MASP.PlaceholderText = "Mã sách";
             this.txt_QLS_MASP.SelectedText = "";
-            this.txt_QLS_MASP.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLS_MASP.Size = new System.Drawing.Size(254, 40);
             this.txt_QLS_MASP.TabIndex = 6;
             // 
             // FormQuanLySach

@@ -147,7 +147,7 @@
             this.btn_QLLS_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_QLLS_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLLS_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_QLLS_Search.Location = new System.Drawing.Point(1400, 196);
+            this.btn_QLLS_Search.Location = new System.Drawing.Point(1447, 245);
             this.btn_QLLS_Search.Name = "btn_QLLS_Search";
             this.btn_QLLS_Search.Size = new System.Drawing.Size(120, 40);
             this.btn_QLLS_Search.TabIndex = 0;
@@ -213,13 +213,13 @@
             this.txt_QLLS_TENLOAI.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLLS_TENLOAI.ForeColor = System.Drawing.Color.Black;
             this.txt_QLLS_TENLOAI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLLS_TENLOAI.Location = new System.Drawing.Point(711, 118);
+            this.txt_QLLS_TENLOAI.Location = new System.Drawing.Point(777, 118);
             this.txt_QLLS_TENLOAI.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLLS_TENLOAI.Name = "txt_QLLS_TENLOAI";
             this.txt_QLLS_TENLOAI.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLLS_TENLOAI.PlaceholderText = "Tên loại sách";
             this.txt_QLLS_TENLOAI.SelectedText = "";
-            this.txt_QLLS_TENLOAI.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLLS_TENLOAI.Size = new System.Drawing.Size(299, 40);
             this.txt_QLLS_TENLOAI.TabIndex = 7;
             this.txt_QLLS_TENLOAI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLLS_TENLOAI_KeyPress);
             // 
@@ -289,13 +289,13 @@
             this.txt_QLLS_NhapNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txt_QLLS_NhapNoiDung.ForeColor = System.Drawing.Color.Black;
             this.txt_QLLS_NhapNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_QLLS_NhapNoiDung.Location = new System.Drawing.Point(1174, 196);
+            this.txt_QLLS_NhapNoiDung.Location = new System.Drawing.Point(1132, 245);
             this.txt_QLLS_NhapNoiDung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_QLLS_NhapNoiDung.Name = "txt_QLLS_NhapNoiDung";
             this.txt_QLLS_NhapNoiDung.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLLS_NhapNoiDung.PlaceholderText = "";
             this.txt_QLLS_NhapNoiDung.SelectedText = "";
-            this.txt_QLLS_NhapNoiDung.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLLS_NhapNoiDung.Size = new System.Drawing.Size(309, 40);
             this.txt_QLLS_NhapNoiDung.TabIndex = 47;
             // 
             // lbl_index
@@ -303,7 +303,7 @@
             this.lbl_index.AutoSize = true;
             this.lbl_index.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_index.ForeColor = System.Drawing.Color.Red;
-            this.lbl_index.Location = new System.Drawing.Point(989, 199);
+            this.lbl_index.Location = new System.Drawing.Point(947, 248);
             this.lbl_index.Name = "lbl_index";
             this.lbl_index.Size = new System.Drawing.Size(158, 28);
             this.lbl_index.TabIndex = 46;
@@ -322,9 +322,9 @@
             this.cb_QLLS_Selected.Items.AddRange(new object[] {
             "Mã loại sách",
             "Tên loại sách"});
-            this.cb_QLLS_Selected.Location = new System.Drawing.Point(1174, 122);
+            this.cb_QLLS_Selected.Location = new System.Drawing.Point(1132, 185);
             this.cb_QLLS_Selected.Name = "cb_QLLS_Selected";
-            this.cb_QLLS_Selected.Size = new System.Drawing.Size(220, 36);
+            this.cb_QLLS_Selected.Size = new System.Drawing.Size(309, 36);
             this.cb_QLLS_Selected.TabIndex = 45;
             this.cb_QLLS_Selected.SelectedIndexChanged += new System.EventHandler(this.cb_QLLS_Selected_SelectedIndexChanged);
             // 
@@ -333,7 +333,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(989, 123);
+            this.label8.Location = new System.Drawing.Point(947, 185);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 28);
             this.label8.TabIndex = 44;
@@ -344,7 +344,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(534, 123);
+            this.label1.Location = new System.Drawing.Point(600, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 28);
             this.label1.TabIndex = 34;
@@ -381,7 +381,7 @@
             this.txt_QLLS_MA_LOAI.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txt_QLLS_MA_LOAI.PlaceholderText = "Mã loại sách";
             this.txt_QLLS_MA_LOAI.SelectedText = "";
-            this.txt_QLLS_MA_LOAI.Size = new System.Drawing.Size(220, 40);
+            this.txt_QLLS_MA_LOAI.Size = new System.Drawing.Size(265, 40);
             this.txt_QLLS_MA_LOAI.TabIndex = 6;
             this.txt_QLLS_MA_LOAI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_QLLS_MA_LOAI_KeyPress);
             // 
