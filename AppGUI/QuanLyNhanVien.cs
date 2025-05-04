@@ -109,22 +109,18 @@ namespace AppGUI
         {
             if (dgv_QLNV.SelectedRows.Count > 0)
             {
-                int index = dgv_QLNV.CurrentCell.RowIndex;
+                // Lấy chỉ số dòng từ SelectedRows
+                int index = dgv_QLNV.SelectedRows[0].Index;
+                // Sử dụng dsNV đã được cập nhật
                 txt_QLNV_MANV.Text = dsNV[index].MaNV.ToString();
                 txt_QLNV_TENNV.Text = dsNV[index].TenNV.ToString();
                 txt_QLNV_SDT.Text = dsNV[index].SDT.ToString();
                 txt_QLNV_Email.Text = dsNV[index].Email.ToString();
                 txt_QLNV_DIACHI.Text = dsNV[index].DiaChi.ToString();
                 txt_QLNV_PASSWORD.Text = dsNV[index].Password.ToString();
-                txt_QLNV_SAF.Text = dsNV[index].SDT.ToString();
-                if (dsNV[index].GioiTinh == true)
-                {
-                    rad_QLNV_Male.Checked = true;
-                }
-                else
-                {
-                    rad_QLNV_Female.Checked = true;
-                }
+                txt_QLNV_SAF.Text = dsNV[index].Luong.ToString();
+                rad_QLNV_Male.Checked = dsNV[index].GioiTinh;
+                rad_QLNV_Female.Checked = !dsNV[index].GioiTinh;
             }
             else
             {
@@ -313,45 +309,49 @@ namespace AppGUI
 
         private void btn_QLNV_Search_Click(object sender, EventArgs e)
         {
-            if(cb_QLNV_Selected.SelectedIndex == -1)
+            if (cb_QLNV_Selected.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn loại cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             string keyword = txt_QLNV_NhapNoiDung.Text.Trim();
             if (string.IsNullOrWhiteSpace(keyword))
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             List<NhanVien_DTO> result = new List<NhanVien_DTO>();
             if (cb_QLNV_Selected.SelectedIndex == 0)
             {
                 result = dsNV.Where(x => x.MaNV.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 1)
             {
                 result = dsNV.Where(x => x.TenNV.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 2)
             {
                 result = dsNV.Where(x => x.SDT.ToString().Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
             else if (cb_QLNV_Selected.SelectedIndex == 3)
             {
                 result = dsNV.Where(x => x.Email.Contains(keyword)).ToList();
-                dgv_QLNV.DataSource = result;
             }
+
             if (result.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy nhân viên nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLNV.DataSource = null;
             }
             else
             {
-                dgv_QLNV.DataSource = result;
+                dsNV = result;
+                dgv_QLNV.DataSource = dsNV;
+
+                dgv_QLNV.Rows[0].Selected = true;
+                LayThongTin();
             }
         }
 

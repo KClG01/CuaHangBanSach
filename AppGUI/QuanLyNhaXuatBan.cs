@@ -235,10 +235,15 @@ namespace AppGUI
             if (result.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy nhà xuất bản nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLNXB.DataSource = null;
             }
             else
             {
-                dgv_QLNXB.DataSource = result;
+                dsNXB = result;
+                dgv_QLNXB.DataSource = dsNXB;
+
+                dgv_QLNXB.Rows[0].Selected = true;
+                layThongTin();
             }
         }
 

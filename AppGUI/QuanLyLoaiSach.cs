@@ -200,29 +200,32 @@ namespace AppGUI
                 return;
             }
 
-            List<LoaiSP_DTO> lS = ls.dsLoaiSach();
             List<LoaiSP_DTO> result = new List<LoaiSP_DTO>();
 
             if (cb_QLLS_Selected.SelectedIndex == 0)
             {
-                result = lS
+                result = dsLS
                     .Where(a => a.MaLoai.ToString().Contains(keyword))
                     .ToList();
             }
             else if (cb_QLLS_Selected.SelectedIndex == 1)
             {
-                result = lS
+                result = dsLS
                     .Where(a => a.TenLoai.ToLower().Contains(keyword.ToLower()))
                     .ToList();
             }
-
-            if (result.Count > 0)
+            if(result.Count == 0)
             {
-                dgv_QLLS.DataSource = result;
+                MessageBox.Show("Không tìm thấy kết quả nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLLS.DataSource = null;
             }
             else
             {
-                MessageBox.Show("Không tìm thấy kết quả nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dsLS = result;
+                dgv_QLLS.DataSource = dsLS;
+
+                dgv_QLLS.Rows[0].Selected = true;
+                layThongTin();
             }
         }
     }

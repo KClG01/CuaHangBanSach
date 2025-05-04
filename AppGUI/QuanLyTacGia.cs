@@ -261,11 +261,15 @@ namespace AppGUI
             if (result.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy tác giả nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv_QLTG.DataSource = null;
             }
             else
             {
-                dgv_QLTG.DataSource = result;
-                dgv_QLTG.ClearSelection();
+                dsTG = result;
+                dgv_QLTG.DataSource = dsTG;
+
+                dgv_QLTG.Rows[0].Selected = true;
+                LayThongTin();
             }
         }
 
