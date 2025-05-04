@@ -126,13 +126,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="ThemChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,7 +143,6 @@
     </Compile>
     <Compile Include="XacNhan_CTHoaDon.Designer.cs">
       <DependentUpon>XacNhan_CTHoaDon.cs</DependentUpon>
->>>>>>> wMuoi50
     </Compile>
     <EmbeddedResource Include="BanSach.resx">
       <DependentUpon>BanSach.cs</DependentUpon>
@@ -192,16 +190,14 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemChiTietHoaDon.resx">
       <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XacNhan_CTHoaDon.resx">
       <DependentUpon>XacNhan_CTHoaDon.cs</DependentUpon>
->>>>>>> wMuoi50
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

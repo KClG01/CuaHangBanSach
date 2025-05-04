@@ -49,11 +49,8 @@
     <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="NhaXuatBan_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="TacGia_DAO.cs" />
-=======
     <Compile Include="SanPham_DAO.cs" />
->>>>>>> wMuoi50
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDTO\AppDTO.csproj">

@@ -48,11 +48,8 @@
     <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="NhaXuatBan_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="TacGia_BUS.cs" />
-=======
     <Compile Include="SanPham_BUS.cs" />
->>>>>>> wMuoi50
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDAO\AppDAO.csproj">
